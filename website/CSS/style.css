@@ -1,0 +1,133 @@
+/* Custom font import code */
+@font-face {
+	font-family: 'Kranky';
+	src: url('fonts/Kranky-Regular.ttf');
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Formatting for the entire page background */
+.Container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-width: 700px;
+	background-color: #2e180f;
+}
+
+
+/* The formatting for the Menu-Panel */
+.Menu-Panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 31px;
+	width: 100%;
+	font-family: Kranky, 'Times New Roman', serif;
+	background-color: #000000;
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.Menu-Panel a {
+	display: inline-block;
+	padding: 5px 20px;
+	margin: 0px 10px;
+	font-weight: 600;
+	color: #ff0000;
+	background-color: #333333;
+	border-radius: 5px;
+}
+
+.Menu-Panel a:visited {
+	color: #660000;
+	font-weight: 600;
+	background-color: #777777;
+}
+
+.Menu-Panel a:hover {
+	color: #660000;
+	font-weight: 800;
+	background-color: #777777;
+}
+
+.Menu-Panel a:active {
+	color: #ffffff;
+	font-weight: 1000;
+	background-color: #111111;
+}
+
+
+/* The formatting for the Side-Panel */
+.Side-Panel {
+	position: fixed;
+	top: 31px;
+	bottom: 0;
+	width: 200px;
+	font-family: Kranky, 'Times New Roman', serif;
+	padding: 5px;
+	padding-top: 15px;
+	background-color: #964B00;
+	text-align: center;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.Side-Panel p {
+	margin-bottom: 15px;
+}
+
+.Side-Panel a {
+	font-weight: 700;
+	padding: 2px 10px;
+	margin: 0px 0px;
+	color: #ff0000;
+	background-color: #333333;
+	border-radius: 5px;
+}
+
+.Side-Panel a:hover {
+	background-color: #777777;
+}
+
+
+/* The formatting for the Main-Panel */
+.Main-Panel {
+	flex-grow: 1;
+	margin-top: 31px;
+	margin-left: 200px;
+	font-family: Kranky, 'Times New Roman', serif;
+	padding: 20px;
+	background-color: #2e180f;
+	color: #ffffff;
+	white-space: nowrap;
+	overflow: auto;
+}
+
+.Main-Panel h1 {
+	margin-bottom: 15px;
+}
+
+.Main-Panel p {
+	margin-bottom: 15px;
+}
+
+.Main-Panel a {
+	padding: 2px 5px;
+	font-weight: 700;
+	color: #ff0000;
+	background-color: #333333;
+	border-radius: 5px;
+}
+
+.Main-Panel a:hover {
+	background-color: #777777;
+}
