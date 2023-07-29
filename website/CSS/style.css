@@ -32,13 +32,16 @@
 	text-align: center;
 }
 
+.Page {
+	display: flex;
+}
+
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	position: fixed;
-	top: 32px;
+	margin-top: 32px;
 	bottom: 0;
-	width: 200px;
+	flex: 0 0 0;
 	font-family: Kranky, 'Times New Roman', serif;
 	padding: 5px;
 	padding-top: 15px;
@@ -49,9 +52,8 @@
 
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
-	flex-grow: 1;
+	flex: 1 1 0px;
 	margin-top: 32px;
-	margin-left: 200px;
 	font-family: Kranky, 'Times New Roman', serif;
 	padding: 20px;
 	background-color: #2e180f;
