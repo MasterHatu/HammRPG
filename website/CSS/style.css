@@ -1,11 +1,11 @@
-/* Custom font import code */
+/* This code imports the custom font style */
 @font-face {
 	font-family: 'Kranky';
 	src: url('fonts/Kranky-Regular.ttf');
 }
 
 
-/* CSS Reset */
+/* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
 * {
 	margin: 0;
 	padding: 0;
@@ -13,7 +13,7 @@
 }
 
 
-/* Formatting for the entire page background */
+/* This container splits the page into the top menu panel and the main content panel */
 .Container {
 	display: flex;
 	flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 
-/* The formatting for the Menu-Panel */
+/* This is the formatting for the Menu-Panel */
 .Menu-Panel {
 	position: fixed;
 	height: 32px;
@@ -33,7 +33,7 @@
 }
 
 
-/* The formatting for the Side-Panel */
+/* This is the formatting for the Side-Panel */
 .Side-Panel {
 	position: fixed;
 	top: 32px;
@@ -44,13 +44,11 @@
 	padding-top: 15px;
 	background-color: #964B00;
 	text-align: center;
-	white-space: nowrap;
-	overflow: auto;
 }
 
 
-/* The formatting for the Main-Panel */
-.Main-Panel {
+/* This is the formatting for the Content-Panel */
+.Content-Panel {
 	flex-grow: 1;
 	margin-top: 32px;
 	margin-left: 200px;
