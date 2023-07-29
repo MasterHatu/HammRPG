@@ -4,7 +4,6 @@
 	src: url('fonts/Kranky-Regular.ttf');
 }
 
-
 /* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
 * {
 	margin: 0;
@@ -13,6 +12,7 @@
 	font-family: Kranky, serif;
 	color: #ffffff;
 }
+
 
 /* This overall section sets up the layout of the page */
 
@@ -48,7 +48,6 @@
 	text-align: center;
 }
 
-
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
 	flex: 1 1 0px;
@@ -60,6 +59,17 @@
 
 /* Now we're getting to the formatting of the content itself */
 
+/* Headers */
+h1 {
+	margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+	margin-bottom: 8px;
+}
+
+/* Links */
 a {
 	background-color: #941111;
 	padding: 2px;
