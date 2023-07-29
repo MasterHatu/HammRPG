@@ -10,10 +10,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Kranky, serif;
 }
 
+/* This overall section sets up the layout of the page */
 
-/* This container splits the page into the top menu panel and the main content panel */
+/* This container splits the page into the top Menu-Panel and the Page container */
 .Container {
 	display: flex;
 	flex-direction: column;
@@ -21,30 +23,25 @@
 	background-color: #2e180f;
 }
 
-
 /* This is the formatting for the Menu-Panel */
 .Menu-Panel {
 	position: fixed;
 	height: 32px;
 	width: 100%;
-	font-family: Kranky, 'Times New Roman', serif;
 	background-color: #000000;
 	text-align: center;
 }
 
+/* This container allows flexbox arranging of the Side-Panel and the Content-Panel */
 .Page {
 	display: flex;
 }
 
-
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	margin-top: 32px;
-	bottom: 0;
 	flex: 0 0 0;
-	font-family: Kranky, 'Times New Roman', serif;
-	padding: 5px;
-	padding-top: 15px;
+	margin-top: 32px;
+	padding: 10px;
 	background-color: #964B00;
 	text-align: center;
 }
@@ -54,8 +51,16 @@
 .Content-Panel {
 	flex: 1 1 0px;
 	margin-top: 32px;
-	font-family: Kranky, 'Times New Roman', serif;
 	padding: 20px;
 	background-color: #2e180f;
 	color: #ffffff;
+}
+
+
+/* Now we're getting to the formatting of the content itself */
+
+a {
+	color: #ffffff;
+	background-color: #941111;
+	padding: 2px;
 }
