@@ -1,15 +1,9 @@
-/* This code imports the custom font style */
-@font-face {
-	font-family: 'Kranky';
-	src: url("https://masterhatu.github.io/HammRPG/Fonts/Kranky-Regular.ttf");
-}
-
 /* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Kranky, serif;
+	font-family: serif;
 	color: #ffffff;
 }
 
