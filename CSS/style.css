@@ -20,24 +20,30 @@
 
 /* This is the formatting for the Menu-Panel */
 .Menu-Panel {
+	display: flex;
 	position: fixed;
-	height: 32px;
+	height: 30px;
 	width: 100%;
-	background-color: #000000;
-	text-align: center;
+	background-color: #272020;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 /* This container allows flexbox arranging of the Side-Panel and the Content-Panel */
 .Page {
 	display: flex;
 	min-height: 100vh;
+	padding-top: 30px;
 }
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
 	flex: 0 0 0;
-	margin-top: 32px;
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
 	background-color: #964B00;
 	text-align: center;
 }
@@ -45,7 +51,6 @@
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
 	flex: 1 1 0px;
-	margin-top: 32px;
 	padding: 20px;
 	background-color: #2e180f;
 }
@@ -65,6 +70,8 @@ p {
 
 /* Links */
 a {
-	background-color: #941111;
-	padding: 2px;
+	background-color: #820f0f;
+	padding: 2px 5px;
+	border-radius: 6px;
+	text-decoration: none;
 }
