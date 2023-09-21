@@ -75,3 +75,7 @@ a {
 	border-radius: 6px;
 	text-decoration: none;
 }
+
+ul {
+	padding: 0px 25px;
+}
