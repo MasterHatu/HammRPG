@@ -53,6 +53,9 @@
 	flex: 1 1 0px;
 	padding: 20px;
 	background-color: #2e180f;
+}
+
+.Card-Organizer {
 	display: flex;
 	gap: 20px;
 }
@@ -84,7 +87,7 @@ ul {
 	padding: 0px 25px;
 }
 
-.item_card {
+.Item-Card {
 	flex: 0 0 250px;
 	border: 2px solid #820f0f;
 	padding: 5px;
@@ -93,15 +96,15 @@ ul {
 	align-items: center;
 }
 
-.item_card h1 {
+.Item-Card h1 {
 	flex: 0 0 auto;
 }
 
-.item_card h4 {
+.Item-Card h4 {
 	flex: 0 0 auto;
 }
 
-.item_card p {
+.Item-Card p {
 	flex: 1 1 0;
 	margin: 10px 0;
 	font-size: 14px;
