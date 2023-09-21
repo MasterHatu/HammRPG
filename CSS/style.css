@@ -86,12 +86,23 @@ ul {
 
 .item_card {
 	flex: 0 0 250px;
+	border: 2px solid #820f0f;
+	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.item_card h1 {
+	flex: 0 0 auto;
+}
+
+.item_card h4 {
+	flex: 0 0 auto;
+}
+
 .item_card p {
+	flex: 1 1 0;
 	margin: 10px 0;
 	font-size: 14px;
 }
