@@ -53,6 +53,7 @@
 	flex: 1 1 0px;
 	padding: 20px;
 	background-color: #2e180f;
+	display: flex;
 }
 
 
@@ -76,6 +77,11 @@ a {
 	text-decoration: none;
 }
 
+/* Lists */
 ul {
 	padding: 0px 25px;
+}
+
+.item_card {
+	flex: 0 0 100px;
 }
