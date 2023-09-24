@@ -9,7 +9,6 @@
 
 
 /* This overall section sets up the layout of the page */
-
 /* This container splits the page into the top Menu-Panel and the Page container */
 .Container {
 	display: flex;
@@ -65,7 +64,7 @@ h1 {
 
 /* Paragraphs */
 p {
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 }
 
 /* Links */
@@ -82,6 +81,7 @@ ul {
 	padding: 0px 25px;
 }
 
+/* The Terminology Page */
 .Terminology-Card-Organizer {
 	display: flex;
 	gap: 20px;
@@ -99,10 +99,6 @@ ul {
 
 .Terminology-Card-Organizer .Item-Card {
 	flex: 0 0 260px;
-}
-
-.Effects-Card-Organizer .Item-Card {
-	flex: 0 0 auto;
 }
 
 .Item-Card h1 {
@@ -135,8 +131,17 @@ ul {
 	border-radius: 10px;
 }
 
+/* The Effects Page, except Item-Card formatting */
 .Effects-Card-Organizer {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 5px;
+}
+
+.Effects-Card-Organizer h2 {
+	margin-top: 20px;
+}
+
+.Effects-Card-Organizer .Item-Card {
+	flex: 0 0 auto;
 }
