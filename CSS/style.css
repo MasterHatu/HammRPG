@@ -89,13 +89,20 @@ ul {
 }
 
 .Item-Card {
-	flex: 0 0 260px;
 	border: 5px solid #820f0f;
 	border-radius: 10px;
 	padding: 5px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.Terminology-Card-Organizer .Item-Card {
+	flex: 0 0 260px;
+}
+
+.Effects-Card-Organizer .Item-Card {
+	flex: 0 0 auto;
 }
 
 .Item-Card h1 {
@@ -113,4 +120,10 @@ ul {
 	margin: 5px 0;
 	font-size: 14px;
 	text-align: center;
+}
+
+.Effects-Card-Organizer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
