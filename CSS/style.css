@@ -122,6 +122,19 @@ ul {
 	text-align: center;
 }
 
+.Highlight {
+	margin: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.Highlight h2 {
+	background-color: #964B00;
+	padding: 5px;
+	border: 10px solid #820f0f;
+	border-radius: 10px;
+}
+
 .Effects-Card-Organizer {
 	display: flex;
 	flex-direction: column;
