@@ -37,7 +37,39 @@
 		</div>
 			<!-- The content page itself-->
 		<div class="Content-Panel">
-			<p>This page is under construction. Please check back later</p>
+			<h1>Status Effects</h1>
+			<p>Sometimes characters will be affected by certain status effects. In this article, the character causing the 
+				effect will be referred to as the <span class="Character">Source</span>, while the character experiencing the 
+				effect will be called the <span class="Character">Target</span>.</p>
+			<p>Typically, the <span class="Character">Source</span> will make an <span class="rolls">atk</span> roll, and then 
+				the <span class="Character">Target</span> makes the appropriate save. The effect is applied if the <span 
+				class="Character">Source</span> wins the contest.</p>
+			<p>Once the effect is applied, it remains until the <span class="Character">Target</span> makes a successful save,
+				which can be re-attempted at the beginning of each <span class="Character">Target</span> turn. For each turn after
+				the effect is first applied, the original atk roll decays by 1 point, meaning that it gets easier to shake off
+				negative effects as time goes on.</p>
+			<div class="Highlight">
+				<h2>DC = atk - (# of Turns since atk)</h2>
+			</div>
+			<p>For example, if a <span class="Character">Source</span> rolled a 15 on their initial atk rolls, the <span
+				class="Character">Target</span> needs to beat the 15 during the first turn to resist the effect. During the second
+				turn, the <span class="Character">Target</span> only needs to beat the 14, then the 13 during the third turn, etc.</p>
+			<p>In most cases the effect wears of on its own according to the formula described above, but in some cases it can 
+				also be removed by performing specific actions, as specified in the effect list below.</p>
+			<div class="Effect">
+				<h2>Blinded</h2>
+				<p>The <span class="Character">Target</span> automatically fails all vision based <span class="Ability">
+					Perception</span> checks. The <span class="Character">Target</span> must roll all <span class="Melee">
+					melee</span> attacks with disadvantage, and all <span class="Ranged">ranged</span> attacks with disadvantage 
+					as well as a -10 modifier. Additionally, the <span class="Character">Target</span> rolls all <span 
+					class="Ability">Grappling</span>, <span class="Ability">Intimidation</span>, <span class="Ability">
+					Acrobatics</span>, <span class="Ability">Reflex</span>, <span class="Ability">Thievery</span>, <span 
+					class="Ability">Crafting</span>, <span class="Ability">Investigation</span>, <span class="Ability">
+					Perception</span>, and <span class="Ability">Performance</span> checks at disadvantage.</p>
+				<p>This effect can be removed if the <span class="Character">Target</span> receives more than two times 
+					its own <span class="Attribute">Constitution</span> value in HP within a single turn.</p>
+				<h2></h2>
+			</div>
 		</div>
 	</div>
 </div>
