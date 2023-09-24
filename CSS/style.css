@@ -101,14 +101,15 @@ ul {
 	flex: 0 0 260px;
 }
 
-.Item-Card h1 {
+.Item-Card h1,
+.Item-Card h2,
+.Item-Card h3 {
 	flex: 0 0 auto;
 	margin: 2px 0;
 }
 
-.Item-Card h2 {
-	flex: 0 0 auto;
-	margin: 2px 0;
+.Item-Card h3 {
+	text-decoration: underline;
 }
 
 .Item-Card p {
