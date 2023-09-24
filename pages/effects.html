@@ -41,61 +41,70 @@
 			<div class="Introduction">
 				<h1>Status Effects</h1>
 				<p>Sometimes characters will be affected by certain status effects. In this article, the character causing the 
-					effect will be referred to as the <span class="Character">Source</span>, while the character experiencing the 
-					effect will be called the <span class="Character">Target</span>.</p>
-				<p>Typically, the <span class="Character">Source</span> will make an <span class="rolls">atk</span> roll, and then 
-					the <span class="Character">Target</span> makes the appropriate save. The effect is applied if the <span 
-					class="Character">Source</span> wins the contest.</p>
-				<p>Once the effect is applied, it remains until the <span class="Character">Target</span> makes a successful save,
-					which can be re-attempted at the beginning of each <span class="Character">Target</span> turn. For each turn after
-					the effect is first applied, the original atk roll decays by 1 point, meaning that it gets easier to shake off
-					negative effects as time goes on.</p>
+					effect will be referred to as the Source, while the character experiencing the effect will be called the Target.</p>
+				<p>Typically, the Source will make an atk roll, and then the Target makes the appropriate save. The effect is 
+					applied if the Source wins the contest.</p>
+				<p>Once the effect is applied, it remains until the Target makes a successful save, which can be re-attempted 
+					at the beginning of each Target turn. For each turn after the effect is first applied, the original atk roll 
+					decays by 1 point, meaning that it gets easier to shake off negative effects as time goes on.</p>
 				<div class="Highlight">
 					<h2>DC = atk - (# of Turns since atk)</h2>
 				</div>
-				<p>For example, if a <span class="Character">Source</span> rolled a 15 on their initial atk rolls, the <span
-					class="Character">Target</span> needs to beat the 15 during the first turn to resist the effect. During the second
-					turn, the <span class="Character">Target</span> only needs to beat the 14, then the 13 during the third turn, etc.</p>
+				<p>For example, if a Source rolled a 15 on their initial atk rolls, the Target needs to beat the 15 during the 
+					first turn to resist the effect. During the second turn, the Target only needs to beat the 14, then the 13 
+					during the third turn, etc.</p>
 				<p>In most cases the effect wears of on its own according to the formula described above, but in some cases it can 
 					also be removed by performing specific actions, as specified in the effect list below.</p>
+			</div>
+			<h2>Status:</h2>
+			<div class="Item-Card">
+				<h3>Dead</h3>
+				<p>The Target is dead and can no longer be controlled by the player.</p>
+				<p>While there are many rituals and spells that can revive a dead character, only the character's allies
+					can perform these. It is also possible to use PP (either from the deceased character or from your new character) 
+					to 'get special favors from the GM', such as bringing back fallen PCs.</p>
+				<p>Regardless of how your character is revived, the GM will apply a contextual penalty to the PC, which 
+					can only be removed with additional PP</p>
 			</div>
 			<h2>Debuffs:</h2>
 			<div class="Item-Card">
 				<h3>Blinded</h3>
-				<p>The <span class="Character">Target</span> automatically fails all vision based <span class="Ability">
-					Perception</span> checks. The <span class="Character">Target</span> must roll all <span class="Melee">
-					melee</span> attacks with disadvantage, and all <span class="Ranged">ranged</span> attacks with disadvantage 
-					as well as a -10 modifier. Additionally, the <span class="Character">Target</span> rolls all <span 
-					class="Ability">Grappling</span>, <span class="Ability">Intimidation</span>, <span class="Ability">
-					Acrobatics</span>, <span class="Ability">Reflex</span>, <span class="Ability">Thievery</span>, <span 
-					class="Ability">Crafting</span>, <span class="Ability">Investigation</span>, <span class="Ability">
-					Perception</span>, and <span class="Ability">Performance</span> checks at disadvantage.</p>
-				<p>This effect can be removed if the <span class="Character">Target</span> receives more than two times 
-					its own <span class="Attribute">Constitution</span> value in HP within a single turn.</p>
+				<p>The Target automatically fails all vision based Perception checks. The Target must roll all melee attacks
+				with disadvantage, and all ranged attacks with <i>disadvantage as well as a -10 modifier</i>. Additionally,
+				the Target rolls all Grappling, Intimidation, Acrobatics, Reflex, Thievery, Crafting, Investigation,
+				Perception, and Performance checks at disadvantage.</p>
+				<p>This effect can be removed if the Target receives more than two times its own Constitution value in HP 
+					healing within a single turn.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Deafened</h3>
+				<p>The Target automatically fails all sound based Perception checks and ignores all sound based communication. 
+					The Target must roll all Stealth, Investigation, Intuition, and Survival checks at disadvantage. Additionally, 
+					the Target is unable to gain any benefits from allied Leadership or Performance based abilities 
+					(including PP assistance).</p>
+				<p>This effect can be removed if the Target receives more than its own Constitution value in HP healing within 
+					a single turn.</p>
 			</div>
 			<h2>Control over Others:</h2>
 			<div class="Item-Card">
 				<h3>Charmed</h3>
-				<p>The <span class="Character">Source</span> may use an Action to give a command to the <span 
-					class="Character">Target</span>. The <span class="Character">Target</span> must follow the command to 
+				<p>The Source may use an Action to give a command to the Target. The Target must follow the command to 
 					the best of their ability until a new command is issued, except if following the command directly 
-					harms the <span class="Character">Target</span> (i.e., you can't tell your <span class="Character">
-					Target</span> to jump off a cliff or fall on their sword).</p>
+					harms the Target (i.e., you can't tell your Target to jump off a cliff or fall on their sword).</p>
 				<p>This effect decays at 2x the normal rate => DC = atk - 2x(# of Turns since atk).</p>
 			</div>
 			<div class="Item-Card">
 				<h3>Controlled</h3>
-				<p>The <span class="Character">Source</span> may use an Action to give a command to the <span
-					class="Character">Target</span>. The <span class="Character">Target</span> must follow the command to
+				<p>The Source may use an Action to give a command to the Target. The Target must follow the command to
 					the best of their ability until a new command is issued, <i>even if the command directly	harms the 
-					<span class="Character">Target</span></i>.</p>
+					Target</i>.</p>
 				<p>This effect decays at 5x the normal rate => DC = atk - 5x(# of Turns since atk).</p>
 			</div>
 			<div class="Item-Card">
 				<h3>Taunted</h3>
-				<p>The <span class="Character">Target</span> is forced to attack the <span class="Character">Source</span>
-					using basic attacks only (no Mana abilities).</p>
-				<p>This effect is always limited based on the <span class="Ability">Ability</span> used.</p>
+				<p>The Target is forced to attack the Source using basic attacks only (no Mana abilities).</p>
+				<p>The duration of this effect is always strictly limited in the Ability description, and the Target can 
+					also attempt to break free each turn using the standard formula.</p>
 			</div>
 		</div>
 		</div>
