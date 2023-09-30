@@ -41,13 +41,13 @@
 				<h1>The HammRPG Concept</h1>
 				<p>HammRPG is a tabletop roleplaying game (TTRPG) that allows players to collectively create and narrate a story 
 					together. One player takes on the role of the Game Master (GM), who drives the story forward and plays all the 
-					non-player characters (NPCs). The other players create their own player characters (PCs) and work together with 
+					non-player characters (NPCs), while the other players create their own player characters (PCs) and work together with 
 					the GM to tell a unique and exciting story.</p>
 				<p>HammRPG is a collaborative storytelling game. This means that the GM and players all work together to create 
 					a story through cooperation and teamwork. No one player is more important than the others and everyone has a 
 					say in how the story unfolds by roleplaying their PC's choices, actions, and conversations. The more you immerse 
 					yourself into your character and try to think and act from their perspective, the more fun everyone will have. 
-					That being said, keep in mind that the player behind the character is always more important that the character or 
+					That being said, keep in mind that the player behind the character is always more important than the character or 
 					the even the story itself!</p>
 				<p>The main concept that sets HammRPG apart from other TTRPGs is its focus on customizability. Where some games may 
 					have you choose certain abilities from a pre-made list of possible features, HammRPG allows each player to create 
@@ -55,15 +55,75 @@
 					like, providing for a virtually infinitely complex combination of character features and roleplay opportunities. 
 					In order ensure all players have the same opportunity to shine, we recommend using the <a href="./abilities.html">
 					Ability</a> guide to create your custom abilities. This will enable you to plan how your PC will develop over time, 
-					and might also provide some ideas for balancing, as well as ideas for abilities you may not have thought of.</p>
+					helps with balancing, and might also provide some ideas for abilities you may not have thought of.</p>
 				<p>The below rules section is designed to help players create a fun and engaging storytelling experience. It provides 
 					a framework for resolving conflicts, handling challenges, and advancing the story in a way that is hopefully fair 
 					to everyone at the table. However, it's important to remember that the rules are not meant to be restrictive - 
 					the group should always feel free to adapt the rules as needed to best serve their specific story.</p>
 			</article>
 			<article>
-				<h1>Levels and Experience</h1>
-				<p>The main measurement of advancement and power of a character, is the character level.</p>
+				<h1>Character Level</h1>
+				<p>Mathematically, the main measurement of advancement and power of a character is the character level (Lv).</p>
+				<p>The lowest possible Lv is Lv1, and while theoretically there is no upper limit to Lv, the higher you go the 
+					more complicated the game becomes. As the number of abilities continues to increase for both PCs and NPCs, it 
+					becomes increasingly difficult to keep track of everything, and so, for practicality, we typically scale NPCs up to 
+					approximately Lv20, as shown below (Note that this is only a rough guide, and many exceptions may exist at the 
+					discretion of the GM.):</p>
+				<ul>
+					<li>Lv1 to Lv3 - Slaves, prisoners, and other characters that have been deliberately weakened</li>
+					<li>Lv4 to Lv6 - Average citizens, grunt soldiers, or common animals</li>
+					<li>Lv7 to Lv8 - Common soldiers, city guards, predator animals</li>
+					<li>Lv9 to Lv10 - Mercenaries, experienced soldiers, stronger predators</li>
+					<li>Lv11 to Lv13 - Professional soldiers, military captains, some weak monsters</li>
+					<li>Lv14 to Lv17 - Generals, guild leaders, more monsters</li>
+					<li>Lv17 to Lv20 - Heroes, famous warriors, stronger monsters</li>
+					<li>Lv20 and up - Legendary figures, epic monsters, etc.</li>
+				</ul>
+				<p>Every character starts with 60 Attribute Points (AP) and 3 Background Points (BP). Additionally, the 
+					character also gainst 1 additional AP, as well as 3 Skill Points (SP) per Lv. These points will be 
+					discussed in detail further below.</p>
+			</article>
+			<article>
+				<h1>Attributes and Attribute Points</h1>
+				<p>HammRPG uses six common attributes to define a character's general affinity with certain abilities: 
+					Constitution (CON), Strength (STR), Dexterity (DEX), Intelligence (INT), Wisdom (WIS) and Charisma (CHA).</p>
+				<p>Attributes are used in two different ways:</p>
+				<ol>
+					<li>The attribute value itself.</li>
+					<li>An ability modifier based on that attribute.</li>
+				</ol>
+				<p>For all attributes, HammRPG uses the full name (e.g.: Constitution) when referring to the attribute 
+					itself, while we use use the abbreviation (e.g.: CON) when referring to the modifier.</p>
+				<p>An attribute score of 10 is considered average, resulting in no modifiers to rolls based on that attribute.
+					If a character has an attribute score lower than 10, they will have a negative modifier to those rolls, while 
+					an attribute higher than 10 will grant a bonus to those rolls.</p>
+				<p>The formula for calculating your modifier is:</p>
+				<div class="Highlight">
+					<h2>modifier = ( attribute - 10 ) / 2</h2>
+					<h6>Note that only integer values are valid for this calculation. A result of less than 1 is always <i>rounded 
+						down</i> to the nearest full number</h6>
+					<h6>E.g. if a character has an attribute value of 11, their modifier is (11-10)/2=0.5 => 0</h6>
+				</div>
+			</article>
+			<article>
+				<h2>Constitution</h2>
+				<p>Constitution is a measure of a character's toughness, and their ability to withstand damage. The most 
+					direct way to represent this is with the number of Health Points (HP) the character has:</p>
+				<div class="Highlight">
+					<h2>maxHP = Constitution * Lv</h2>
+				</div>
+				<p>Based on this formula, you can see that maxHP increases with higher values of Constitution, as well as 
+					the character level itself. As such, a character with high Constitution will continue to gain larger amounts of 
+					maxHP per level-up than one with low Constitution.</p>
+				<p>Constitution also affects Physical Resistance (PR), which further helps your character withstand damage 
+					(see below)</p>
+				<p>The abilities that are based on Constitution are Endurance and Resistance.</p>
+			</article>
+			<article>
+				<h2>Strength</h2>
+				<p>Strength is a measure of the physical force that a character can exert. One of its largest benefits is 
+					its effect on Melee Damage (MD).
+				</p>
 			</article>
 			</div>
 	</div>
