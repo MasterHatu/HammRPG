@@ -140,6 +140,12 @@ ul, ol {
 	border-radius: 10px;
 }
 
+.Highlight article {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
 /* The Effects Page, except Item-Card formatting */
 .Effects-Card-Organizer {
 	display: flex;

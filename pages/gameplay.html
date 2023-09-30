@@ -80,8 +80,9 @@
 					<li>Lv20 and up - Legendary figures, epic monsters, etc.</li>
 				</ul>
 				<p>Every character starts with 60 Attribute Points (AP) and 3 Background Points (BP). Additionally, the 
-					character also gainst 1 additional AP, as well as 3 Skill Points (SP) per Lv. These points will be 
-					discussed in detail further below.</p>
+					character also gainst 1 additional AP, as well as 3 Skill Points (SP) per Lv. Some GMs also allow their  player to 
+					earn additional BP at certain Lvs, such as 3 base, +1 at Lv 5, +2 at Lv 10, +1 at Lv 15, and +3 at Lv20; 
+					however, this is optional. The different types of points will be discussed in detail further below.</p>
 			</article>
 			<article>
 				<h1>Attributes and Attribute Points</h1>
@@ -115,15 +116,39 @@
 				<p>Based on this formula, you can see that maxHP increases with higher values of Constitution, as well as 
 					the character level itself. As such, a character with high Constitution will continue to gain larger amounts of 
 					maxHP per level-up than one with low Constitution.</p>
-				<p>Constitution also affects Physical Resistance (PR), which further helps your character withstand damage 
-					(see below)</p>
-				<p>The abilities that are based on Constitution are Endurance and Resistance.</p>
+				<p>Constitution also affects Physical Resistance (PR), which further helps your character withstand damage. The 
+					PR modifier works the same as the regular CON modifier, except that it does not have negative values, even if 
+					your Constitutionis less than 10.</p>
+				<div class="Highlight">
+					<article>
+						<h5>If CON < 0:</h5>
+						<h2>PR = 0</h2>
+					</article>
+					<article>
+						<h5>If CON >= 0:</h5>
+						<h2>PR = CON</h2>
+					</article>
+				</div>
+				<p>Please refer to the damage calculation guide below for further details on PR.</p>
+				<p>The Endurance and Resistance abilities are also based on Constitution.</p>
 			</article>
 			<article>
 				<h2>Strength</h2>
 				<p>Strength is a measure of the physical force that a character can exert. One of its largest benefits is 
-					its effect on Melee Damage (MD).
-				</p>
+					its effect on Melee Damage (MD), which will cause your melee attacks to hit harder. Just as PR does not 
+					have negative values, MD also does not decrease a damage roll's (dmg) result.</p>
+				<div class="Highlight">
+					<article>
+						<h5>If STR < 0:</h5>
+								<h2>MD = 0</h2>
+					</article>
+					<article>
+						<h5>If STR >= 0:</h5>
+						<h2>MD = STR</h2>
+					</article>
+				</div>
+				<p>Please refer to the damage calculation guide below for further details on MD.</p>
+				<p>Strength also affects the Athletics, Grappling and Intimidation abilities.</p>
 			</article>
 			</div>
 	</div>
