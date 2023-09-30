@@ -113,7 +113,7 @@
 			</article>
 			<article>
 				<h2>Constitution</h2>
-				<p>Constitution is a measure of a character's toughness, and their ability to withstand damage. The most 
+				<p>Constitution (CON) is a measure of a character's toughness, and their ability to withstand damage. The most 
 					direct way to represent this is with the number of Health Points (HP) the character has:</p>
 				<div class="Highlight">
 					<h2>maxHP = Constitution * Lv</h2>
@@ -139,7 +139,7 @@
 			</article>
 			<article>
 				<h2>Strength</h2>
-				<p>Strength is a measure of the physical force that a character can exert. One of its largest benefits is 
+				<p>Strength (STR) is a measure of the physical force that a character can exert. One of its largest benefits is 
 					its effect on Melee Damage (MD), which will cause your melee attacks to hit harder. Just as PR does not 
 					have negative values, MD also does not decrease a damage roll's (dmg) result.</p>
 				<div class="Highlight">
@@ -154,6 +154,22 @@
 				</div>
 				<p>Please refer to the damage calculation guide below for further details on MD.</p>
 				<p>Strength also affects the Athletics, Grappling and Intimidation abilities.</p>
+			</article>
+			<article>
+				<h1>Dexterity</h1>
+				<p>Dexterity (DEX) is a measure of agility and flexibility. A character with a high Dexterity attribute 
+					is better able to perform jumps and other complicated maneuvers, avoid or disable traps, and may even 
+					be able to dodge incoming attacks entirely.</p>
+				<p>Dodge Value (DV), which allows characters to completely avoid attacks, is calculated similar to other 
+					modifiers, however, it scales only half as rapidly:</p>
+				<div class="Highlight">
+					<h2>DV = ( DEX - 10 ) / 4</h2>
+				</div>
+				<p>It is important to note that DV does not make a character invulnerable: Area damage, such as an exploding 
+					fireball, a cloud of poison, a collapsing wall, or a shockwave from an artillery shell, applies directly, 
+					without any chance to dodge. In such cases, the GM may call for a Reflex or Resistance save to reduce the 
+					damage, but DV itself will not come into play.</p>
+				<p>Dexterity also affects the Acrobatics, Reflex, Stealth and Thievery abilities.</p>
 			</article>
 			</div>
 	</div>
