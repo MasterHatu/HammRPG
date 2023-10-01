@@ -302,7 +302,9 @@
 						HammRPG uses a turn-based combat system to slow down time in order to allow players (and the GM) to think about 
 						their next move, describe their attacks or other Actions in epic detail, and still banter between each other 
 						without the stress of real-time combat.</p>
-					<p>At Lv1, each player has 1 Action, 1 Reaction, and 5 tiles of Movement per turn.</p>
+					<p>At Lv1, each player has 1 Action, 1 Reaction, and 5 m of Movement per turn.</p>
+					<h6>Note that, unless otherwise specified, HammRPG considers 1 tile on a given battlemap to be 1 meter (m) by 1 m 
+						in size fojr simplicity.</h6>
 
 				<h2>Dice Rolling</h2>
 					<p>Many of the actions described below are resolved by rolling dice. In such cases, HammRPG uses the XdX notation 
@@ -316,27 +318,39 @@
 			<article>
 				<h2>Combat Actions and Abilities</h2>
 					<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
-						examples of this, but there are several basic Actions that every character can perform:</p>
+						examples of this, but there are several basic Actions that every character can perform even without 
+						purchasing these Actions with BP or SP:</p>
 				
-					<h3>Attack Action</h3>
+					<h3>Melee Attack Action</h3>
 						<p>The attack Action is the most basic Action in combat encounters. You can either just use your hands 
-							or feet or you can use an equipped weapon. If you are not able to move into melee range of your enemy, you 
-							can try to throw objects (rocks, bottles,	etc.) at your enemy or use ranged weapons or even magic. Your 
-							specific selection of possible attack Actions will depend on the skills and items your PC has availabel. 
-							All attack Actions are rolled with a 1d20, plus any bonuses from your character's proficiencies, or the 
-							weapon's own modifiers, where the final result represents the attack roll (atk).</p>
+							or feet or you can use an equipped weapon. Your specific selection of possible attack Actions will depend 
+							on the skills and items your PC has available. All melee attack Actions are rolled with a 1d20, plus any 
+							bonuses from your character's proficiencies, or the weapon's own modifiers, where the final result 
+							represents the attack roll (atk).</p>
 						<div class="Highlight">
 							<h2>atk = 1d20 + Proficiencies + Weapon Modifiers</h2>
 						</div>
-						<p>The result of atk is then compared to the target's DV; If atk is equal to, or higher than, the DV, the 
-							attack is successful, and you move on the damage calculations or apply the appropriate effects. The type 
-							and number of dice to use for the dmg roll depends on what attack Action you performed.</p>
-						<p>For instance, an unarmed attack uses the unarmed proficiency for atk and a 1d4 damage die. Since it is 
+						<p>The result of atk is then compared to the target's DV; If atk is equal to or higher than the DV, the 
+							attack is successful, and you move on the damage calculations, which will be explained in detail further 
+							below, or apply the appropriate effects. The type and number of dice to use for the dmg roll depends on 
+							what attack Action you performed.</p>
+						<p>For instance, an unarmed attack uses the unarmed proficiency for atk and a 1d4 damage die. If this is 
 							a melee attack, it also benefits from the MD modifier. Similarly, a Steel Shortsword uses sword proficiency, 
 							but it also provides a bonus of +1 for atk due to its own design, as well as a 1d6+MD for dmg.</p>
 						<p>The <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=
 							sharing">Armory</a> contains a list of commonly available items with their roll modifiers and other 
 							important stats.</p>
+
+					<h3>Ranged Attack Action</h3>
+						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
+							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc.</p>
+						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
+							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
+							available in your surroundings, or you can carry them with you in your inventory. It is up to you to 
+							ensure that you keep track of your ammunition. The GM has plenty of other things to keep track of.</p>
+						<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
+							shortbow, 
+						</p>
 
 					<h3>Sprint Action (Athletics)</h3>
 						<p>A sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
@@ -345,9 +359,9 @@
 							the sprint:</p>
 						<ul>
 							<li>less than 0 => no bonus Movement (the Action is still spent, though!)</li>
-							<li>0 to 9 => +1 tile of Movement</li>
-							<li>10 to 19 => +2 tiles of Movement</li>
-							<li>20 to 29 => +3 tiles of Movement</li>
+							<li>0 to 9 => +1 m of Movement</li>
+							<li>10 to 19 => +2 m of Movement</li>
+							<li>20 to 29 => +3 m of Movement</li>
 							<li>etc.</li>
 						</ul>
 				
@@ -364,10 +378,17 @@
 							it as is. Regardless of who gains control, <i>both</i> contestants gain the <b>Grappled</b> 
 							effect as long as the Grapple is maintained.</p>
 						<p>While grappled, the contestants can only perform the following Actions (rolling with disadvantage unless 
-							they currently have control):</p>
+							they are in control of the contest):</p>
 						<ul>
 							<li>Gain Control: The character performing this Action simply re-rolls their Grappling attempt. The DC for 
-								this is calculated according to the normal DC formula, based on the opponent's most recent Grappling roll.</li>
+								this is calculated according to the normal DC formula, based on the opponent's most recent Grappling roll. 
+								This Action can also be used to improve already existing control of a Grappling contest; however, it 
+								does not deal any damage.</li>
+							<li>Shove Action: The initiator rolls Athletics, while the defender rolls Resistance. The winner may 
+								then dictate up to 1 tile of movement for each 5 points of lead in the contest. For example, if the 
+								contest results are 5 vs 18, the character that rolled the 18 can move both characters by up to 2 
+								tiles each ((18 - 5) / 5 = 2). Such movment is only possible if the winner actually has the necessary 
+								Movement available, but the looser's Movement is ignored within this context.</li>
 							<li>Unarmed Attack</li>
 							<li>Intimidation Action</li>
 							<li>Pickpocket Action</li>
@@ -379,9 +400,29 @@
 						</ul>
 				
 					<h3>Intimidation Action</h3>
-
+						<p>In combat, an Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>
+							Feared</b> effect. It functions similar to the Grappling contest, except that the attacker rolls Intimidation, 
+							while the target rolls Leadership as a measure of their level of discipline. A successful Intimidation 
+							attempt applies the <b>Feared</b> effect to that one target only.</p>
 
 					<h3>Jump Action (Acrobatics)</h3>
+						<p>In many instances, a character may need to jump, for example to cross a chasm, to avoid triggering a pressure 
+							plate trap, etc. This is usually done through an Acrobatics ability roll:</p>
+						<ul>
+							<li>less than 0 => the jump critically fails, which may mean the PC falls into the chasm, triggers the trap, 
+								etc. without the opportunity to try to save the situation</li>
+							<li>0 to 4 => the jump fails, but the PC may roll a Reflex save to stop themselves. The DC for the save is 
+								20 - the existing Acrobatics roll</li>
+							<li>5 to 9 => the jump clears up to 1 m</li>
+							<li>10 to 14 => the jump clears up to 2 m</li>
+							<li>15 to 19 => the jump clears up to 3 m</li>
+							<li>20 to 24 => the jump clears up to 4 m</li>
+							<li>25 to 29 => the jump clears up to 5 m</li>
+							<li>etc.</li>
+						</ul>
+						<p>Note that the Jump distance <b>does</b> count towards your Movement. In other words, if your PC has only 
+							3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked Acrobatics check 
+							(let's say a 42 or something like that).</p>
 
 					<h3>Disengage Action (Reflex)</h3>
 						<p>If you find yourself surrounded by enemies, retreat may be the most viable strategy. Disengaging represents an
