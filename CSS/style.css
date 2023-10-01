@@ -138,6 +138,13 @@ ul, ol {
 	padding: 5px;
 	border: 10px solid #820f0f;
 	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.Highlight h2 section {
+	text-align: center;
 }
 
 .Highlight article {
