@@ -386,36 +386,57 @@
 							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
 							available in your surroundings, or you can carry them with you in your inventory. It is up to you, the 
 							player, to ensure that you keep track of ammunition for your PC.</p>
-						<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
-							shortbow from the <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77
-							vcSobVA/edit?usp=sharing">Armory</a>, we can see that the standard range is 40 m, while the less accurate 
-							range is up to 400 m. This means that, when attacking a target the is within 40 m of our character, we 
-							simply roll atk with proficiencies. However, if the target is in the long range, we must roll atk with 
-							disadvantage.</p>
-						<p>Throwing, on the other hand, is more a feature of the skill of the thrower, rather than the tool being 
-							thrown. As such, throwing is handled through ability rolls (although DV still applies regardless):</p>
-						<div class="Highlight Side-by-Side">
-							<article>
-								<p>When throwing for impact damage:<br>(e.g.: rock or spear throw)</p>
-								<h2>Athletics roll, where DC = range</h2>
-							</article>
-							<article>
-								<p>When throwing for targeting precision:<br>(e.g.: poison flask, distracting noise)</p>
-								<h2>Acrobatics roll, where DC = range</h2>
-							</article>
-						</div>
+						<h4>Shooting</h4>
+							<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
+								shortbow from the <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77
+								vcSobVA/edit?usp=sharing">Armory</a>, we can see that the standard range is 40 m, while the maximum 
+								range is up to 400 m. This means that, when attacking a target that is within 40 m of our character, we 
+								simply roll atk with proficiencies. However, if the target is in the long range, we must roll atk with 
+								disadvantage, which scales based on the standard range.</p>
+							<p>In our example above, this means that for every 40 m, we need to consider an additional instance of 
+								disadvantage. Up to 40 m we roll a single die (no disadvantage), between 40 m and 80 m we roll two dice 
+								and take the lower result (disadvantage), between 80 m and 120 m we roll three dice and take the lowest 
+								result (double disadvantage), then between 120 m and 160 m we roll 4 dice and take the lowest result 
+								(triple disadvantage), etc.</p>
+							<p>The maximum range indicates the absoulte maximum at which a shot can be attempted, although in many 
+								instances, it is probably not practical to actually try to make a shot at that range due to the scaling 
+								disadvantage consideration.</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Standard Range</p>
+									<h2>Single atk roll + proficiency modifiers</h2>
+								</article>
+								<article>
+									<p>Long Range</p>
+									<h2>+1 instance of disadvantage per multiplier of the standard range number</h2>
+								</article>
+							</div>
+						<h4>Throwing</h4>
+							<p>Throwing, on the other hand, is more a feature of the skill of the thrower, rather than the tool being 
+								thrown. As such, throwing is handled through ability rolls (although DV still applies regardless):</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>When throwing for impact damage:<br>(e.g.: rock or spear throw)</p>
+									<h2>Athletics roll, where DC = range</h2>
+								</article>
+								<article>
+									<p>When throwing for targeting precision:<br>(e.g.: poison flask, distracting noise)</p>
+									<h2>Acrobatics roll, where DC = range</h2>
+								</article>
+							</div>
 						<h4>Ranged Failure Handling</h4>
-						<p>When a melee attack fails, it most likely simply swings through the air, which we can easily ignore. 
-							However, once a ranged projectile has been fired, it might still hit something else, even if it misses 
-							its intended target. Particularly, projectiles that deal area damage, such as a flask of poison that 
-							shatters on impact and releases a poison cloud, or artillery shells, are important in this context.</p>
-						<p>In HammRPG, we therefore consider targeting accuracy as follows:</p>
-						<p>If the throwing roll fails, the projectile lands 1 m from the intended target for every point 
-								below the DC => roll a 1d8 to see which direction on the map (1 means top, 2 means top-right, etc.)</p>
-						<p>As such, if a character tries to hit a target 10 m away, they need to roll a 10 or higher for their 
-							throw. If they roll a 6, the target will be ( 10 - 6 ) = 4 m away from the intended target, in the 
-							1d8 direction.</p>
-
+							<p>When a melee attack fails, it most likely simply swings through the air, which we can easily ignore. 
+								However, once a ranged projectile has been fired or thrown, it might still hit something else, even 
+								if it misses its intended target. Particularly, projectiles that deal area damage, such as a flask 
+								of poison that shatters on impact and releases a poison cloud, or exploding artillery shells, are 
+								important in this context.</p>
+							<p>In HammRPG, we therefore consider targeting accuracy as follows:</p>
+							<p>If the shot or throwing roll fails, the projectile lands 1 m from the intended target for every point 
+									below the DC => roll a 1d8 to see which direction on the map (1 means top, 2 means top-right, etc.)</p>
+							<p>As such, if a character tries to hit a target 10 m away, they need to roll a 10 or higher for their 
+								throw. If they roll a 6, the target will be ( 10 - 6 ) = 4 m away from the intended target, in the 
+								1d8 direction.</p>
+					
 					<h3>Sprint Action (Athletics)</h3>
 						<p>A sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
 							quickly, or run away from an overpowering enemy. For the purposes of HammRPG, sprinting is considered a feat 
