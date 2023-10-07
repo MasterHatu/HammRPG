@@ -379,6 +379,11 @@
 							sharing">Armory</a> contains a list of commonly available items with their roll modifiers and other 
 							important stats.</p>
 
+						<h4>Melee Attack Failure:</h4>
+							<p>There are no special considerations, as the attack likely just swings through the air. Some GMs like 
+								to apply immersive consequences on a nat1 (hit yourself, hit a nearby ally, drop your weapon, etc.), 
+								but this is optional and should be discussed during the Session Zero for your game.</p>
+
 					<h3>Ranged Attack Action</h3>
 						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
 							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc.</p>
@@ -386,6 +391,8 @@
 							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
 							available in your surroundings, or you can carry them with you in your inventory. It is up to you, the 
 							player, to ensure that you keep track of ammunition for your PC.</p>
+						<p>Additionally, characters can use <a href="#Cover">Cover</a> to help avoid ranged attacks</p>
+
 						<h4>Shooting</h4>
 							<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
 								shortbow from the <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77
@@ -411,9 +418,11 @@
 									<h2>+1 instance of disadvantage per multiplier of the standard range number</h2>
 								</article>
 							</div>
+
 						<h4>Throwing</h4>
-							<p>Throwing, on the other hand, is more a feature of the skill of the thrower, rather than the tool being 
-								thrown. As such, throwing is handled through ability rolls (although DV still applies regardless):</p>
+							<p>Throwing, on the other hand, is more a feature of the skill of the thrower, as there is no tool being 
+								used. As such, throwing is handled through a combined atk/ability roll - in other words, an atk roll 
+								that also benefits from the ability modifier:</p>
 							<div class="Highlight Side-by-Side">
 								<article>
 									<p>When throwing for impact damage:<br>(e.g.: rock or spear throw)</p>
@@ -424,18 +433,49 @@
 									<h2>Acrobatics roll, where DC = range</h2>
 								</article>
 							</div>
+							<p>As such throwing does not have an inherent maximum range, but rather your character's skills determine 
+								how far they can realistically throw. A beneficial side effect of this method is that both your Throwing 
+								proficiency and your Athletics or Acrobatics proficiency applies, which makes throwing a potentially very 
+								powerful combat method at early levels.</p>
+							<p>Regardless of the range of a throw though, the target's DV still applies, and a throwing attack will miss 
+								if it is lower than the target's DV, even if it is higher than the DC needed for the throw.</p>
+
 						<h4>Ranged Failure Handling</h4>
 							<p>When a melee attack fails, it most likely simply swings through the air, which we can easily ignore. 
 								However, once a ranged projectile has been fired or thrown, it might still hit something else, even 
-								if it misses its intended target. Particularly, projectiles that deal area damage, such as a flask 
-								of poison that shatters on impact and releases a poison cloud, or exploding artillery shells, are 
+								if it misses its intended target. Particularly, projectiles that deal area damage, such as flasks 
+								of poison that shatter on impact and release a poison cloud, or exploding artillery shells, are 
 								important in this context.</p>
-							<p>In HammRPG, we therefore consider targeting accuracy as follows:</p>
-							<p>If the shot or throwing roll fails, the projectile lands 1 m from the intended target for every point 
-									below the DC => roll a 1d8 to see which direction on the map (1 means top, 2 means top-right, etc.)</p>
-							<p>As such, if a character tries to hit a target 10 m away, they need to roll a 10 or higher for their 
-								throw. If they roll a 6, the target will be ( 10 - 6 ) = 4 m away from the intended target, in the 
-								1d8 direction.</p>
+							<p>We can therefore have to consider targeting accuracy when a ranged attack fails. If the attack misses: </p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>For ranged <u>weapon</u> attacks:</p>
+									<h2>Offset = (range to target / default range ) * ( DV - atk )</h2>
+								</article>
+								<article>
+									<p>For ranged <u>throw</u> attacks:</p>
+									<h2>Offset = DC - atk</h2>
+								</article>
+							</div>
+							<p>You can then roll a 1d8 to determine in which direction the projectlie missed. A 1 would mean the 
+								projectile lands north of the target, 2 northeast, 3 east, etc.</p>
+							<p>Note that this system is rather complicated, and it is entirely reasonable to simply have the GM make an 
+								on the spot ruling on where the projectile landed based on how bad the atk roll was. For non-area damage 
+								or effect causing ranged attacks, a miss can simply be a miss without figuring out where else the 
+								projectile goes.</p>
+
+						<h4 id="Cover">Cover</h4>
+							<p>Another optional system for ranged weapons is the effect blocking projectiles by utilizing cover.</p>
+							<p>Different blocking objects provide different levels of protection:</p>
+							<ul>
+								<li>Light Cover (heavy foliage, picket fence, light post, etc.): +2 DV</li>
+								<li>Medium Cover (wooden wall, storage crates, etc.): +5 DV</li>
+								<li>Heavy Cover (stone wall, metal plate objects, etc.): +10 to DV</li>
+								<li>Complete Cover: Ranged attacks are not possible</li>
+							</ul>
+							<p>Note that peeking out from cover, for example in order to make a ranged attack yourself, reduces the 
+								effect of whatever cover you are using by 50%. Additionally, it is not possible to peek out from 
+								complete cover.</p>
 					
 					<h3>Sprint Action (Athletics)</h3>
 						<p>A sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
