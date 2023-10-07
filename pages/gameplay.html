@@ -38,7 +38,7 @@
 			<!-- The content page itself-->
 		<div class="Content-Panel">
 			<article>
-				<h1>The HammRPG Concept</h1>
+				<h1 id="Concept">The HammRPG Concept</h1>
 					<p>HammRPG is a tabletop roleplaying game (TTRPG) that allows players to collectively create and narrate a story 
 						together. One player takes on the role of the Game Master (GM), who drives the story forward and plays all the 
 						non-player characters (NPCs), while the other players create their own player characters (PCs) and work together 
@@ -63,7 +63,7 @@
 			</article>
 			
 			<article>
-				<h1>Character Level</h1>
+				<h1 id="Level">Character Level</h1>
 					<p>Mathematically, the main measurement of advancement and power of a character is the character level (Lv).</p>
 					<p>The lowest possible Lv is Lv1, and while theoretically there is no upper limit to Lv, the higher you go the 
 						more complicated the game becomes. As the number of abilities continues to increase for both PCs and NPCs, it 
@@ -107,7 +107,7 @@
 			</article>
 
 			<article>
-				<h1>Attributes</h1>
+				<h1 id="Attributes">Attributes</h1>
 					<p>HammRPG uses six common attributes to define a character's general affinity with certain abilities: 
 						Constitution (CON), Strength (STR), Dexterity (DEX), Intelligence (INT), Wisdom (WIS) and Charisma (CHA).</p>
 					<p>Attributes are used in two different ways:</p>
@@ -154,7 +154,7 @@
 			</article>
 			
 			<article>
-				<h3>Constitution</h3>
+				<h3 id="Constitution">Constitution</h3>
 					<p>Constitution (CON) is a measure of a character's toughness, and their ability to withstand damage. The most 
 						direct way to represent this is with the number of Health Points (HP) the character has:</p>
 					<div class="Highlight">
@@ -181,7 +181,7 @@
 			</article>
 			
 			<article>
-				<h3>Strength</h3>
+				<h3 id="Strength">Strength</h3>
 					<p>Strength (STR) is a measure of the physical force that a character can exert. One of its largest benefits is 
 						its effect on Melee Damage (MD), which will cause your melee attacks to hit harder. Just as PR does not 
 						have negative values, MD also does not decrease a damage roll's (dmg) result.</p>
@@ -200,7 +200,7 @@
 			</article>
 			
 			<article>
-				<h3>Dexterity</h3>
+				<h3 id="Dexterity">Dexterity</h3>
 					<p>Dexterity (DEX) is a measure of agility and flexibility. A character with a high Dexterity attribute 
 						is better able to perform jumps and other complicated maneuvers, avoid or disable traps, and may even 
 						be able to dodge incoming attacks entirely.</p>
@@ -217,7 +217,7 @@
 			</article>
 			
 			<article>
-				<h3>Intelligence</h3>
+				<h3 id="Intelligence">Intelligence</h3>
 					<p>Intelligence (INT) represents a character's ability to use their mind through their Mana Points (MP):</p>
 					<div class="Highlight">
 						<h2>maxMP = Intelligence * Lv</h2>
@@ -235,7 +235,7 @@
 			</article>
 			
 			<article>
-				<h3>Wisdom</h3>
+				<h3 id="Wisdom">Wisdom</h3>
 					<p>Wisdom (WIS) represents a character's attunement with the world around them, including magic. Most magic based 
 						abilities use the WIS modifier to enhance magical damage rolls, and a high Wisdom attribute also improves magical 
 						reisitance (MR) to defend against enemy spells. The formula is very similar to that for PR:</p>
@@ -255,7 +255,7 @@
 			</article>
 			
 			<article>
-				<h3>Charisma</h3>
+				<h3 id="Charisma">Charisma</h3>
 					<p>Charisma (CHA) is the attribute least applicable to combat, but that does not make it any weaker than the other 
 						attributes. A character with high Charisma benefits from significant advantages during roleplay elements of a game, 
 						including the potential to avoid combat altogether. Meanwhile, a character with a particularly low Charisma score 
@@ -280,7 +280,7 @@
 			</article>
 			
 			<article>
-				<h1>Background Points</h1>
+				<h1 id="Background-Points">Background Points</h1>
 					<p>Background Points (BP) are what makes your character unique. These points can be spent to acquire powerful abilities 
 						that will define your PC and their playstyle throughout the entire game.</p>
 					<p>While not strictly required, HammRPG recommends writing a backstory for your PC first, and only then creating 
@@ -292,7 +292,7 @@
 			</article>
 			
 			<article>
-				<h1>Skill Points</h1>
+				<h1 id="Skill-Points">Skill Points</h1>
 					<p>Skill Points (SP) are very similar to BP, except that they are less powerful. For instance, a single BP could grant 
 						your character a +5 bonus for a given ability, while a SP would only grant a +1.</p>
 					<p>The biggest advantage of SP over BP is that you get a lot more of them, which allows you to diversify your PC much 
@@ -306,7 +306,7 @@
 			</article>
 			
 			<article>
-				<h1>Encounters</h1>
+				<h1 id="Encounters">Encounters</h1>
 					<p>While outside of combat situations, your character is able to do essentially anything you can think of. When 
 						an encounter starts, the GM will typically describe the situation first, then the players have an opportunity 
 						to interact with that situation. Depending on what the players choose to do, the GM will then ask for appropriate 
@@ -322,9 +322,9 @@
 						without the stress of real-time combat.</p>
 					<p>At Lv1, each player has 1 Action, 1 Reaction, and 5 m of Movement per turn.</p>
 					<h6>Note that, unless otherwise specified, HammRPG considers 1 tile on a given battlemap to be 1 meter (m) by 1 m 
-						in size fojr simplicity.</h6>
+						in size for simplicity.</h6>
 
-				<h2>Dice Rolling</h2>
+				<h2 id="Dice-Rolling">Dice Rolling</h2>
 					<p>Many of the actions described below are resolved by rolling dice. In such cases, HammRPG uses the XdX notation 
 						style:</p>
 					<div class="Highlight">
@@ -344,11 +344,9 @@
 							<h2>roll twice and take the higher number</h2>
 						</article>
 					</div>
-					<p>In either case, both rolls are performed first, then all modifiers are applied to the appropriate result.</p>
 					<p>The instances of disadvantage or advantage stack, which means that if there are multiple sources of advantage 
 						or disadvantage, the number of total dice rolled also increases. Likewise, advantage and disadvantage cancel 
-						each other out so that you don't need to roll 15 dice at once and then calculate a result based on averages or 
-						some complicated formula.</p>
+						each other out.</p>
 					<p>For example, let's say our PC has a situation where they need to make a roll with 4 sources of Advantage and 
 						2 sources of Disadvantage: Two of the advantage-disadvantage pair cancel each other out, and we are left with 
 						2 instances of Advantage. As a result, we roll 3 dice (1 base, plus 1 for each instance of advantage), and 
@@ -358,7 +356,7 @@
 			</article>
 			
 			<article>
-				<h2>Initiative</h2>
+				<h2 id="Initiative">Initiative</h2>
 					<p>In order to determine who gets to go first during turn based combat, HammRPG uses Initiative rolls, which is 
 						essentially a simple Reflex ability roll.</p>
 					<div class="Highlight">
@@ -373,12 +371,12 @@
 			</article>
 
 			<article>
-				<h2>Combat Actions and Abilities</h2>
+				<h2 id="Actions-and-Abilities">Combat Actions and Abilities</h2>
 					<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
 						examples of this, but there are several basic Actions that every character can perform even without 
 						purchasing these Actions with BP or SP:</p>
 				
-					<h3>Melee Attack Action</h3>
+					<h3 id="Melee-Attack">Melee Attack Action</h3>
 						<p>The attack Action is the most basic Action in combat encounters. You can either just use your hands 
 							or feet or you can use an equipped weapon. Your specific selection of possible attack Actions will depend 
 							on the skills and items your PC has available. All melee attack Actions are rolled with a 1d20, plus any 
@@ -388,7 +386,7 @@
 							<h2>atk = 1d20 + Proficiencies + Weapon Modifiers</h2>
 						</div>
 						<p>The result of atk is then compared to the target's DV; If atk is equal to or higher than the DV, the 
-							attack is successful, and you move on the damage calculations, which will be explained in detail further 
+							attack is successful, and you move on to the damage calculations, which will be explained in detail further 
 							below, or apply the appropriate effects. The type and number of dice to use for the dmg roll depends on 
 							what attack Action you performed.</p>
 						<p>For instance, an unarmed attack uses the unarmed proficiency for atk and a 1d4 damage die. If this is 
@@ -404,7 +402,7 @@
 								but this is optional and should be discussed during the <a href="#Session-Zero">Session Zero</a> for 
 								your game.</p>
 
-					<h3>Ranged Attack Action</h3>
+					<h3 id="Ranged-Attack">Ranged Attack Action</h3>
 						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
 							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc.</p>
 						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
@@ -497,7 +495,7 @@
 								effect of whatever cover you are using by 50%. Additionally, it is not possible to peek out from 
 								complete cover.</p>
 					
-					<h3>Sprint Action (Athletics)</h3>
+					<h3 id="Sprint-Action">Sprint Action (Athletics)</h3>
 						<p>A sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
 							quickly, or run away from an overpowering enemy. For the purposes of HammRPG, sprinting is considered a feat 
 							of strength, which means you will make an Athletics ability roll and gain a small bonus per Action spent on 
@@ -510,7 +508,7 @@
 							<li>etc.</li>
 						</ul>
 				
-					<h3>Grappling Action</h3>
+					<h3 id="Grappling-Action">Grappling Action</h3>
 						<p>Grappling is an attempt to hold an enemy down, preventing them from moving and using Actions freely. This 
 							can be done to protect your allies, prevent an enemy from running away, or simply to stop a spellcaster from 
 							casting.</p>
@@ -570,8 +568,11 @@
 							(let's say a 42 or something like that).</p>
 
 					<h3>Disengage Action (Reflex)</h3>
-						<p>If you find yourself surrounded by enemies, retreat may be the most viable strategy. Disengaging represents an
-							attempt to leave</p>
+						<p>In many situations, retreat may be the most viable strategy. Disengaging represents an attempt to leave an 
+							enemy's melee range, but as you will see in the <a href="Attack-of-Opportunity">Attack of Opportunity</a> 
+							section, this gives them a potential opportunity attack you even though it is not your turn.. A disengage is 
+							your attempt to avoid this attack, by spending an Action of your own to contest the enemy's atk with your 
+							 ability, giving you a second chance to get away from the enemy.</p>
 				
 					<h3>Sneak Action (Stealth)</h3>
 
