@@ -85,12 +85,12 @@
 						character also gains 1 additional AP, as well as 3 Skill Points (SP) per Lv. Some GMs further allow their 
 						players to earn additional BP at certain Lvs, such as 3 base, +1 at Lv 5, +2 at Lv 10, +1 at Lv 15, and 
 						+3 at Lv20; however, this is optional at the GM's discretion, and will be discussed during the <a href=
-						"#Session-Zero">Session Zero</a> for your specific game. The different types of points will be discussed 
-						in detail further below.</p>
+						"javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session Zero</a> for your specific game. 
+						The different types of points will be discussed in detail further below.</p>
 			</article>
 			
 			<article>
-				<h2>Levelling Up</h2>
+				<h2 id="Level-Up">Levelling Up</h2>
 					<p>One of the main motivations for many players is the opportunity to advance and develop their character. 
 						Of course, there any many ways to show character growth through roleplay, but the primary way to represent 
 						character growth is by increasing your PC's level, by collecting Experience Points (XP).</p>
@@ -104,7 +104,8 @@
 						determine if an encounter is significant enough to warrant XP.</p>
 					<p>Typically, this method is used to collect separate XP per individual PC, but some groups prefer to pool 
 						their XP (both needed and collected), so that they can advance and grow together. This is up to the group 
-						to determine during their <a href="#Session-Zero">Session Zero</a> before the actual game starts</p>
+						to determine during their <a href="javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session 
+						Zero</a> before the actual game starts</p>
 			</article>
 
 			<article>
@@ -119,9 +120,10 @@
 					<p>For all attributes, HammRPG uses the full name (e.g.: Constitution) when referring to the attribute 
 						itself, while we use use the abbreviation (e.g.: CON) when referring to the modifier.</p>
 
-					<h2>Attribute Point Distribution</h2>
+					<h2 id="AP-Distribution">Attribute Point Distribution</h2>
 						<p>There are various ways to allocate Attribute Points (AP) in your specific game. Which system you use should 
-							be discussed during the <a href="#Session-Zero">Session Zero</a> before you actually start playing.</p>
+							be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session 
+							Zero</a> before you actually start playing.</p>
 						<p>The main method of attribute point distribution endorsed by HammRPG is sometimes called Point-Buy: All 
 							characters start with 60 Attribute Points (AP), and gain 1 additional AP per Lv. These points can be 
 							allocated to any of the attributes entirely at the player's preference. This is the default method, as it 
@@ -133,14 +135,14 @@
 							discussion. This method introduces an element of randomness, which can result in wildly different characters 
 							strength levels. While experienced players may relish the challenge of adjusting their play-style according 
 							to what character they rolled, newer players may find it more difficult, especially if they ended up with a 
-							below average character. Additionally, most enemies in the <a href="#GM-Guide">GM guide</a> are balanced 
+							below average character. Additionally, most enemies in the <a href="./gm-guide.html">GM guide</a> are balanced 
 							around the idea that characters will have a base of 60 AP.</p>
 						<p>Note that AP (as well as most other types of points) can only be changed when the character is created, or 
 							during level-up events, which usually require a full rest.</p>
 			</article>
 			
 			<article>
-				<h2>Attribute Modifiers</h2>
+				<h2 id="AP-Modifiers">Attribute Modifiers</h2>
 					<p>Modifiers are calculated based on the attribute most relevant to the roll. An attribute score of 10 is 
 						considered average, resulting in no modifiers to rolls based on that attribute. If a character has an 
 						attribute score lower than 10, they will have a negative modifier to those rolls, while an attribute 
@@ -367,12 +369,12 @@
 						at the same time, and then play all the NPC's turn at the same time. Group initiative makes cooperation easier 
 						for groups who prefer it, and may speed up combat in online text-only campaigns, while individual initiative 
 						tends to make for cleaner combat if players like to lean heavily into roleplay, as well as for high level groups.
-						This is a matter of preference and will be discussed during the <a href="#Session-Zero">Session Zero</a> 
-						before the campaign starts.</p>
+						This is a matter of preference and will be discussed during the <a href="javascript:void(0);" onclick=
+						"scrolltoSection('#Session-Zero')">Session Zero</a> before the campaign starts.</p>
 			</article>
 
 			<article>
-				<h2 id="Actions-and-Abilities">Combat Actions and Abilities</h2>
+				<h2 id="Combat">Combat</h2>
 					<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
 						examples of this, but there are several basic Actions that every character can perform even without 
 						purchasing these Actions with BP or SP:</p>
@@ -400,12 +402,51 @@
 						<h4>Melee Attack Failure:</h4>
 							<p>There are no special considerations, as the attack likely just swings through the air. Some GMs like 
 								to apply immersive consequences on a nat1 (hit yourself, hit a nearby ally, drop your weapon, etc.), 
-								but this is optional and should be discussed during the <a href="#Session-Zero">Session Zero</a> for 
-								your game.</p>
+								but this is optional and should be discussed during the <a href="javascript:void(0);" onclick=
+								"scrolltoSection('#Session-Zero')">Session Zero</a> for your game.</p>
+					
+					<h3 id="Damage-Calculation">Damage Calculation</h3>
+							<p>If an attack successfully hits the target, the next step is to determine how hard the hit lands. The 
+								Damage Roll (dmg) dice are usually determined by the specific weapons being used. A default unarmed attack 
+								uses 1d4 dice, while a particularly good weapon may have 2d12 or even larger dice. Additionally, some 
+								weapons provide intrinsic modifiers to the damage dice as well, as detailed in either the <a href="https:
+								//docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=sharing">Armory</a> 
+								or the item's specific stats.</p>
+							<p>All melee attacks also benefit from the MD modifier, which is based on the character's Strength, as 
+								well as MD proficiency:</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Melee Attack:</p>
+									<h2>dmg = XdX + Item Modifiers + MD</h2>
+								</article>
+								<article>
+									<p>Ranged Attack</p>
+									<h2>dmg = XdX + Item Modifiers</h2>
+								</article>
+							</div>
+							<p>However, different people experience pain differently, and an unarmored character will suffer much more 
+								than one in heavy plate armor. This concept is represented by the character's PR and MR stats. As such, 
+								we need to determine if the attack was physical or magical in nature, and the subtract the appropriate 
+								modifer from the dmg:</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Physical dmg:</p>
+									<h2>actual HP loss = dmg - MR</h2>
+								</article>
+								<article>
+									<p>Magical dmg</p>
+									<h2>actual HP loss = dmg - MR</h2>
+								</article>
+							</div>
+							<p>Note that these modifiers can never reduce your actual HP loss below 1. If an attack hits you, but the dmg 
+								is lower than your PR/MR, you will always suffer at least 1 point of HP loss.</p>
 
 					<h3 id="Ranged-Attack">Ranged Attack Action</h3>
 						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
-							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc.</p>
+							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc. The damage 
+							calculation for ranged weapons is idential to the <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Damage-Calculation')">Damage Calculation</a> for melee weapons except that ranged weapons do not by default 
+							benefit from the MD modifier.</p>
 						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
 							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
 							available in your surroundings, or you can carry them with you in your inventory. It is up to you, the 
@@ -571,10 +612,11 @@
 
 					<h3>Disengage Action (Reflex)</h3>
 						<p>In many situations, retreat may be the most viable strategy. Disengaging represents an attempt to leave an 
-							enemy's melee range, but as you will see in the <a href="Attack-of-Opportunity">Attack of Opportunity</a> 
-							section, this gives them a potential opportunity to attack you even though it is not your turn. A disengage 
-							is your attempt to avoid this attack, by spending an Action of your own to contest the enemy's atk with your 
-							Reflex ability, giving you a second chance to get away from the enemy.</p>
+							enemy's melee range, but as you will see in the <a href="javascript:void(0);" onclick="scrolltoSection(
+							'#Attack-of-Opportunity')">Attack of Opportunity</a> section, this gives them a potential opportunity to 
+							attack you even though it is not their turn. A disengage is your attempt to avoid this attack, by spending 
+							an Action of your own to contest the enemy's atk with your Reflex ability, giving you a second chance to 
+							get away from the enemy.</p>
 				
 					<h3>Sneak Action (Stealth)</h3>
 						<p>Sneaking represents an attempt to prevent an enemy from knowing where you are or what you are doing. While, 
