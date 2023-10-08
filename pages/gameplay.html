@@ -31,12 +31,48 @@
 		<!-- The Side-Panel at the left side of the screen-->
 		<div class="Side-Panel">
 			<a href="./gameplay.html">Gameplay</a>
+			<ul>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Concept')">HammRPG Concept</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Level')">Character Level</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Level-Up')">Level-Up</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Attributes')">Attributes</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('AP-Distribution')">AP Distribution</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('AP-Modifiers')">AP Modifiers</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Constitution')">Constitution</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Strength')">Strength</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Dexterity')">Dexterity</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Intelligence')">Intelligence</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Wisdom')">Wisdom</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Charisma')">Charisma</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Background-Points')">Background Points</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Skill-Points')">Skill Points</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Encounters')">Encounters</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Dice-Rolling')">Dice Rolling</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Combat')">Combat</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Initiative')">Initiative</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Movement')">Movement</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Actions')">Actions</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Reactions')">Reactions</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Melee-Attack')">Melee Attack Action</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Melee-Failure')">Melee Failure</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Damage-Calculation')">Damage Calculation</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Attack')">Ranged Attack Action</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Weapon')">Ranged Weapon Attack</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Throwing')">Ranged Throwing Attack</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Failure')">Ranged Failure</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Cover')">Cover</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Abilities')">Abilities</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Sprint-Action')">Sprint</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('Grappling-Action')">Grappling</a></li>
+				<li><a href="javascript:void(0);" onclick="scrolltoSection('')"></a></li>
+			</ul>
       <a href="./terminology.html">Terminology</a>
       <a href="./effects.html">Status Effects</a>
       <a href="./creation.html">Character Creation</a>
       <a href="./abilities.html">Abilities</a>
 		</div>
-			<!-- The content page itself-->
+
+		<!-- The content page itself-->
 		<div class="Content-Panel">
 			<article>
 				<h1 id="Concept">The HammRPG Concept</h1>
@@ -85,7 +121,7 @@
 						character also gains 1 additional AP, as well as 3 Skill Points (SP) per Lv. Some GMs further allow their 
 						players to earn additional BP at certain Lvs, such as 3 base, +1 at Lv 5, +2 at Lv 10, +1 at Lv 15, and 
 						+3 at Lv20; however, this is optional at the GM's discretion, and will be discussed during the <a href=
-						"javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session Zero</a> for your specific game. 
+						"javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session Zero</a> for your specific game. 
 						The different types of points will be discussed in detail further below.</p>
 			</article>
 			
@@ -104,7 +140,7 @@
 						determine if an encounter is significant enough to warrant XP.</p>
 					<p>Typically, this method is used to collect separate XP per individual PC, but some groups prefer to pool 
 						their XP (both needed and collected), so that they can advance and grow together. This is up to the group 
-						to determine during their <a href="javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session 
+						to determine during their <a href="javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session 
 						Zero</a> before the actual game starts</p>
 			</article>
 
@@ -122,7 +158,7 @@
 
 					<h2 id="AP-Distribution">Attribute Point Distribution</h2>
 						<p>There are various ways to allocate Attribute Points (AP) in your specific game. Which system you use should 
-							be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection('#Session-Zero')">Session 
+							be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session 
 							Zero</a> before you actually start playing.</p>
 						<p>The main method of attribute point distribution endorsed by HammRPG is sometimes called Point-Buy: All 
 							characters start with 60 Attribute Points (AP), and gain 1 additional AP per Lv. These points can be 
@@ -318,7 +354,8 @@
 						then leads to certain consequences as described by the GM. This back-and-forth between describing, rolling and 
 						interacting is the essence of HammRPG.</p>
 					<p>As such, while not in combat, actions and abilities are relatively fluid and intuitive, rather than closely 
-						defined.</p>
+						defined. Nevertheless, you can find a general description of each of the <a href="javascript:void(0);" 
+						onclick="scrolltoSection('Abilities')">Abilities</a> below.</p>
 					<p>However, if a situation escalates into combat, time becomes a much more significant factor. This is where 
 						HammRPG uses a turn-based combat system to slow down time in order to allow players (and the GM) to think about 
 						their next move, describe their attacks or other Actions in epic detail, and still banter between each other 
@@ -356,199 +393,31 @@
 			</article>
 
 			<article>
-				<h2 id="Combat">Combat</h2>
-					<h3 id="Initiative">Initiative</h3>
-						<p>In order to determine who gets to go first during turn based combat, HammRPG uses Initiative rolls, which is 
-							essentially a simple Reflex ability roll.</p>
-						<div class="Highlight">
-							<h2>Initiative = Reflex roll = 1d20 + Reflex modifier</h2>
-						</div>
-						<p>Some groups prefer to utilize individual initiatives, while others prefer to allow all PCs to play their turn 
-							at the same time, and then play all the NPC's turn at the same time. Group initiative makes cooperation easier 
-							for groups who prefer it, and may speed up combat in online text-only campaigns, while individual initiative 
-							tends to make for cleaner combat if players like to lean heavily into roleplay, as well as for high level groups.
-							This is a matter of preference and will be discussed during the <a href="javascript:void(0);" onclick=
-							"scrolltoSection('#Session-Zero')">Session Zero</a> before the campaign starts.</p>
+				<h2 id="Abilities">Abilities</h2>
+					<p>All characters have acccess to the same set of basic Abilities, which are influenced by the most appropriate 
+						<a href="javascript:void(0);" onclick="scrolltoSection('Attributes')">Attribute</a>:</p>
 
-					<h3 id="Movement">Movement</h3>
-						<p>At Lv1, each player has 5 m of Movement per turn.</p>
-						<p>Unless otherwise specified, <b>HammRPG considers 1 tile on a given battlemap to be 1 meter (m) by 1 m</b> 
-							in size, for simplicity. However, additional Movement can be purchased with BP or SP, as outlined in the 
-							<a href="./creation.html">Character Creation Guide</a> and the <a href="./abilities.html">Ability Creation 
-								Guide</a></p>
+					<h3 id="Endurance">Endurance</h3>
+						<p>Endurance is a character's cardio. In essence, how long can an effort be sustained before you run out of 
+							steam. While there is no specific combat-Action based on Endurance, your GM can ask you for an Endurance roll 
+							if you perform repeated <a href="javascript:void(0);" onclick="scrolltoSection('Sprint-Action')">Sprinting</a> 
+							attempts or other strenuous tasks.</p>
+						<p>Endurance can also be used to help calculate travel times for long distance trips, etc.</p>
 
-					<h3 id="Actions">Actions and Reactions</h3>
-						<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
-							examples of this, but there are several basic Actions that every character can perform even without 
-							purchasing these Actions with BP or SP, as outlined below.</p>
-						<p>By default, each character has 1 Action and 1 Reaction, and can purchase more with SP or BP. Some GMs also 
-							grant additional Actions at certain levels, just to increase the speed of combat encounters and allow players 
-							to feel more powerful.</p>
-				
-					<h3 id="Melee-Attack">Melee Attack Action</h3>
-						<p>The attack Action is the most basic Action in combat encounters. You can either just use your hands 
-							or feet or you can use an equipped weapon. Your specific selection of possible attack Actions will depend 
-							on the skills and items your PC has available. All melee attack Actions are rolled with a 1d20, plus any 
-							bonuses from your character's proficiencies, or the weapon's own modifiers, where the final result 
-							represents the attack roll (atk).</p>
-						<div class="Highlight">
-							<h2>atk = 1d20 + Proficiencies + Weapon Modifiers</h2>
-						</div>
-						<p>The result of atk is then compared to the target's DV; If atk is equal to or higher than the DV, the 
-							attack is successful, and you move on to the damage calculations, which will be explained in detail further 
-							below, or apply the appropriate effects. The type and number of dice to use for the dmg roll depends on 
-							what attack Action you performed.</p>
-						<p>For instance, an unarmed attack uses the unarmed proficiency for atk and a 1d4 damage die. If this is 
-							a melee attack, it also benefits from the MD modifier. Similarly, a Steel Shortsword uses sword proficiency, 
-							but it also provides a bonus of +1 for atk due to its own design, as well as a 1d6+MD for dmg.</p>
-						<p>The <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=
-							sharing">Armory</a> contains a list of commonly available items with their roll modifiers and other 
-							important stats.</p>
+					<h3 id="Resistance">Resistance</h3>
+						<p>Resistance is one of the less-used abilities. Generally, it applies as a save against hostile attempts to 
+							affect your character, such as Grappling attempts or attacks that attempt to stun your character.</p>
+						<p>Some GMs also like to use the Resistance ability to reduce the potency of certain effects, such as poisons, 
+							but this is up to the GM and should be discussed during your group's <a href="javascript:void(0);" onclick=
+							"scrolltoSection('Session-Zero')">Session Zero</a>.</p>
 
-						<h4>Melee Attack Failure:</h4>
-							<p>There are no special considerations, as the attack likely just swings through the air. Some GMs like 
-								to apply immersive consequences on a nat1 (hit yourself, hit a nearby ally, drop your weapon, etc.), 
-								but this is optional and should be discussed during the <a href="javascript:void(0);" onclick=
-								"scrolltoSection('#Session-Zero')">Session Zero</a> for your game.</p>
-					
-					<h3 id="Damage-Calculation">Damage Calculation</h3>
-							<p>If an attack successfully hits the target, the next step is to determine how hard the hit lands. The 
-								Damage Roll (dmg) dice are usually determined by the specific weapons being used. A default unarmed attack 
-								uses 1d4 dice, while a particularly good weapon may have 2d12 or even larger dice. Additionally, some 
-								weapons provide intrinsic modifiers to the damage dice as well, as detailed in either the <a href="https:
-								//docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=sharing">Armory</a> 
-								or the item's specific stats.</p>
-							<p>All melee attacks also benefit from the MD modifier, which is based on the character's Strength, as 
-								well as MD proficiency:</p>
-							<div class="Highlight Side-by-Side">
-								<article>
-									<p>Melee Attack:</p>
-									<h2>dmg = XdX + Item Modifiers + MD</h2>
-								</article>
-								<article>
-									<p>Ranged Attack</p>
-									<h2>dmg = XdX + Item Modifiers</h2>
-								</article>
-							</div>
-							<p>However, different people experience pain differently, and an unarmored character will suffer much more 
-								than one in heavy plate armor. This concept is represented by the character's PR and MR stats. As such, 
-								we need to determine if the attack was physical or magical in nature, and the subtract the appropriate 
-								modifer from the dmg:</p>
-							<div class="Highlight Side-by-Side">
-								<article>
-									<p>Physical dmg:</p>
-									<h2>actual HP loss = dmg - PR</h2>
-								</article>
-								<article>
-									<p>Magical dmg</p>
-									<h2>actual HP loss = dmg - MR</h2>
-								</article>
-							</div>
-							<p>Note that these modifiers can never reduce your actual HP loss below 1. If an attack hits you, but the dmg 
-								is lower than your PR/MR, you will always suffer at least 1 point of HP loss.</p>
-
-					<h3 id="Ranged-Attack">Ranged Attack Action</h3>
-						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
-							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc. The damage 
-							calculation for ranged weapons is idential to the <a href="javascript:void(0);" onclick="scrolltoSection(
-							'Damage-Calculation')">Damage Calculation</a> for melee weapons, except that ranged weapons do not by default 
-							benefit from the MD modifier.</p>
-						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
-							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
-							available in your surroundings, or you can carry such ammunition with you in your inventory. It is up to you, 
-							the player, to ensure that you keep track of ammunition for your PC.</p>
-						<p>Additionally, characters can use <a href="javascript:void(0);" onclick="scrolltoSection('Cover')">
-							Cover</a> to help avoid ranged attacks</p>
-
-						<h4>Shooting</h4>
-							<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
-								shortbow from the <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77
-								vcSobVA/edit?usp=sharing">Armory</a>, we can see that the standard range is 40 m, while the maximum 
-								range is up to 400 m. This means that, when attacking a target that is within 40 m of our character, we 
-								simply roll atk with proficiencies. However, if the target is in the long range, we must roll atk with 
-								disadvantage, which scales based on the standard range.</p>
-							<p>In our example above, this means that for every 40 m, we need to consider an additional instance of 
-								disadvantage. Up to 40 m we roll a single die (no disadvantage), between 40 m and 80 m we roll two dice 
-								and take the lower result (disadvantage), between 80 m and 120 m we roll three dice and take the lowest 
-								result (double disadvantage), then between 120 m and 160 m we roll 4 dice and take the lowest result 
-								(triple disadvantage), etc.</p>
-							<p>The maximum range indicates the absoulte maximum at which a shot can be attempted, although in many 
-								instances, it is probably not practical to actually try to make a shot at that range due to the scaling 
-								disadvantage consideration.</p>
-							<div class="Highlight Side-by-Side">
-								<article>
-									<p>Standard Range</p>
-									<h2>Single atk roll + proficiency modifiers</h2>
-								</article>
-								<article>
-									<p>Long Range</p>
-									<h2>+1 instance of disadvantage per multiplier of the standard range number</h2>
-								</article>
-							</div>
-
-						<h4>Throwing</h4>
-							<p>Throwing, on the other hand, is more a feature of the skill of the thrower, as there is no tool being 
-								used. As such, throwing is handled through a combined atk/ability roll - in other words, an atk roll 
-								that also benefits from the ability modifier:</p>
-							<div class="Highlight Side-by-Side">
-								<article>
-									<p>When throwing for impact damage:<br>(e.g.: rock or spear throw)</p>
-									<h2>Athletics roll, where DC = range</h2>
-								</article>
-								<article>
-									<p>When throwing for targeting precision:<br>(e.g.: poison flask, distracting noise)</p>
-									<h2>Acrobatics roll, where DC = range</h2>
-								</article>
-							</div>
-							<p>As such throwing does not have an inherent maximum range, but rather your character's skills determine 
-								how far they can realistically throw. A beneficial side effect of this method is that both your Throwing 
-								proficiency and your Athletics or Acrobatics proficiency applies, which makes throwing a potentially very 
-								powerful combat method at early levels.</p>
-							<p>Regardless of the range of a throw though, the target's DV still applies, and a throwing attack will miss 
-								if it is lower than the target's DV, even if it is higher than the DC needed for the throw.</p>
-
-						<h4>Ranged Failure Handling</h4>
-							<p>When a melee attack fails, it most likely simply swings through the air, which we can easily ignore. 
-								However, once a ranged projectile has been fired or thrown, it might still hit something else, even 
-								if it misses its intended target. Particularly, projectiles that deal area damage, such as flasks 
-								of poison that shatter on impact and release a poison cloud, or exploding artillery shells, are 
-								important in this context.</p>
-							<p>We can therefore have to consider targeting accuracy when a ranged attack fails. If the attack misses: </p>
-							<div class="Highlight Side-by-Side">
-								<article>
-									<p>For ranged <u>weapon</u> attacks:</p>
-									<h2>Offset = (range to target / default range ) * ( DV - atk )</h2>
-								</article>
-								<article>
-									<p>For ranged <u>throw</u> attacks:</p>
-									<h2>Offset = DC - atk</h2>
-								</article>
-							</div>
-							<p>You can then roll a 1d8 to determine in which direction the projectlie missed. A 1 would mean the 
-								projectile lands north of the target, 2 northeast, 3 east, etc.</p>
-							<p>Note that this system is rather complicated, and it is entirely reasonable to simply have the GM make an 
-								on the spot ruling on where the projectile landed based on how bad the atk roll was. For non-area damage 
-								or effect causing ranged attacks, a miss can simply be a miss without figuring out where else the 
-								projectile goes.</p>
-
-						<h4 id="Cover">Cover</h4>
-							<p>Another optional system for ranged weapons is the effect blocking projectiles by utilizing cover.</p>
-							<p>Different blocking objects provide different levels of protection:</p>
-							<ul>
-								<li>Light Cover (heavy foliage, picket fence, light post, etc.): +2 DV</li>
-								<li>Medium Cover (wooden wall, storage crates, etc.): +5 DV</li>
-								<li>Heavy Cover (stone wall, metal plate objects, etc.): +10 to DV</li>
-								<li>Complete Cover: Ranged attacks are not possible</li>
-							</ul>
-							<p>Note that peeking out from cover, for example in order to make a ranged attack yourself, reduces the 
-								effect of whatever cover you are using by 50%. Additionally, it is not possible to peek out from 
-								complete cover.</p>
-					
-					<h3 id="Sprint-Action">Sprint Action (Athletics)</h3>
-						<p>A sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
-							quickly, or run away from an overpowering enemy. For the purposes of HammRPG, sprinting is considered a feat 
-							of strength, which means you will make an Athletics ability roll and gain a small bonus Movement per Action 
-							spent on the sprint:</p>
+					<h3 id="Athletics">Athletics</h3>
+						<p>Athletics is a measure of the direct physical force a character's body can muster on short notice. Trying to 
+							push a heavy object, lift a rock, or compete in an arm-wrestling match are all typical examples that would 
+							warrant an Athletics roll.</p>
+						<p id="Sprint-Action">In combat, the most common Athletics check you will see is the Sprint Action:</p>
+						<p>A Sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
+							quickly, or run away from an overpowering enemy. If you spend a combat-Action to try to sprint:</p>
 						<ul>
 							<li>less than 0 => no bonus Movement (the Action is still spent, though!)</li>
 							<li>0 to 9 => +1 m of Movement</li>
@@ -557,11 +426,12 @@
 							<li>etc.</li>
 						</ul>
 				
-					<h3 id="Grappling-Action">Grappling Action</h3>
+					<h3 id="Grappling">Grappling</h3>
 						<p>Grappling is an attempt to hold an enemy down, preventing them from moving and using Actions freely. This 
 							can be done to protect your allies, prevent an enemy from running away, or simply to stop a spellcaster from 
-							casting.</p>
-						<p>First, the initiating grappler rolls their atk roll, which is essentially a regular Grappling ability roll. 
+							casting. Grappling is almost exclusively a combat action, which means if you attempt it in a non-combat 
+							encounter, it will usually turn into a combat encounter.</p>
+						<p>First, the initiating grappler rolls their atk roll, which is a Grappling ability roll with Unarmed Proficiency. 
 							The resulting number is then compared to the target's DV to see if the target simply dodges the attack 
 							altogether. Finally, if the target does not dodge, the defender also rolls a Grappling roll to determine 
 							who gains control in the struggle. The initial Grappling attempt does not deal any damage.</p>
@@ -591,15 +461,18 @@
 							<li>Distraction Action</li>
 						</ul>
 				
-					<h3 id="Intimidation-Action">Intimidation Action</h3>
-						<p>In combat, an Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>
-							Feared</b> effect. It functions similar to the Grappling contest, except that the attacker rolls Intimidation, 
-							while the target rolls Leadership as a measure of their level of discipline. A successful Intimidation 
-							attempt applies the <b>Feared</b> effect to that one target only.</p>
+					<h3 id="Intimidation">Intimidation</h3>
+						<p>An Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>Feared</b> 
+							effect when in combat. It functions similar to the Grappling contest, except that the initiator rolls Intimidation, 
+							while the target rolls Leadership as a measure of their level of discipline.</p>
+						<p>Intimidation is usually specific to the one target, but can in some cases also apply to a group of targets. 
+							In such situations, the GM will ususally increase the DC based on how many targets are around. In other words, 
+							the more allies a target has around them, the higher their chance of resisting an Intimidation attempt.</p>
 
-					<h3 id="Jump-Action">Jump Action (Acrobatics)</h3>
-						<p>In many instances, a character may need to jump, for example to cross a chasm, to avoid triggering a pressure 
-							plate trap, etc. This is usually done through an Acrobatics ability roll:</p>
+					<h3 id="Acrobatics">Acrobatics</h3>
+						<p>Acrobatics represents a character's general agility.</p>
+						<p id="Jump-Action">In many instances, a character may need to perform a Jump Action, for example to cross a 
+							chasm, to avoid triggering a pressure plate trap, etc.:</p>
 						<ul>
 							<li>less than 0 => the jump critically fails, which may mean the PC falls into the chasm, triggers the trap, 
 								etc. without the opportunity to try to save the situation</li>
@@ -612,9 +485,9 @@
 							<li>25 to 29 => the jump clears up to 5 m</li>
 							<li>etc.</li>
 						</ul>
-						<p>Note that the Jump distance <b>does</b> count towards your Movement. In other words, if your PC has only 
-							3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked Acrobatics check 
-							(let's say a 42 or something like that).</p>
+						<p>Note that the Jump distance <b>does</b> count towards your Movement when you are in combat. In other words, 
+							if your PC has only 3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked 
+							Acrobatics check (let's say a 42 or something like that).</p>
 
 					<h3 id="Disengage-Action">Disengage Action (Reflex)</h3>
 						<p>In many situations, retreat may be the most viable strategy. Disengaging represents an attempt to leave an 
@@ -721,6 +594,209 @@
 						specific context, including your role-play for the distraction.</p>
 				
 			</article>
+
+			<article>
+				<h2 id="Combat">Combat</h2>
+					<p>The following sections are specific to combat encounters; however, this is not an exhaustive list. In many cases, 
+						your GM will have to make a situation-specific ruling, which then supercedes the rules described here.</p>
+
+					<h3 id="Initiative">Initiative</h3>
+						<p>In order to determine who gets to go first during turn based combat, HammRPG uses Initiative rolls, which is 
+							essentially a simple Reflex ability roll.</p>
+						<div class="Highlight">
+							<h2>Initiative = Reflex roll = 1d20 + Reflex modifier</h2>
+						</div>
+						<p>Some groups prefer to utilize individual initiatives, while others prefer to allow all PCs to play their turn 
+							at the same time, and then play all the NPC's turn at the same time. Group initiative makes cooperation easier 
+							for groups who prefer it, and may speed up combat in online text-only campaigns, while individual initiative 
+							tends to make for cleaner combat if players like to lean heavily into roleplay, as well as for high level groups.
+							This is a matter of preference and will be discussed during the <a href="javascript:void(0);" onclick=
+							"scrolltoSection('Session-Zero')">Session Zero</a> before the campaign starts.</p>
+
+					<h3 id="Movement">Movement</h3>
+						<p>At Lv1, each player has 5 m of Movement per turn.</p>
+						<p>Unless otherwise specified, <b>HammRPG considers 1 tile on a given battlemap to be 1 meter (m) by 1 m</b> 
+							in size, for simplicity. However, additional Movement can be purchased with BP or SP, as outlined in the 
+							<a href="./creation.html">Character Creation Guide</a> and the <a href="./abilities.html">Ability Creation 
+								Guide</a></p>
+
+					<h3 id="Actions">Actions</h3>
+						<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
+							examples of this, but there are several basic Actions that every character can perform even without 
+							purchasing these Actions with BP or SP. Please refer to the <a href="javascript:void(0);" onclick=
+							"scrolltoSection('Abilities')">Abilities List</a> for specific descriptions on how your Abilities can be 
+							used in a combat encounter.</p>
+						<p>By default, each character has 1 Action, and can purchase more with SP or BP. Some GMs also 
+							grant additional Actions at certain levels, just to increase the speed of combat encounters and allow players 
+							to feel more powerful.</p>
+
+					<h3 id="Reactions">Reactions</h3>
+						<p>A Reaction is very similar to an <a href="javascript:void(0);" onclick="scrolltoSection('Action')">Action</a>, 
+							except that it is something you can do when it is not your turn. The only default Reaction is the <a href=
+							"javascript:void(0);" onclick="scrolltoSection('AOO')">Attack of Opportunity</a>.</p>
+						<p>By default, each character has 1 Reaction, and can purchase more with SP or BP.</p>
+				
+					<h3 id="Melee-Attack">Melee Attack Action</h3>
+						<p>The attack Action is the most basic Action in combat encounters. You can either just use your hands 
+							or feet or you can use an equipped weapon. Your specific selection of possible attack Actions will depend 
+							on the skills and items your PC has available. All melee attack Actions are rolled with a 1d20, plus any 
+							bonuses from your character's proficiencies, or the weapon's own modifiers, where the final result 
+							represents the attack roll (atk).</p>
+						<div class="Highlight">
+							<h2>atk = 1d20 + Proficiencies + Weapon Modifiers</h2>
+						</div>
+						<p>The result of atk is then compared to the target's DV; If atk is equal to or higher than the DV, the 
+							attack is successful, and you move on to the damage calculations, which will be explained in detail further 
+							below, or apply the appropriate effects. The type and number of dice to use for the dmg roll depends on 
+							what attack Action you performed.</p>
+						<p>For instance, an unarmed attack uses the unarmed proficiency for atk and a 1d4 damage die. If this is 
+							a melee attack, it also benefits from the MD modifier. Similarly, a Steel Shortsword uses sword proficiency, 
+							but it also provides a bonus of +1 for atk due to its own design, as well as a 1d6+MD for dmg.</p>
+						<p>The <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=
+							sharing">Armory</a> contains a list of commonly available items with their roll modifiers and other 
+							important stats.</p>
+
+						<h4 id="Melee-Failure">Melee Attack Failure:</h4>
+							<p>There are no special considerations, as the attack likely just swings through the air. Some GMs like 
+								to apply immersive consequences on a nat1 (hit yourself, hit a nearby ally, drop your weapon, etc.), 
+								but this is optional and should be discussed during the <a href="javascript:void(0);" onclick=
+								"scrolltoSection('Session-Zero')">Session Zero</a> for your game.</p>
+					
+					<h3 id="Damage-Calculation">Damage Calculation</h3>
+							<p>If an attack successfully hits the target, the next step is to determine how hard the hit lands. The 
+								Damage Roll (dmg) dice are usually determined by the specific weapons being used. A default unarmed attack 
+								uses 1d4 dice, while a particularly good weapon may have 2d12 or even larger dice. Additionally, some 
+								weapons provide intrinsic modifiers to the damage dice as well, as detailed in either the <a href="https:
+								//docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77vcSobVA/edit?usp=sharing">Armory</a> 
+								or the item's specific stats.</p>
+							<p>All melee attacks also benefit from the MD modifier, which is based on the character's Strength, as 
+								well as MD proficiency:</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Melee Attack:</p>
+									<h2>dmg = XdX + Item Modifiers + MD</h2>
+								</article>
+								<article>
+									<p>Ranged Attack</p>
+									<h2>dmg = XdX + Item Modifiers</h2>
+								</article>
+							</div>
+							<p>However, different people experience pain differently, and an unarmored character will suffer much more 
+								than one in heavy plate armor. This concept is represented by the character's PR and MR stats. As such, 
+								we need to determine if the attack was physical or magical in nature, and the subtract the appropriate 
+								modifer from the dmg:</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Physical dmg:</p>
+									<h2>actual HP loss = dmg - PR</h2>
+								</article>
+								<article>
+									<p>Magical dmg</p>
+									<h2>actual HP loss = dmg - MR</h2>
+								</article>
+							</div>
+							<p>Note that these modifiers can never reduce your actual HP loss below 1. If an attack hits you, but the dmg 
+								is lower than your PR/MR, you will always suffer at least 1 point of HP loss.</p>
+
+					<h3 id="Ranged-Attack">Ranged Attack Action</h3>
+						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
+							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc. The damage 
+							calculation for ranged weapons is idential to the <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Damage-Calculation')">Damage Calculation</a> for melee weapons, except that ranged weapons do not by default 
+							benefit from the MD modifier.</p>
+						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
+							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
+							available in your surroundings, or you can carry such ammunition with you in your inventory. It is up to you, 
+							the player, to ensure that you keep track of ammunition for your PC.</p>
+						<p>Additionally, characters can use <a href="javascript:void(0);" onclick="scrolltoSection('Cover')">
+							Cover</a> to help avoid ranged attacks</p>
+
+						<h4 id="Ranged-Weapon">Ranged Weapon Attacks</h4>
+							<p>Most specialized ranged attack tools have their own unique effective ranges. For example, when using a 
+								shortbow from the <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-ryOK-unPjXyxaJk77
+								vcSobVA/edit?usp=sharing">Armory</a>, we can see that the standard range is 40 m, while the maximum 
+								range is up to 400 m. This means that, when attacking a target that is within 40 m of our character, we 
+								simply roll atk with proficiencies. However, if the target is in the long range, we must roll atk with 
+								disadvantage, which scales based on the standard range.</p>
+							<p>In our example above, this means that for every 40 m, we need to consider an additional instance of 
+								disadvantage. Up to 40 m we roll a single die (no disadvantage), between 40 m and 80 m we roll two dice 
+								and take the lower result (disadvantage), between 80 m and 120 m we roll three dice and take the lowest 
+								result (double disadvantage), then between 120 m and 160 m we roll 4 dice and take the lowest result 
+								(triple disadvantage), etc.</p>
+							<p>The maximum range indicates the absoulte maximum at which a shot can be attempted, although in many 
+								instances, it is probably not practical to actually try to make a shot at that range due to the scaling 
+								disadvantage consideration.</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>Standard Range</p>
+									<h2>Single atk roll + proficiency modifiers</h2>
+								</article>
+								<article>
+									<p>Long Range</p>
+									<h2>+1 instance of disadvantage per multiplier of the standard range number</h2>
+								</article>
+							</div>
+
+						<h4 id="Ranged-Throwing">Ranged Throwing Attacks</h4>
+							<p>Throwing, on the other hand, is more a feature of the skill of the thrower, as there is no tool being 
+								used. As such, throwing is handled through a combined atk/ability roll - in other words, an atk roll 
+								that also benefits from the ability modifier:</p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>When throwing for impact damage:<br>(e.g.: rock or spear throw)</p>
+									<h2>Athletics roll, where DC = range</h2>
+								</article>
+								<article>
+									<p>When throwing for targeting precision:<br>(e.g.: poison flask, distracting noise)</p>
+									<h2>Acrobatics roll, where DC = range</h2>
+								</article>
+							</div>
+							<p>As such throwing does not have an inherent maximum range, but rather your character's skills determine 
+								how far they can realistically throw. A beneficial side effect of this method is that both your Throwing 
+								proficiency and your Athletics or Acrobatics proficiency applies, which makes throwing a potentially very 
+								powerful combat method at early levels.</p>
+							<p>Regardless of the range of a throw though, the target's DV still applies, and a throwing attack will miss 
+								if it is lower than the target's DV, even if it is higher than the DC needed for the throw.</p>
+
+						<h4 id="Ranged-Failure">Ranged Failure Handling</h4>
+							<p>When a melee attack fails, it most likely simply swings through the air, which we can easily ignore. 
+								However, once a ranged projectile has been fired or thrown, it might still hit something else, even 
+								if it misses its intended target. Particularly, projectiles that deal area damage, such as flasks 
+								of poison that shatter on impact and release a poison cloud, or exploding artillery shells, are 
+								important in this context.</p>
+							<p>We can therefore have to consider targeting accuracy when a ranged attack fails. If the attack misses: </p>
+							<div class="Highlight Side-by-Side">
+								<article>
+									<p>For ranged <u>weapon</u> attacks:</p>
+									<h2>Offset = (range to target / default range ) * ( DV - atk )</h2>
+								</article>
+								<article>
+									<p>For ranged <u>throw</u> attacks:</p>
+									<h2>Offset = DC - atk</h2>
+								</article>
+							</div>
+							<p>You can then roll a 1d8 to determine in which direction the projectlie missed. A 1 would mean the 
+								projectile lands north of the target, 2 northeast, 3 east, etc.</p>
+							<p>Note that this system is rather complicated, and it is entirely reasonable to simply have the GM make an 
+								on the spot ruling on where the projectile landed based on how bad the atk roll was. For non-area damage 
+								or effect causing ranged attacks, a miss can simply be a miss without figuring out where else the 
+								projectile goes.</p>
+
+						<h4 id="Cover">Cover</h4>
+							<p>Another optional system for ranged weapons is the effect blocking projectiles by utilizing cover.</p>
+							<p>Different blocking objects provide different levels of protection:</p>
+							<ul>
+								<li>Light Cover (heavy foliage, picket fence, light post, etc.): +2 DV</li>
+								<li>Medium Cover (wooden wall, storage crates, etc.): +5 DV</li>
+								<li>Heavy Cover (stone wall, metal plate objects, etc.): +10 to DV</li>
+								<li>Complete Cover: Ranged attacks are not possible</li>
+							</ul>
+							<p>Note that peeking out from cover, for example in order to make a ranged attack yourself, reduces the 
+								effect of whatever cover you are using by 50%. Additionally, it is not possible to peek out from 
+								complete cover.</p>
+			</article>
+
+			
 
 			</div>
 	</div>
