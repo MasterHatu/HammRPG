@@ -359,25 +359,28 @@
 			</article>
 			
 			<article>
-				<h2 id="Initiative">Initiative</h2>
-					<p>In order to determine who gets to go first during turn based combat, HammRPG uses Initiative rolls, which is 
-						essentially a simple Reflex ability roll.</p>
-					<div class="Highlight">
-						<h2>Initiative = Reflex roll = 1d20 + Reflex modifier</h2>
-					</div>
-					<p>Some groups prefer to utilize individual initiatives, while others prefer to allow all PCs to play their turn 
-						at the same time, and then play all the NPC's turn at the same time. Group initiative makes cooperation easier 
-						for groups who prefer it, and may speed up combat in online text-only campaigns, while individual initiative 
-						tends to make for cleaner combat if players like to lean heavily into roleplay, as well as for high level groups.
-						This is a matter of preference and will be discussed during the <a href="javascript:void(0);" onclick=
-						"scrolltoSection('#Session-Zero')">Session Zero</a> before the campaign starts.</p>
+				
 			</article>
 
 			<article>
 				<h2 id="Combat">Combat</h2>
-					<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
-						examples of this, but there are several basic Actions that every character can perform even without 
-						purchasing these Actions with BP or SP:</p>
+					<h3 id="Initiative">Initiative</h3>
+						<p>In order to determine who gets to go first during turn based combat, HammRPG uses Initiative rolls, which is 
+							essentially a simple Reflex ability roll.</p>
+						<div class="Highlight">
+							<h2>Initiative = Reflex roll = 1d20 + Reflex modifier</h2>
+						</div>
+						<p>Some groups prefer to utilize individual initiatives, while others prefer to allow all PCs to play their turn 
+							at the same time, and then play all the NPC's turn at the same time. Group initiative makes cooperation easier 
+							for groups who prefer it, and may speed up combat in online text-only campaigns, while individual initiative 
+							tends to make for cleaner combat if players like to lean heavily into roleplay, as well as for high level groups.
+							This is a matter of preference and will be discussed during the <a href="javascript:void(0);" onclick=
+							"scrolltoSection('#Session-Zero')">Session Zero</a> before the campaign starts.</p>
+
+					<h3 id="Actions">Actions and Reactions</h3>
+						<p>An Action is a basic activity that a player performs. Swinging a sword at an enemy is one of the simplest 
+							examples of this, but there are several basic Actions that every character can perform even without 
+							purchasing these Actions with BP or SP:</p>
 				
 					<h3 id="Melee-Attack">Melee Attack Action</h3>
 						<p>The attack Action is the most basic Action in combat encounters. You can either just use your hands 
@@ -445,12 +448,12 @@
 						<p>If you cammot reach your enemy, you can still try to attack them by throwing objects (rocks, bottles, 
 							alchemical flasks, chairs, etc.), or using ranged weapons such as bows, crossbows, guns, etc. The damage 
 							calculation for ranged weapons is idential to the <a href="javascript:void(0);" onclick="scrolltoSection(
-							'Damage-Calculation')">Damage Calculation</a> for melee weapons except that ranged weapons do not by default 
+							'Damage-Calculation')">Damage Calculation</a> for melee weapons, except that ranged weapons do not by default 
 							benefit from the MD modifier.</p>
 						<p>One important thing to keep in mind with virtually all ranged weapons, is ammunition; you can only 
 							shoot an arrow if you actually have an arrow to shoot. Some improvised items, such as rocks, might be 
-							available in your surroundings, or you can carry them with you in your inventory. It is up to you, the 
-							player, to ensure that you keep track of ammunition for your PC.</p>
+							available in your surroundings, or you can carry such ammunition with you in your inventory. It is up to you, 
+							the player, to ensure that you keep track of ammunition for your PC.</p>
 						<p>Additionally, characters can use <a href="javascript:void(0);" onclick="scrolltoSection('Cover')">
 							Cover</a> to help avoid ranged attacks</p>
 
@@ -585,13 +588,13 @@
 							<li>Distraction Action</li>
 						</ul>
 				
-					<h3>Intimidation Action</h3>
+					<h3 id="Intimidation-Action">Intimidation Action</h3>
 						<p>In combat, an Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>
 							Feared</b> effect. It functions similar to the Grappling contest, except that the attacker rolls Intimidation, 
 							while the target rolls Leadership as a measure of their level of discipline. A successful Intimidation 
 							attempt applies the <b>Feared</b> effect to that one target only.</p>
 
-					<h3>Jump Action (Acrobatics)</h3>
+					<h3 id="Jump-Action">Jump Action (Acrobatics)</h3>
 						<p>In many instances, a character may need to jump, for example to cross a chasm, to avoid triggering a pressure 
 							plate trap, etc. This is usually done through an Acrobatics ability roll:</p>
 						<ul>
@@ -610,15 +613,15 @@
 							3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked Acrobatics check 
 							(let's say a 42 or something like that).</p>
 
-					<h3>Disengage Action (Reflex)</h3>
+					<h3 id="Disengage-Action">Disengage Action (Reflex)</h3>
 						<p>In many situations, retreat may be the most viable strategy. Disengaging represents an attempt to leave an 
 							enemy's melee range, but as you will see in the <a href="javascript:void(0);" onclick="scrolltoSection(
-							'#Attack-of-Opportunity')">Attack of Opportunity</a> section, this gives them a potential opportunity to 
+							'Attack-of-Opportunity')">Attack of Opportunity</a> section, this gives them a potential opportunity to 
 							attack you even though it is not their turn. A disengage is your attempt to avoid this attack, by spending 
 							an Action of your own to contest the enemy's atk with your Reflex ability, giving you a second chance to 
 							get away from the enemy.</p>
 				
-					<h3>Sneak Action (Stealth)</h3>
+					<h3 id="Sneak-Action">Sneak Action (Stealth)</h3>
 						<p>Sneaking represents an attempt to prevent an enemy from knowing where you are or what you are doing. While, 
 							mathematically, this is represented by a simple ability check, the actual chance of success is much more 
 							complicated:</p>
@@ -633,7 +636,7 @@
 							<h2>Successful Sneak Attack = dmg *2</h2>
 						</div>
 
-					<h3>Pickpocket Action (Thievery)</h3>
+					<h3 id="Pickpocket-Action">Pickpocket Action (Thievery)</h3>
 						<p>As a combat action, pickpocketing represents an attempt to manipulate your enemy's inventory. This can be 
 							straightforward as grabbing a key from their belt, or as subtle as switching one of their healing potions 
 							for a poison flask from your own inventory. Obviously, if the enemy has already spotted you, the DC for the 
@@ -641,7 +644,7 @@
 							you achieve success.</p>
 						<p>For obvious reasons, this action can only be performed if you are in melee range of your target.</p>
 
-					<h3>Knowledge Check (History)</h3>
+					<h3 id="Knowledge-Check">Knowledge Check (History)</h3>
 						<p>A History check is essential when special enemy types appear on the battlefield. Certain enemies will either 
 							be immune to certain damage types, or may even be healed or strengthened by them instead. Think of a fire 
 							elemental, for example. Not only does it not care about you waving a torch in its face, but stoking its flames 
@@ -649,7 +652,7 @@
 						<p>The History check is therefore there to try to find out what the enemy may be vulnerable to, or resistant 
 							against.</p>
 
-					<h3>Targeting Action (Investigation)</h3>
+					<h3 id="Targeting-Action">Targeting Action (Investigation)</h3>
 						<p>Taking a second to pick your target's weak spot is useful, especially if your enemy has not seen you yet. 
 							It essentially sacrifices one action in order to make the next attack stronger:</p>
 						<ul>
@@ -662,15 +665,57 @@
 							<li>25 to 29 => +6 atk and +12 dmg</li>
 						</ul>
 
-					<h3>Intuition Check</h3>
+					<h3 id="Intuition-Check">Intuition Check</h3>
+						<p>If you're stuck and not really sure what to do, you can also use an Intuition check to essentaily ask your 
+							GM for some hints. A Knowledge check can only give you information that your PC would reasonably know based 
+							on their backstory and previous encounters, but a good Intuition check might allow you to infer brand new 
+							conclusions.</p>
 
-					<h3>Perception Check</h3>
+					<h3 id="Perception-Check">Perception Check</h3>
+						<p>This is a quick physical check of your surroundings. If you suspect that there might be enemies in hiding, 
+							waiting to ambush you, or if you think an area might be trapped, it may be a good idea to spend an Action 
+							just making sure you have a good lay of the land before charging in.</p>
+						<p>As for all abilities, if you do not make a specific roll, your Passive Perception is 0 + your modifiers. In 
+							other words, even if you get the lowest possible roll on your ability check, you will get more information 
+							than simply waiting for the GM to tell you what's happening. Some GMs will wait for you to ask them for a 
+							Perception check, rather than potentially giving you a hint that there might be something hidden by asking 
+							you for it.</p>
 
-					<h3>Inspiration Action</h3>
+					<h3 id="Inspiration-Action">Inspiration Action</h3>
+						<p>If you have a very critical roll coming up, you can spnd an Action to psych yourself up for it. This is 
+							very similar to the <a href="javascript:void(0);" onclick="scrolltoSection('Targeting-Action')">
+							Targeting Action</a> for atk rolls, but for ability checks. Note that the bonuses are reduced:</p>
+						<ul>
+							<li>less than 0 => no bonus</li>
+							<li>0 to 9 => +1 next ability roll</li>
+							<li>10 to 19 => +2 next ability roll</li>
+							<li>20 to 29 => +3 next ability roll</li>
+						</ul>
+						<p>You will also roll Inspiration every time you spend a <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Party-Point')">Party Point</a> on yourself, although in that case it does not cost you an Action.</p>
 
-					<h3>Help Others Action (Leadership)</h3>
+					<h3 id="Help-Others-Action">Help Others Action (Leadership)</h3>
+						<p>In the same spirit as the <a href="javascript:void(0);" onclick="scrolltoSection('Inspiration-Action')">
+							Inspiration Action</a>, you can also spend an Action to help one of your allies. These bonuses are higher, 
+							though, especially if you roll well:</p>
+						<ul>
+							<li>less than 0 => no bonus</li>
+							<li>0 to 4 => +1</li>
+							<li>5 to 9 => +2</li>
+							<li>10 to 14 => +3</li>
+							<li>15 to 19 => +4</li>
+							<li>20 to 24 => +5</li>
+							<li>25 to 29 => +6</li>
+						</ul>
+						<p>When you spend <a href="javascript:void(0);" onclick="scrolltoSection('Party-Point')">Party Points</a> on 
+							your allies instead of yourself, you will also be able to use the Leadership roll instead of the Inspiration 
+							roll.</p>
 
-					<h3>Distraction Action (Performance)</h3>
+					<h3 id="Distraction-Action">Distraction Action (Performance)</h3>
+						<p>This is essentially the opposite of a <a href="javascript:void(0);" onclick="scrolltoSection('Sneak-Action')">
+						Sneak Action</a>, and can be used to help take the attention away from your allies so that they can perform a 
+						critical task more safely, or to lure enemies into a trap. The GM will determine the DC of the roll based on the 
+						specific context, including your role-play for the distraction.</p>
 				
 			</article>
 			</div>
