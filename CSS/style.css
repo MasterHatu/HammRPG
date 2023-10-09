@@ -41,7 +41,7 @@
 	position: fixed;
 	top: 30px;
 	left: 0;
-	width: 140px;
+	width: 150px;
 	max-height: 100vh - 30px;
 	background-color: #964B00;
 	display: flex;
@@ -70,7 +70,7 @@
 .Content-Panel {
 	flex: 1 1 0px;
 	padding: 20px;
-	margin-left: 140px;
+	margin-left: 150px;
 	background-color: #2a2117;
 }
 
