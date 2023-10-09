@@ -106,10 +106,10 @@
 							can be done to protect your allies, prevent an enemy from running away, or simply to stop a spellcaster from 
 							casting. Grappling is almost exclusively a combat action, which means if you attempt it in a non-combat 
 							encounter, it will usually turn into a combat encounter.</p>
-						<p>First, the initiating grappler rolls their atk roll, which is a Grappling ability roll with Unarmed Proficiency. 
-							The resulting number is then compared to the target's DV to see if the target simply dodges the attack 
-							altogether. Finally, if the target does not dodge, the defender also rolls a Grappling roll to determine 
-							who gains control in the struggle. The initial Grappling attempt does not deal any damage.</p>
+						<p>First, the initiating grappler rolls their atk roll, which is a Grappling ability roll with Unarmed 
+							Proficiency. The resulting number is then compared to the target's DV to see if the target simply dodges 
+							the attack altogether. Finally, if the target does not dodge, the defender also rolls a Grappling roll to 
+							determine who gains control in the struggle. The initial Grappling attempt does not deal any damage.</p>
 						<p>If the attacker gains control, the Grapple is maintained, and the attacker continues their turn. 
 							If the defender gains control, they may choose to immediately let go of the Grapple, or maintain 
 							it as is. Regardless of who gains control, <i>both</i> contestants gain the <b>Grappled</b> 
@@ -138,8 +138,8 @@
 				
 					<h3 id="Intimidation">Intimidation</h3>
 						<p>An Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>Feared</b> 
-							effect when in combat. It functions similar to the Grappling contest, except that the initiator rolls Intimidation, 
-							while the target rolls Leadership as a measure of their level of discipline.</p>
+							effect when in combat. It functions similar to the Grappling contest, except that the initiator rolls 
+							Intimidation, while the target rolls Leadership as a measure of their level of discipline.</p>
 						<p>Intimidation is usually specific to the one target, but can in some cases also apply to a group of targets. 
 							In such situations, the GM will ususally increase the DC based on how many targets are around. In other words, 
 							the more allies a target has around them, the higher their chance of resisting an Intimidation attempt.</p>
@@ -193,25 +193,70 @@
 							<h2>Successful Sneak Attack = dmg *2</h2>
 						</div>
 
-					<h3 id="Pickpocket-Action">Pickpocket Action (Thievery)</h3>
-						<p>As a combat action, pickpocketing represents an attempt to manipulate your enemy's inventory. This can be 
-							straightforward as grabbing a key from their belt, or as subtle as switching one of their healing potions 
-							for a poison flask from your own inventory. Obviously, if the enemy has already spotted you, the DC for the 
-							attempt will be higher, but distractions in the form of Grappling or Performance rolls can sometimes help 
-							you achieve success.</p>
-						<p>For obvious reasons, this action can only be performed if you are in melee range of your target.</p>
+					<h3 id="Thievery">Thievery</h3>
+						<p>Thievery is the ability that represents the subtler, and often not entirely legal, arts requiring delicate 
+							manual dexterity. Lockpicking, trap-disarming, pickpocketing, etc, all fall into this category.</p>
+						<p>As a combat action, pickpocketing represents an attempt to manipulate your enemy's inventory, for example, 
+							grabbing a key from their belt, or switching one of their healing potions for a poison flask from your own 
+							inventory. Obviously, if the enemy has already spotted you, the DC for the attempt will be higher, but 
+							distractions in the form of Grappling or Performance rolls can sometimes help you achieve success.</p>
+						<p>For obvious reasons, pickpocketing can only be performed if you are in melee range of your target.</p>
 
-					<h3 id="Knowledge-Check">Knowledge Check (History)</h3>
-						<p>A History check is essential when special enemy types appear on the battlefield. Certain enemies will either 
-							be immune to certain damage types, or may even be healed or strengthened by them instead. Think of a fire 
-							elemental, for example. Not only does it not care about you waving a torch in its face, but stoking its flames 
-							would actually make it stronger.</p>
-						<p>The History check is therefore there to try to find out what the enemy may be vulnerable to, or resistant 
+					<h3 id="Crafting">Crafting</h3>
+						<p>Crafting is one of those abilities that are often overlooked, as you will rarely be asked to make a Crafting 
+							roll. Nevertheless, characters trained in a craft can perform remarkable feats with it, and usually have a 
+							much easier time acquiring gold than those who are not.</p>
+						<p>The Crafting modifier becomes important when you are spending some down-time to collect ingredients:</p>
+						<div class="Highlight">
+							<h2># of ingredients collected per hour = 1d4 + Crafting Proficiency</h2>
+						</div>
+						<p>For every point of Proficiency bonus your character has, they can memorize a recipe to craft an item 
+							corresponding to that profession. The <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-
+							ryOK-unPjXyxaJk77vcSobVA/edit?usp=sharing">Armory</a> contains some ideas for items, but you can also 
+							create custom items for yourself. You and your GM will then have to figure out the ingredient cost for 
+							your custom recipes before you can actually create them in the game.</p>
+						<p>For instance, if your chosen craft is Alchemy, you could use one of your recipe memory slots to memorize 
+							how to make a healing potion. While it is entirely possible to purchase a recipe from a merchant, or even 
+							find it while you are out adventuring, those recipes that are not memorized can only be created as long as 
+							you have the recipe in your inventory, meaning it can be stolen from you, or the page might get destroyed 
+							while you cross a river... Memorized recipes cannot be lost.</p>
+						<p>Note that the INT modifier that usually applies to an ability <i>does not</i> count towards your recipe 
+							limit, but it <i>does</i> get factored in when you are collecting ingredients or calculating hourly wage, 
+							as described below.</p>
+						<div class="Highlight">
+							<h2>Recipe Limit = Crafting Proficiency (without INT modifier)</h2>
+						</div>
+						<p>Another way to use the Crafting ability is to calculate a better wage for skilled workers compared to 
+							those without a learned craft (keep in mind that you can only earn this better wage if there is demand 
+							for it - for example, you can only get a blacksmith's pay if you are actually working as a blacksmith):</p>
+						<div class="Highlight">
+							<h2>In-game Hourly wage = Crafting Proficiency (minimum 2 gold per hour)</h2>
+						</div>
+
+					<h3 id="History">History</h3>
+						<p>History checks can be rolled when you are trying to remember something specific to your past. This can 
+							include knowledge that your character would have based on their backstory - even if the player that 
+							controls the character doesn't have that knowledge, or it can mean small bits of information that your 
+							GM may have given you before, but you just need a little reminder.</p>
+						<p>In combat, a History check is essential when special enemy types appear on the battlefield. Certain 
+							enemies will either be immune to certain damage types, or may even be healed or strengthened by them 
+							instead. Think of a fire elemental, for example. Not only does it not care about you waving a torch in 
+							its face, but stoking its flames would actually make it stronger. The History check is therefore there 
+							to try to remember any special information about what  the enemy may be vulnerable to, or resistant 
 							against.</p>
+						<p></p>
 
-					<h3 id="Targeting-Action">Targeting Action (Investigation)</h3>
-						<p>Taking a second to pick your target's weak spot is useful, especially if your enemy has not seen you yet. 
-							It essentially sacrifices one action in order to make the next attack stronger:</p>
+					<h3 id="Investigation">Investigation</h3>
+						<p>Investigation comes into play when you are trying to figure out brand new information. Where a History 
+							check refers to specific information you have learned before, Investigation can help you figure out 
+							something you never knew before.</p>
+						<p>Investigation is also useful when you are searching for something, such as a trap, or a clue about 
+							something. In this context, it overlaps slightly with Perception, but Investigation is more of a hands-
+							on search, looking under that pile of leaves or questioning suspects, while Perception is simply 
+							observation without interference.</p>
+						<p>In combat, it can also be useful to take a second to pick your target's weak spot, especially if your
+							enemy has not seen you yet. It essentially sacrifices one action in order to make the next attack 
+							stronger:</p>
 						<ul>
 							<li>less than 0 => no bonus</li>
 							<li>0 to 4 => +1 atk and +2 dmg</li>
@@ -222,39 +267,45 @@
 							<li>25 to 29 => +6 atk and +12 dmg</li>
 						</ul>
 
-					<h3 id="Intuition-Check">Intuition Check</h3>
+					<h3 id="Intuition">Intuition</h3>
 						<p>If you're stuck and not really sure what to do, you can also use an Intuition check to essentaily ask your 
-							GM for some hints. A Knowledge check can only give you information that your PC would reasonably know based 
-							on their backstory and previous encounters, but a good Intuition check might allow you to infer brand new 
-							conclusions.</p>
+							GM for some hints. Think of it as a form of 'sixth sense'. A History check can only give you information 
+							that your PC would reasonably know based on their backstory and previous encounters, and an Investigation 
+							can lead to logically formed conclusion, but a good Intuition check might allow you to infer brand new 
+							information right in the heat of the moment.</p>
+						<p>Despite this vague description, Intuition comes up rather often, as it bridges the gap that may occur 
+							between GM and players based on their own thinking styles. If your GM is giving you information and you 
+							just can't seem to put the pieces of the puzzle together, it might be worth asking for an Intuition check 
+							as well.</p>
 
-					<h3 id="Perception-Check">Perception Check</h3>
+					<h3 id="Perception">Perception</h3>
 						<p>This is a quick physical check of your surroundings. If you suspect that there might be enemies in hiding, 
-							waiting to ambush you, or if you think an area might be trapped, it may be a good idea to spend an Action 
-							just making sure you have a good lay of the land before charging in.</p>
-						<p>As for all abilities, if you do not make a specific roll, your Passive Perception is 0 + your modifiers. In 
-							other words, even if you get the lowest possible roll on your ability check, you will get more information 
-							than simply waiting for the GM to tell you what's happening. Some GMs will wait for you to ask them for a 
-							Perception check, rather than potentially giving you a hint that there might be something hidden by asking 
-							you for it.</p>
+							waiting to ambush you, or if you think an area might be trapped, or even just if you really enjoy a 
+							scene your GM is describing, it may be a good idea to spend an Action just making sure you have a good lay 
+							of the land before interacting.</p>
+						<p>As for all abilities in HammRPG, <u>if you do not make a specific roll, your Passive ability is 0 + your 
+							modifiers</u>. In other words, even if you get the lowest possible roll on your ability check, you will 
+							get more information than simply waiting for the GM to tell you what's happening. Some GMs will wait for 
+							you to ask them for a Perception check, rather than potentially giving you a hint that there might be 
+							something hidden by asking you for it.</p>
 
-					<h3 id="Inspiration-Action">Inspiration Action</h3>
-						<p>If you have a very critical roll coming up, you can spnd an Action to psych yourself up for it. This is 
-							very similar to the <a href="javascript:void(0);" onclick="scrolltoSection('Targeting-Action')">
-							Targeting Action</a> for atk rolls, but for ability checks. Note that the bonuses are reduced:</p>
+					<h3 id="Inspiration">Inspiration</h3>
+						<p>If you have a very critical roll coming up, you can psych yourself up for it using your own internal 
+							monologue as Inspiration (Note that this costs an Action in combat, unless you are spending PP):</p>
 						<ul>
 							<li>less than 0 => no bonus</li>
 							<li>0 to 9 => +1 next ability roll</li>
 							<li>10 to 19 => +2 next ability roll</li>
 							<li>20 to 29 => +3 next ability roll</li>
 						</ul>
-						<p>You will also roll Inspiration every time you spend a <a href="javascript:void(0);" onclick="scrolltoSection(
-							'Party-Point')">Party Point</a> on yourself, although in that case it does not cost you an Action.</p>
 
-					<h3 id="Help-Others-Action">Help Others Action (Leadership)</h3>
-						<p>In the same spirit as the <a href="javascript:void(0);" onclick="scrolltoSection('Inspiration-Action')">
-							Inspiration Action</a>, you can also spend an Action to help one of your allies. These bonuses are higher, 
-							though, especially if you roll well:</p>
+					<h3 id="Leadership">Leadership</h3>
+						<p>Leadership functions as a measure of your disciplice and your ability to inspire others. As such, it 
+							is the default save against enemy attempts to <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Intimidation')">Intimidate</a> you.</p>
+						<p>In the same spirit as the <a href="javascript:void(0);" onclick="scrolltoSection('Inspiration')">
+							Inspiration Action</a> above, you can also spend an Action to help one of your allies. The bonuses for 
+							helping your friends are higher, though, especially if you roll well:</p>
 						<ul>
 							<li>less than 0 => no bonus</li>
 							<li>0 to 4 => +1</li>
@@ -264,15 +315,26 @@
 							<li>20 to 24 => +5</li>
 							<li>25 to 29 => +6</li>
 						</ul>
-						<p>When you spend <a href="javascript:void(0);" onclick="scrolltoSection('Party-Point')">Party Points</a> on 
-							your allies instead of yourself, you will also be able to use the Leadership roll instead of the Inspiration 
-							roll.</p>
+						<p>When you spend PP to help your allies instead of yourself, you will also be able to use the Leadership 
+							roll instead of the Inspiration roll, which makes helping others more effective than helping yourself, 
+							specifically in order to encourage teamwork.</p>
 
-					<h3 id="Distraction-Action">Distraction Action (Performance)</h3>
-						<p>This is essentially the opposite of a <a href="javascript:void(0);" onclick="scrolltoSection('Sneak-Action')">
-						Sneak Action</a>, and can be used to help take the attention away from your allies so that they can perform a 
-						critical task more safely, or to lure enemies into a trap. The GM will determine the DC of the roll based on the 
-						specific context, including your role-play for the distraction.</p>
+					<h3 id="Performance">Performance</h3>
+						<p>Performance refers to your ability to handle the spotlight. Whether performing in a tavern or running a 
+							distraction while your allies steal something or sneak up on a critical enemy, Performance has a huge 
+							variety of applications. The GM will determine the DC of the roll based on the specific context, including 
+							your role-play for the distraction and/or any details you describe.</p>
+
+					<h3 id="Persuasion">Persuasion</h3>
+						<p>Persuasion is the art of word-craft, which means it will most commonly come into play when you role-play 
+							conversations and similar situations. Some spells, particularly charms and such, can also utilize the 
+							Persuasion ability for their applicable contests.</p>
+						<p>If you or your GM do not enjoy the haggling experience, you can also use Persuasion as an easy way to 
+							calculate discounts when buying or selling items. The formula for this is given in the Charisma section 
+							of the <a href="./gameplay-attributes.html">Attributes</a> page; however, using Persuasion rather than 
+							the base CHA modifier allows you to take advantage of Persuasion proficiency. Which of these two methods 
+							you end up using should be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Session-Zero')">Session Zero</a> for your game.</p>
 				
 			</article>
 		</div>
