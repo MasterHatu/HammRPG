@@ -38,19 +38,30 @@
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	flex: 0 0 0;
+	position: fixed;
+	top: 30px;
+	left: 0;
+	width: 100px;
+	max-height: 100vh - 30px;
+	background-color: #964B00;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	padding: 5px;
-	background-color: #964B00;
 	text-align: center;
+}
+
+.Side-Panel p {
+	font-size: 10px;
+	margin: 1px;
+	text-align: left;
 }
 
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
 	flex: 1 1 0px;
 	padding: 20px;
+	margin-left: 100px;
 	background-color: #2a2117;
 }
 
