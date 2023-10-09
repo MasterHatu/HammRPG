@@ -57,6 +57,10 @@
 	text-align: left;
 }
 
+.Side-Panel ul {
+	padding-left: 15px;
+}
+
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
 	flex: 1 1 0px;
