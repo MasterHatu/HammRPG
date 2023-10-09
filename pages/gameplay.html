@@ -47,6 +47,28 @@
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Skill-Points')">Skill Points</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Encounters')">Encounters</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Dice-Rolling')">Dice Rolling</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Abilities')">Abilities</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Endurance')">Endurance</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Resistance')">Resistance</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Athletics')">Athletics</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Grappling')">Grappling</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Intimidation')">Intimidation</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Acrobatics')">Acrobatics</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Reflex')">Reflex</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Stealth')">Stealth</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Thievery')">Thievery</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Crafting')">Crafting</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('History')">History</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Investigation')">Investigation</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Mindfulness')">Mindfulness</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Intuition')">Intuition</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Perception')">Perception</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Survival')">Survival</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Willpower')">Willpower</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Inspiration')">Inspiration</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Leadership')">Leadership</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Performance')">Performance</a></p>
+			<p><a href="javascript:void(0);" onclick="scrolltoSection('Persuasion')">Persuasion</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Combat')">Combat</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Initiative')">Initiative</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Movement')">Movement</a></p>
@@ -60,11 +82,7 @@
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Throwing')">Ranged Throwing Attack</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Failure')">Ranged Failure</a></p>
 			<p><a href="javascript:void(0);" onclick="scrolltoSection('Cover')">Cover</a></p>
-			<p><a href="javascript:void(0);" onclick="scrolltoSection('Abilities')">Abilities</a></p>
-			<p><a href="javascript:void(0);" onclick="scrolltoSection('Sprint-Action')">Sprint</a></p>
-			<p><a href="javascript:void(0);" onclick="scrolltoSection('Grappling-Action')">Grappling</a></p>
-			<p><a href="javascript:void(0);" onclick="scrolltoSection('')"></a></p>
-      <a href="./terminology.html">Terminology</a>
+			<a href="./terminology.html">Terminology</a>
       <a href="./effects.html">Status Effects</a>
       <a href="./creation.html">Character Creation</a>
       <a href="./abilities.html">Abilities</a>
@@ -487,15 +505,21 @@
 							if your PC has only 3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked 
 							Acrobatics check (let's say a 42 or something like that).</p>
 
-					<h3 id="Disengage-Action">Disengage Action (Reflex)</h3>
-						<p>In many situations, retreat may be the most viable strategy. Disengaging represents an attempt to leave an 
-							enemy's melee range, but as you will see in the <a href="javascript:void(0);" onclick="scrolltoSection(
-							'Attack-of-Opportunity')">Attack of Opportunity</a> section, this gives them a potential opportunity to 
-							attack you even though it is not their turn. A disengage is your attempt to avoid this attack, by spending 
-							an Action of your own to contest the enemy's atk with your Reflex ability, giving you a second chance to 
-							get away from the enemy.</p>
+					<h3 id="Reflex">Reflex</h3>
+						<p>Reflex is primarily a save against enemy attempts to place a character under an effect. It can also be used 
+							as a save when the character experiences sudden unexpected (and usually very negative) situations.</p>
+						<p>For example, if your character has to climb a rope to cross a deep chasm, rolling very low on an <a href=
+							"javascript:void(0);" onclick="scrolltoSection('Acrobatics')">Acrobatics</a> check could result in your 
+							character falling to their death. Rather than having such high stakes rely upon a single roll, the GM may 
+							allow the falling character a Reflex save to try to catch the rope again.</p>
+						<p id="Disengage">In combat, retreat may sometimes be the most viable strategy. A Disengage Action therefore 
+							represents an attempt to leave an enemy's melee range, but as you will see in the <a href="javascript:void(0);" 
+							onclick="scrolltoSection('AOO')">Attack of Opportunity</a> section, this may give the enemy a potential 
+							opportunity to attack even though it is not their turn. The disengage is the fleeing character's attempt to 
+							avoid this attack, by spending an Action of their own to contest the enemy's atk with a Reflex ability 
+							roll.</p>
 				
-					<h3 id="Sneak-Action">Sneak Action (Stealth)</h3>
+					<h3 id="Stealth">Stealth</h3>
 						<p>Sneaking represents an attempt to prevent an enemy from knowing where you are or what you are doing. While, 
 							mathematically, this is represented by a simple ability check, the actual chance of success is much more 
 							complicated:</p>
@@ -504,8 +528,8 @@
 							possible.</p>
 						<p>Unfortunately, your GM will most likely not tell you if your attempt at stealth is successful or not until 
 							the consequences are already self-evident...</p>
-						<p>If you manage to stay hidden, the first attack you make from stealth counts as a Sneak Attack, which means 
-							the dmg roll for the atk will be multiplied by 2.</p>
+						<p id="Sneak-Attack">In combat, if you manage to stay hidden, the first attack you make from a successful 
+							stealth attempt counts as a Sneak Attack, which means the dmg roll for the atk will be multiplied by 2.</p>
 						<div class="Highlight">
 							<h2>Successful Sneak Attack = dmg *2</h2>
 						</div>
