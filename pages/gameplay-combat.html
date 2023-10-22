@@ -49,6 +49,8 @@
 				<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Throwing')">Ranged-Throwing</a></p></li>
 				<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Ranged-Failure')">Ranged Failure</a></p></li>
 				<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Cover')">Cover</a></p></li>
+				<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Held-Action')">Held Action</a></p></li>
+				<li><p><a href="javascript:void(0);" onclick="scrolltoSection('AOO')">AOO</a></p></li>
 			</ul>
 			<a href="./terminology.html">Terminology</a>
       <a href="./effects.html">Status Effects</a>
@@ -257,12 +259,41 @@
 							<p>Note that peeking out from cover, for example in order to make a ranged attack yourself, reduces the 
 								effect of whatever cover you are using by 50%. Additionally, it is not possible to peek out from 
 								complete cover.</p>
-
-					<h3 id="AOO">Attack of Opportunity</h3>
-						<p></p>
 					
 					<h3 id="Held-Action">Holding an Action</h3>
-						<p></p>
+						<p>In some instances, you may want to wait to perform an action until something specific happens. For 
+							example, you might want to wait to attack the guard at the watchtower you're trying to take out until 
+							your friend is in position to do the same for the second guard. Or you might want to wait to run around 
+							the corner until the patrol turns around, or hold an attack action until a target comes into your 
+							firing range.</p>
+						<p>This is where the Held Action comes in:</p>
+						<div class="Highlight Side-by-Side">
+							<h2>Held Action = Reaction + Predetermined Action</h2>
+						</div>
+						<p>It is important to note that you need to have both an Action and a Reaction available to perform a 
+							Held Action. As such, you can only hold as many Actions as you have Reactions available (and of course 
+							you can only hold an Action if you actually have an Action available to hold). The Held Action is then 
+							performed at the exact moment its trigger activates. In other words, the Held Action can transfer a 
+							specific Action from your own turn to another character's turn, if that other character activates the 
+							trigger.</p>
+						<p>Let's say you are unable to get into firing range of your enemy during your turn. Rather than simply 
+							giving up your Action for that turn entirely, you can assign a trigger to it, and then use your Reaction 
+							to activate it once the trigger becomes true. In this example, the trigger would be 'the enemy comes 
+							around the corner', and the Held Action could be 'I perform a Power Attack with my bow'.</p>
+						<p>Of course, you can still choose not to go through with the Held Action even if the trigger does 
+							become true.</p> 
+						<p>Unfortunately, though, you cannot change your Held Action during your enemy's turn. So if 
+							you specified that you will be making a Power Attack, you can only make a Power Attack, not a regular 
+							attack, not the 360 No Scope Shot, not a Spinning Death Shot, or any of your other abilities - only 
+							the exact Action that you Held, and only if your exact specified trigger becomes activated.</p>
+						
+					<h3 id="AOO">Attack of Opportunity</h3>
+						<p>The Attack of Opportunity (AOO), is the most common Reaction in the game. Essentially, it represents a 
+							zone of control that your character has.</p>
+						<p>By default, the AOO becomes triggered when a hostile character leaves your character's melee range, 
+							and allows you to use a Reaction to make a basic attack. It is not possible to use your Mana consuming 
+							active abilities on an AOO (unless you have spent BP/SP to change this, as per <a href="./abilities.html">
+							Ability Creation Guide</a>).</p>
 						
 			</article>
 		</div>
