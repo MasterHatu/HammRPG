@@ -111,13 +111,7 @@ ul, ol {
 	margin-bottom: 10px;
 }
 
-/* The Terminology Page */
-.Terminology-Card-Organizer {
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
-}
-
+/* The Gameplay Rules section */
 .Item-Card {
 	border: 5px solid #820f0f;
 	border-radius: 10px;
@@ -125,6 +119,17 @@ ul, ol {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.Item-Card.Example {
+	align-items: flex-start;
+}
+
+/* The Terminology Page */
+.Terminology-Card-Organizer {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .Terminology-Card-Organizer .Item-Card {
