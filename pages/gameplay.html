@@ -35,6 +35,9 @@
 			<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Concept')">Concept</a></p></li>
 			<li><p class="Submenu"><a href="javascript:void(0);" onclick="scrolltoSection('Encounters')">Encounters</a></p></li>
 			<li><p class="Submenu"><a href="javascript:void(0);" onclick="scrolltoSection('Dice-Rolling')">Dice Rolling</a></p></li>
+			<li><p class="Submenu"><a href="javascript:void(0);" onclick="scrolltoSection('Nat1')">Crit Fail</a></p></li>
+			<li><p class="Submenu"><a href="javascript:void(0);" onclick="scrolltoSection('Nat20')">Crit Success</a></p></li>
+			<li><p class="Submenu"><a href="javascript:void(0);" onclick="scrolltoSection('PP')">PP</a></p></li>
 			</ul>
 			<p><a href="./gameplay-level.html">Character Level</a></p>
 			<p><a href="./gameplay-attributes.html">Attributes</a></p>
@@ -122,7 +125,7 @@
 					<p>Any applicable modifiers are only applied after the roll itself, including advantage-disadvantage 
 						considerations, have been completed.</p>
 
-					<h3 id="nat1">Critical Fails</h3>
+					<h3 id="Nat1">Critical Fails</h3>
 						<p>Rolling a natural 1 (nat1) constitutes a critical failure. While ability rolls are still compared in the 
 							same way they always are, atk rolls that result in a nat1 miss regardless of the actual DV value of the 
 							target. For example, if your target has a DV of 2, and you roll a nat1+5 => 6, the attack is still 
@@ -131,7 +134,7 @@
 							hitting yourself, dropping your weapon, or falling to the ground, however, this should be discussed during 
 							your group's Session Zero.</p>
 
-					<h3 id="nat20">Critical Successes</h3>
+					<h3 id="Nat20">Critical Successes</h3>
 						<p>Just as a nat1 is considered a critical fail, a natural 20 (nat20) is considered a critical success. 
 							However, as a bonus, the number resulting from a nat20 is multiplied by 2 (e.g.:Nat20 +2 = 44).</p>
 						<p>For atk rolls, a nat20 constitutes a guaranteed hit, thus giving you a chance to hit even enemies with 
@@ -168,7 +171,7 @@
 							'PP farming', all such moments must be approved by the GM.</li>
 					</ul>
 					<p>There is no theoretical limit to how many PP a PC can store; however, the powerful boosts that PP can 
-						bestow make it rare for a character to gather significant amounts of PP. Let's see some examples:</p>
+						bestow make it rare for a character to gather large amounts of PP. Let's see some examples:</p>
 					<ul>
 						<li>When you make an ability roll (i.e.: not atk or dmg rolls), you can spend 1 PP to grant your PC a 1d4 
 							Inspiration bonus. Since this counts as an Inspiration roll, you can also make an Inspiration ability 
@@ -180,21 +183,31 @@
 							but also by the number of Reactions you have available at the time of the roll.</li>
 						<li>At the beginning of an encounter, you can use some PP to learn critical information about your enemies 
 							(vulnerabilities, immunities, etc.), at a cost of 1 PP per piece of intel.</li>
-						<li>Similarly, at the beginning of an encounter, you can spend 5 PP to change a piece of terrain on a battle-
+						<li>Similarly, at the beginning of an encounter, you can spend 3 PP to change a piece of terrain on a battle-
 							map, such as insert a window into a wall, place a few bushes near the alley you want to sneak in, etc. 
 							Do note, however, that such changes may affect how the GM planned the encounter, such as guard posts, 
-							patrol routes, etc, so your GM may need some time to actually implement a requested change.</li>
-						<li>During a levell-up event, you can spend PP reassign or adjust your skills. Changing an SP ability costs 
-							1 PP per SP changed, while changing BP costs 5 PP per BP.</li>
+							patrol routes, etc, so your GM may increase the cost of the specific change you request, as well as take 
+							some time to actually implement the requested change.</li>
+						<li>During a level-up event, you can spend PP reassign or adjust your skills. Changing an SP ability costs 
+							1 PP per SP changed, while changing BP costs 5 PP per BP. This simply reflects that BP define who your 
+							character is, while SP represent what your PC is currently able to do. Additionally, this allows you to 
+							adjust abilities that turn out to be less useful than you envisioned without excessive penalty.</li>
 						<li>During any full rest, you can spend PP to permanently improve your item's stats. This represents the fact 
 							that your PC is getting accustomed to using that particular item, thus making it more effective for that PC. 
 							In other words, the upgrade applies to the item when the PC that upgraded it uses it, but it does not 
-							increase the value of the item for anyone else. The cost for such upgrades is highly dependent on what you're 
-							trying to do, but here are a few examples: 5 PP could improve your sword with a +1 to atk rolls, or add +1 PR 
-							to an armor item. 10 PP can even upgrade the damage dice by two points, for example bringing it from 1d8 to 
-							1d10, or from 1d12 to 1d14. Adding additional dice, such as going from 1d6 to 2d6 is much more expensive, at 
-							20PP. You can request almost any change, and your GM will then tell you if they are comfortable running that 
-							change, as well as the PP cost.</li>
+							apply the upgrades when any other character uses it, which means it does not increase the value of the item 
+							for anyone else. The cost for such upgrades is highly dependent on what you're trying to do, but here are a 
+							few examples: 5 PP could improve your sword with a +1 to atk rolls, or add +1 PR to an armor item. 10 PP can 
+							even upgrade the damage dice by two points, for example bringing it from 1d8 to 1d10, or from 2d12 to 2d14. 
+							Adding additional dice, such as going from 1d6 to 2d6 is much more expensive, though, at 20PP. You can 
+							request almost any change, and your GM will then tell you if they are comfortable running that change, as 
+							well as the PP cost.</li>
+						<li>If you have any other special requests for your GM, such as resurrecting a character that died, etc., 
+							you can try to use PP to try to barter for it. However, ultimately each GM sets their own boundaries for 
+							their game, and players and GMs will all have certain lines they will not cross. Many such things can 
+							and should be discussed during the Session Zero for your specific game. PP are not intended as a way to 
+							bully the GM, and "No!" is a perfectly valid response to your request. Please refer to the Adventurer's 
+							Code before you make any special requests.</li>
 					</ul>
 			</article>
 		</div>
