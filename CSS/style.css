@@ -1,3 +1,9 @@
+/* Color palette with commonly used colors */
+:root {
+	--red: #820f0f;
+	--orange: #964B00;
+  }
+
 /* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
 * {
 	margin: 0;
@@ -14,7 +20,7 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color: #964B00;
+	background-color: var(--orange);
 }
 
 /* This is the formatting for the Menu-Panel */
@@ -43,7 +49,7 @@
 	left: 0;
 	width: 125px;
 	max-height: calc(100vh - 30px);
-	background-color: #964B00;
+	background-color: var(--orange);
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
@@ -98,11 +104,14 @@ p {
 
 /* Links */
 a {
-	background-color: #820f0f;
+	background-color: var(--red);
 	padding: 2px 5px;
 	border-radius: 6px;
 	text-decoration: none;
 	font-weight: 700;
+}
+a:hover {
+	background-color: #9b3636;
 }
 
 /* Lists */
@@ -113,7 +122,7 @@ ul, ol {
 
 /* The Gameplay Rules section */
 .Example {
-	border: 5px solid #820f0f;
+	border: 5px solid var(--red);
 	border-radius: 10px;
 	padding: 5px;
 }
@@ -130,7 +139,7 @@ ul, ol {
 }
 
 .Item-Card {
-	border: 5px solid #820f0f;
+	border: 5px solid var(--red);
 	border-radius: 10px;
 	padding: 5px;
 	display: flex;
@@ -165,9 +174,9 @@ ul, ol {
 }
 
 .Highlight h2 {
-	background-color: #964B00;
+	background-color: var(--orange);
 	padding: 5px;
-	border: 10px solid #820f0f;
+	border: 6px solid var(--red);
 	border-radius: 10px;
 	display: flex;
 	gap: 10px;
