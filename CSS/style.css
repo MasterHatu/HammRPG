@@ -146,6 +146,7 @@ a {
 	border-radius: 6px;
 	text-decoration: none;
 	font-weight: 700;
+	white-space: nowrap;
 }
 a:hover {
 	background-color: var(--lightred);
@@ -245,11 +246,6 @@ ul, ol {
 
 .Effects-Card-Organizer .Item-Card {
 	flex: 0 0 auto;
-}
-
-/* Add a class so that word wrap is prevented so that 2 or more words stay on a single line */
-.Keeptogether {
-	white-space: nowrap ;
 }
 
 /* Scroll up button */
