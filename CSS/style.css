@@ -3,10 +3,12 @@
 	/* Color palette with commonly used colors */
 	--red: #820f0f;
 	--orange: #c9a17c;
+	--brown: #2a2117;
 	--black: #1b1717;
 
-	/* Width of the side panel */
+	/* Some constant variables */
 	--sidePanelWidth: 160px;
+	--menuPanelHeight: 40px;
   }
 
 /* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
@@ -15,7 +17,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Times New Roman",serif;
-	color: #ffffff;
+	color: white;
 }
 
 
@@ -32,19 +34,35 @@
 .Menu-Panel {
 	display: flex;
 	position: fixed;
-	height: 40px;
+	height: var(--menuPanelHeight);
 	width: 100%;
 	background-color: var(--black);
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
+	font-size: large;
+	gap: 20px;
 }
+
+.Menu-Panel a {
+	background-color: transparent;
+}
+.Menu-Panel a:hover {
+    background-color: var(--red);
+}
+
+.Current-Menu-Panel {
+    text-decoration: underline;
+	text-underline-offset: 4px;
+	text-decoration-color: var(--red);
+	text-decoration-thickness: 3px;
+}
+
 
 /* This container allows flexbox arranging of the Side-Panel and the Content-Panel */
 .Page {
 	display: flex;
 	min-height: 100vh;
-	padding-top: 40px;
+	padding-top: var(--menuPanelHeight);
 	margin: 0 7% 0 10%;
 }
 
@@ -84,7 +102,7 @@
 	padding: 20px;
 	margin-left: var(--sidePanelWidth);
 	margin-right: var(--sidePanelWidth);
-	background-color: #2a2117;
+	background-color: var(--brown);
 }
 
 
