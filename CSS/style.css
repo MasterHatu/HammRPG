@@ -44,10 +44,8 @@
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	position: fixed;
 	top: 30px;
 	left: 0;
-	width: 125px;
 	max-height: calc(100vh - 30px);
 	background-color: var(--orange);
 	display: flex;
@@ -78,7 +76,6 @@
 .Content-Panel {
 	flex: 1 1 0px;
 	padding: 20px;
-	margin-left: 125px;
 	background-color: #2a2117;
 }
 
