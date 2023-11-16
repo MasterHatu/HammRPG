@@ -1,7 +1,12 @@
-/* Color palette with commonly used colors */
+
 :root {
+	/* Color palette with commonly used colors */
 	--red: #820f0f;
-	--orange: #964B00;
+	--orange: #c9a17c;
+	--black: #1b1717;
+
+	/* Width of the side panel */
+	--sidePanelWidth: 160px;
   }
 
 /* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
@@ -27,9 +32,9 @@
 .Menu-Panel {
 	display: flex;
 	position: fixed;
-	height: 30px;
+	height: 40px;
 	width: 100%;
-	background-color: #272020;
+	background-color: var(--black);
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -39,18 +44,19 @@
 .Page {
 	display: flex;
 	min-height: 100vh;
-	padding-top: 30px;
+	padding-top: 40px;
+	margin: 0 7% 0 10%;
 }
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	top: 30px;
-	left: 0;
-	max-height: calc(100vh - 30px);
-	background-color: var(--orange);
+	position: fixed;
+	left: 10%;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	width: var(--sidePanelWidth);
+	gap: 8px;
 	padding: 5px;
 	text-align: center;
 	overflow-y: auto;
@@ -64,7 +70,7 @@
 
 .Side-Panel ul {
 	padding-left: 15px;
-	padding-right: 0;
+	padding-right: 15px;
 	margin-bottom: 2px;
 }
 
@@ -76,6 +82,8 @@
 .Content-Panel {
 	flex: 1 1 0px;
 	padding: 20px;
+	margin-left: var(--sidePanelWidth);
+	margin-right: var(--sidePanelWidth);
 	background-color: #2a2117;
 }
 
@@ -171,7 +179,7 @@ ul, ol {
 }
 
 .Highlight h2 {
-	background-color: var(--orange);
+	background-color: #a55a13;
 	padding: 5px;
 	border: 6px solid var(--red);
 	border-radius: 10px;
