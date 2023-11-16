@@ -104,7 +104,6 @@
 
 .Current-Submenu {
 	padding: 8px 0 4px 0;
-	border: 1px solid #e1cbb7;
 	border-radius: 5px;
 }
 
@@ -168,6 +167,7 @@ ul, ol {
 /* The Terminology Page */
 .Terminology-Card-Organizer {
 	display: flex;
+	justify-content: center;
 	gap: 20px;
 	flex-wrap: wrap;
 }
@@ -250,6 +250,25 @@ ul, ol {
 /* Add a class so that word wrap is prevented so that 2 or more words stay on a single line */
 .Keeptogether {
 	white-space: nowrap ;
+}
+
+/* Scroll up button */
+.Scrollup {
+	display: flex;
+    justify-content: center;
+}
+.Scrollup a {
+	position: fixed;
+	bottom: 60px;
+	width: 50px;
+	height: 50px;
+	padding: 0 0 5px 0;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	border-radius: 100%;
+	font-size: 13px;
+	font-weight: 700;
 }
 
 
