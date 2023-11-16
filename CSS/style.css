@@ -247,8 +247,27 @@ ul, ol {
 	flex: 0 0 auto;
 }
 
-
 /* Add a class so that word wrap is prevented so that 2 or more words stay on a single line */
 .Keeptogether {
 	white-space: nowrap ;
+}
+
+
+/* Style changes for smaller screen sizes */
+
+/* For screens with a width of less than 1000px*/
+@media only screen and (max-width: 1000px) {
+	.Menu-Panel {
+		height: 80px;
+		font-size: 2em;
+	}
+
+	.Page {
+		margin: 0;
+		padding-top: 80px;
+	}
+
+	.Content-Panel {
+		margin-right: 0;
+	}
 }
