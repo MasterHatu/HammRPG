@@ -246,3 +246,9 @@ ul, ol {
 .Effects-Card-Organizer .Item-Card {
 	flex: 0 0 auto;
 }
+
+
+/* Add a class so that word wrap is prevented so that 2 or more words stay on a single line */
+.Keeptogether {
+	white-space: nowrap ;
+}
