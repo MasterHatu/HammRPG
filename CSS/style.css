@@ -2,6 +2,7 @@
 :root {
 	/* Color palette with commonly used colors */
 	--red: #820f0f;
+	--lightred: #b43333;
 	--orange: #c9a17c;
 	--brown: #2a2117;
 	--black: #1b1717;
@@ -45,6 +46,7 @@
 
 .Menu-Panel a {
 	background-color: transparent;
+	font-weight: 100;
 }
 .Menu-Panel a:hover {
     background-color: var(--red);
@@ -68,7 +70,6 @@
 
 /* This is the formatting for the Side-Panel */
 .Side-Panel {
-	position: fixed;
 	left: 10%;
 	margin-top: 10px;
 	display: flex;
@@ -82,25 +83,39 @@
 
 .Side-Panel p {
 	font-size: 10px;
-	margin: 1px;
+	margin: 2px 5px;
 	text-align: left;
 }
 
 .Side-Panel ul {
 	padding-left: 15px;
-	padding-right: 15px;
-	margin-bottom: 2px;
+	padding-right: 0;
+	margin: 7px 0 2px 10px;
 }
 
 .Side-Panel li {
-	margin-bottom: 4px;
+	margin-bottom: 6px;
+}
+
+.Side-Panel a {
+	padding: 4px 5px;
+	font-weight: 100;
+}
+
+.Current-Submenu {
+	padding: 8px 0 4px 0;
+	border: 1px solid #e1cbb7;
+	border-radius: 5px;
+}
+
+.Current-Side-Panel {
+	background-color: var(--lightred);
 }
 
 /* This is the formatting for the Content-Panel */
 .Content-Panel {
 	flex: 1 1 0px;
-	padding: 20px;
-	margin-left: var(--sidePanelWidth);
+	padding: 20px 25px 20px 25px;
 	margin-right: var(--sidePanelWidth);
 	background-color: var(--brown);
 }
@@ -134,7 +149,7 @@ a {
 	font-weight: 700;
 }
 a:hover {
-	background-color: #9b3636;
+	background-color: var(--lightred);
 }
 
 /* Lists */

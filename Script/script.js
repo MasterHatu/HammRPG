@@ -2,7 +2,7 @@
 // ends up in the current view even if there is an overlapping element at the top
 function scrolltoSection(sectionId) {
 	let element = document.getElementById(sectionId);
-	let offset = 50;
+	let offset = 60;
 	window.scrollTo({
 		top: element.offsetTop - offset,
 		behavior: 'smooth'
