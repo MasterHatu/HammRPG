@@ -1,0 +1,238 @@
+<!-- General organizational Information -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HammRPG - Gameplay</title>
+	<link href="./../css/style.css" 
+		type="text/css" 
+		rel="stylesheet">
+	<script src="./../script/script.js"></script>
+	<meta name="HammRPG Gameplay" 
+		content="Gameplay rules for HammRPG">
+</head>
+
+<body>
+<!-- This container divided the available screenspace into 2 flexbox sections, the Menu-Panel and the Page itself-->
+<div class="Container">
+	<!-- The Menu-Panel at the top of the screen-->
+	<div class="Menu-Panel">
+		<a href="./../index.html">Home</a>
+		<a href="./gameplay.html" class="Current-Menu-Panel">Gameplay</a>
+		<a href="./ongoing.html">Campaigns</a>
+		<a href="./archived.html">Archive</a>
+		<a href="./foc.html">FoC</a>
+		<a href="./forum.html">Forum</a>
+	</div>
+
+	<!-- The page is subdivided into the navigational menu on the Side-Panel and the Content-Panel itself-->
+	<div class="Page">
+		<!-- The Side-Panel at the left side of the screen-->
+		<div class="Side-Panel">
+			<a href="./gameplay.html" class="Current-Side-Panel">Gameplay</a>
+			<p><a href="./gameplay.html">HammRPG Concept</a></p>
+			<p><a href="./gameplay-level.html">Character Level</a></p>
+			<div class="Current-Submenu">
+				<p><a href="javascript:void(0);" onclick="scrolltoSection('Attributes')" class="Current-Side-Panel">Attributes</a></p>
+				<ul>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('AP-Distribution')">AP Distribution</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('AP-Modifiers')">AP Modifiers</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Constitution')">Constitution</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Strength')">Strength</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Dexterity')">Dexterity</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Intelligence')">Intelligence</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Wisdom')">Wisdom</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Charisma')">Charisma</a></p></li>
+				</ul>
+			</div>
+			<p><a href="./gameplay-abilities.html">Abilities</a></p>
+			<p><a href="./gameplay-combat.html">Combat</a></p>
+			<a href="./terminology.html">Terminology</a>
+			<a href="./effects.html">Status Effects</a>
+			<a href="./creation.html">Character Creation</a>
+			<a href="./skillcreation.html">Skill Creation</a>
+			<div class="Scrollup"><a href="javascript:void(0);" onclick="scrollUp()">&#9585;&#9586;</a></div>
+		</div>
+
+		<!-- The content page itself-->
+		<div class="Content-Panel">
+			<article>
+				<h1 id="Attributes">Attributes</h1>
+					<p>HammRPG uses six common attributes to define a character's general affinity with certain abilities: 
+						Constitution (CON), Strength (STR), Dexterity (DEX), Intelligence (INT), Wisdom (WIS) and Charisma (CHA).</p>
+					<p>Attributes are used in two different ways:</p>
+					<ol>
+						<li>The attribute value itself.</li>
+						<li>An ability modifier based on that attribute.</li>
+					</ol>
+					<p>For all attributes, HammRPG uses the full name (e.g.: Constitution) when referring to the attribute 
+						itself, while we use use the abbreviation (e.g.: CON) when referring to the modifier.</p>
+
+					<h2 id="AP-Distribution">Attribute Point Distribution</h2>
+						<p>There are various ways to allocate Attribute Points (AP) in your specific game. Which system you use should 
+							be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session 
+							Zero</a> before you actually start playing.</p>
+						<p>The main method of attribute point distribution endorsed by HammRPG is sometimes called Point-Buy: All 
+							characters start with 60 Attribute Points (AP), and gain 1 additional AP per Lv. These points can be 
+							allocated to any of the attributes entirely at the player's preference. This is the default method, as it 
+							allows complete player freedon in their character creation, and results in characters that should be at 
+							least reasonably similar in power compared to each other. Of course, in a game as customizable as HammRPG, 
+							complete balance is nearly impossible, as one set of abilities might synergize better than another.</p>
+						<p>Another popular method is Stat-Rolling: Each player rolls three six-sided dice (3d6) six times. The results 
+							of the rolls are either appended to the attributes in order, or at the player's preference, per group 
+							discussion. This method introduces an element of randomness, which can result in wildly different characters 
+							strength levels. While experienced players may relish the challenge of adjusting their play-style according 
+							to what character they rolled, newer players may find it more difficult, especially if they ended up with a 
+							below average character. Additionally, most enemies in the <a href="./gm-guide.html">GM guide</a> are balanced 
+							around the idea that characters will have a base of 60 AP.</p>
+						<p>Note that AP (as well as most other types of points) can only be changed when the character is created, or 
+							during level-up events, which usually require a full rest.</p>
+			</article>
+			
+			<article>
+				<h2 id="AP-Modifiers">Attribute Modifiers</h2>
+					<p>Modifiers are calculated based on the attribute most relevant to the roll. An attribute score of 10 is 
+						considered average, resulting in no modifiers to rolls based on that attribute. If a character has an 
+						attribute score lower than 10, they will have a negative modifier to those rolls, while an attribute 
+						higher than 10 will grant a bonus to those rolls.</p>
+					<p>The formula for calculating your modifier is:</p>
+					<div class="Highlight">
+						<h2>modifier = ( attribute - 10 ) / 2</h2>
+					</div>
+					<p><b>Note:</b> Only integer values are valid for modifier calculations. A result of less than 1 is always <i>
+							rounded down</i> to the nearest full number.</p>
+					<p>E.g. if a character has an attribute value of 11, their modifier is (11-10)/2=0.5 => 0.</p>
+			</article>
+			
+			<article>
+				<h3 id="Constitution">Constitution</h3>
+					<p>Constitution (CON) is a measure of a character's toughness, and their ability to withstand damage. The most 
+						direct way to represent this is with the number of Health Points (HP) the character has:</p>
+					<div class="Highlight">
+						<h2>maxHP = Constitution * Lv</h2>
+					</div>
+					<p>Based on this formula, you can see that maxHP increases with higher values of Constitution, as well as 
+						the character level itself. As such, a character with high Constitution will continue to gain larger amounts of 
+						maxHP per level-up than one with low Constitution.</p>
+					<p>Constitution also affects Physical Resistance (PR), which further helps your character withstand damage. The 
+						PR modifier works the same as the regular CON modifier, except that it does not have negative values, even if 
+						your Constitutionis less than 10.</p>
+					<div class="Highlight">
+						<article>
+							<h5>If CON &lt; 0:</h5>
+							<h2>PR = 0</h2>
+						</article>
+						<article>
+							<h5>If CON >= 0:</h5>
+							<h2>PR = CON</h2>
+						</article>
+					</div>
+					<p>Please refer to the damage calculation guide below for further details on PR.</p>
+					<p>The Endurance and Resistance abilities are also based on Constitution.</p>
+			</article>
+			
+			<article>
+				<h3 id="Strength">Strength</h3>
+					<p>Strength (STR) is a measure of the physical force that a character can exert. One of its largest benefits is 
+						its effect on Melee Damage (MD), which will cause your melee attacks to hit harder. Just as PR does not 
+						have negative values, MD also does not decrease a damage roll's (dmg) result.</p>
+					<div class="Highlight">
+						<article>
+							<h5>If STR &lt; 0:</h5>
+									<h2>MD = 0</h2>
+						</article>
+						<article>
+							<h5>If STR >= 0:</h5>
+							<h2>MD = STR</h2>
+						</article>
+					</div>
+					<p>Please refer to the damage calculation guide below for further details on MD.</p>
+					<p>Strength also affects the Athletics, Grappling and Intimidation abilities.</p>
+			</article>
+			
+			<article>
+				<h3 id="Dexterity">Dexterity</h3>
+					<p>Dexterity (DEX) is a measure of agility and flexibility. A character with a high Dexterity attribute 
+						is better able to perform jumps and other complicated maneuvers, avoid or disable traps, and may even 
+						be able to dodge incoming attacks entirely.</p>
+					<p>Dodge Value (DV), which allows characters to completely avoid attacks, is calculated similar to other 
+						modifiers, however, it scales only half as rapidly:</p>
+					<div class="Highlight">
+						<h2>DV = ( DEX - 10 ) / 4</h2>
+					</div>
+					<p>It is important to note that DV does not make a character invulnerable: Area damage, such as an exploding 
+						fireball, a cloud of poison, a collapsing wall, or a shockwave from an artillery shell, applies directly, 
+						without any chance to dodge. In such cases, the GM may call for a Reflex or Resistance save to reduce the 
+						damage, but DV itself will not come into play.</p>
+					<p>Dexterity also affects the Acrobatics, Reflex, Stealth and Thievery abilities.</p>
+			</article>
+			
+			<article>
+				<h3 id="Intelligence">Intelligence</h3>
+					<p>Intelligence (INT) represents a character's ability to use their mind through their Mana Points (MP):</p>
+					<div class="Highlight">
+						<h2>maxMP = Intelligence * Lv</h2>
+					</div>
+					<p>As you can see, the formula is the same as the formula for maxHP, except instead of using Constitution as 
+						a base, MP are based on INT. As MP are needed to use active abilities, this means that characters with a high 
+						Intelligence attribute will be able to use their active abilities more often than those with low Intelligence.</p>
+					<p>Intelligence also comes into play as a form of roleplay immersion. For instance, an NPC with a low Intelligence 
+						attribute is less likely to use advanced combat tactics than one with high Intelligence. Many players also enjoy 
+						roleplaying these details, as it creates a fun atmosphere for everyone.</p>
+					<p>The abilities based on Intelligence focus more on roleplaying than on pure combat stats, through Crafting, 
+						History, Investigation, and Mindfulness. However, a smart player can still use this attribute to create a powerful 
+						character.</p>
+					</p>
+			</article>
+			
+			<article>
+				<h3 id="Wisdom">Wisdom</h3>
+					<p>Wisdom (WIS) represents a character's attunement with the world around them, including magic. Most magic based 
+						abilities use the WIS modifier to enhance magical damage rolls, and a high Wisdom attribute also improves magical 
+						reisitance (MR) to defend against enemy spells. The formula is very similar to that for PR:</p>
+					<div class="Highlight">
+						<article>
+							<h5>If WIS &lt; 0:</h5>
+							<h2>MR = 0</h2>
+						</article>
+						<article>
+							<h5>If WIS >= 0:</h5>
+							<h2>MR = WIS</h2>
+						</article>
+					</div>
+					<p>Therefore, a character with a Wisdom attribute of 12, would automatically have an MR value of +1. Please refer to 
+						the damage calculation guide below for further details on MR.</p>
+					<p>Wisdom further affects the ability rolls for Intuition, Perception, Survival and Willpower.</p>
+			</article>
+			
+			<article>
+				<h3 id="Charisma">Charisma</h3>
+					<p>Charisma (CHA) is the attribute least applicable to combat, but that does not make it any weaker than the other 
+						attributes. A character with high Charisma benefits from significant advantages during roleplay elements of a game, 
+						including the potential to avoid combat altogether. Meanwhile, a character with a particularly low Charisma score 
+						may find themselves unfortunately vulnerable to spells that affect the mind, which range from card tricks and other 
+						small illusions to game-changing charms or mind-controls. Nevertheless, Charisma remains one of the subtler 
+						attributes.</p>
+					<p>Groups who do not enjoy the haggling experience in their games can also use the CHA modifier to quickly calculate 
+						discounts when their characters visit merchants to purchase items:</p>
+					<div class="Highlight">
+						<article>
+							<h5>When Purchasing:</h5>
+							<h2><section>Purchase Price</section><section>=</section><section>Armory Price * ( 1.5 - ( CHA / 50 ) ) * Local 
+								Supply Modifier</section></h2>
+						</article>
+						<article>
+							<h5>When Selling:</h5>
+							<h2><section>Selling Price</section><section>=</section><section>Armory Price * ( 0.5 + ( CHA / 50 ) ) * Local 
+								Supply Modifier</section></h2>
+						</article>
+					</div>
+					<p>The Inspiration, Leadership, Performance, and Persuasion abilities are based on Charisma.</p>
+			</article>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
