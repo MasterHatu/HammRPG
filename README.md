@@ -1,4 +1,4 @@
-<h1>Welcome to <a href="https://masterhatu.github.io/HammRPG/src/" target=”_blank”>HammRPG</a></h1>
+<h1>Welcome to <a target=”_blank” href="https://masterhatu.github.io/HammRPG/src/">HammRPG</a></h1>
 <p> HammRPG is a <strong>tabletop roleplaying game</strong> (TTRPG) loosely in the style of other famous TTRPGs you
     may already have heard of. It began because a small group of friends wanted to try out the collective
     story-telling experience but could not afford to buy any established rule books. Instead, we decided to create a 
