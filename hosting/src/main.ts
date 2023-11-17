@@ -19,6 +19,6 @@ onAuthStateChanged(auth, user => {
   console.log(user);
 })
 
-button?.addEventListener('click', clickEvent => {
+button?.addEventListener('click', _clickEvent => {
   signInWithRedirect(auth, new GoogleAuthProvider())
 });
