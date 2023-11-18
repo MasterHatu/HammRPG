@@ -1,3 +1,24 @@
+// Scrolls to 60 px above the referenced section so that the title of the referenced section
+// ends up in the current view even if there is an overlapping element at the top
+function scrolltoSection(sectionId) {
+	let element = document.getElementById(sectionId);
+	let offset = 60;
+	window.scrollTo({
+		top: element.offsetTop - offset,
+		behavior: 'smooth'
+	});
+}
+
+// Scrolls to 100 px above the referenced section so that the title of the referenced section
+// ends up in the current view even if there is an overlapping element at the top
+function scrollUp() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+}
+
+
 (function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))r(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const o of s.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&r(o)}).observe(document,{childList:!0,subtree:!0});function t(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(i){if(i.ep)return;i.ep=!0;const s=t(i);fetch(i.href,s)}})();var Ze={};/**
  * @license
  * Copyright 2017 Google LLC
