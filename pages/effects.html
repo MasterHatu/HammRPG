@@ -1,0 +1,203 @@
+<!-- General organizational Information -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HammRPG - Status Effects</title>
+	<link href="./../css/style.css" 
+		type="text/css" 
+		rel="stylesheet">
+	<script src="./../script/script.js"></script>
+	<meta name="HammRPG Status Efects" 
+		content="Status Effects in HammRPG">
+</head>
+
+<body>
+<!-- This container divided the available screenspace into 2 flexbox sections, the Menu-Panel and the Page itself-->
+<div class="Container">
+	<!-- The Menu-Panel at the top of the screen-->
+	<div class="Menu-Panel">
+		<a href="./../index.html">Home</a>
+		<a href="./gameplay.html" class="Current-Menu-Panel">Gameplay</a>
+		<a href="./ongoing.html">Campaigns</a>
+		<a href="./archived.html">Archive</a>
+		<a href="./foc.html">FoC</a>
+		<a href="./forum.html">Forum</a>
+	</div>
+
+	<!-- The page is subdivided into the navigational menu on the Side-Panel and the Content-Panel itself-->
+	<div class="Page">
+		<!-- The Side-Panel at the left side of the screen-->
+		<div class="Side-Panel">
+			<a href="./gameplay.html">Gameplay</a>
+			<a href="./terminology.html">Terminology</a>
+			<a href="./effects.html" class="Current-Side-Panel">Status Effects</a>
+			<a href="./creation.html">Character Creation</a>
+			<a href="./skillcreation.html">Skill Creation</a>
+			<div class="Scrollup"><a href="javascript:void(0);" onclick="scrollUp()">&#9585;&#9586;</a></div>
+		</div>
+			<!-- The content page itself-->
+		<div class="Content-Panel">
+		<div class="Effects-Card-Organizer">
+			<div class="Introduction">
+				<h1>Status Effects</h1>
+				<p>Sometimes characters will be affected by certain status effects. In this article, the character causing the 
+					effect will be referred to as the Source, while the character experiencing the effect will be called the Target.</p>
+				<p>Typically, the Source will make an atk roll, and then the Target makes the appropriate save. The effect is 
+					applied if the Source wins the contest.</p>
+				<p>Once the effect is applied, it remains until the Target makes a successful save, which can be re-attempted 
+					at the beginning of each Target turn. For each turn after the effect is first applied, the original atk roll 
+					decays by 1 point, meaning that it gets easier to shake off negative effects as time goes on.</p>
+				<div class="Highlight">
+					<h2>DC = atk - (# of Turns since atk)</h2>
+				</div>
+				<p>For example, if a Source rolled a 15 on their initial atk rolls, the Target needs to beat the 15 during the 
+					first turn to resist the effect. During the second turn, the Target only needs to beat the 14, then the 13 
+					during the third turn, etc.</p>
+				<p>In some cases, the effect can also be removed by performing specific actions, as specified below.</p>
+			</div>
+
+			<h2>Status:</h2>
+			<div class="Item-Card">
+				<h3>Dead</h3>
+				<p>The Target is dead and can no longer be controlled by the player.</p>
+				<p>While there are many rituals and spells that can revive a dead character, only the character's allies
+					can perform these. It is also possible to use PP (either from the deceased character or from your new character) 
+					to 'get special favors from the GM', such as bringing back fallen PCs.</p>
+				<p>Regardless of how your character is revived, the GM will apply a contextual penalty to the PC, which 
+					can only be removed with additional PP</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Unconscious</h3>
+				<p>An unconscious character is unable to move or perform any actions. All enemy attacks against an unconscious 
+					character roll with advantage, but instead of dealing HP damage, they apply a failed death save.</p>
+				<p>This effect is removed if the Target receives any healing, or successfully resolves their death saves.</p>
+			</div>
+
+			<h2>Buffs:</h2>
+			<div class="Item-Card">
+				<h3>Hidden</h3>
+				<p>A hidden character has not been seen, heard or otherwise perceived (yet?). You will typically not know if 
+					your Stealth attempt was successful or not, but no matter what your actual roll was, remember that 
+					<i>your PC believes that they are hidden</i>.</p>
+				<p>This effect ends when the Target performs any Action or Reaction that another character is able 
+					to perceive. If the Action that breaks the effect is an atk action, it <i>may</i> deal 2x damage.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Invisible</h3>
+				<p>The Target cannot be seen, except with the help of visual tools (such as a cloud of dust), or magical spells 
+					(such as Reveal, True Sight, etc.). However, the target can still be perceived by other means (heat signature, 
+					sound, etc.), so the Hidden effect is not guaranteed.</p>
+				<p>This effect typically ends after a set duration, and a character can only obtain Invisibility once per turn.</p>
+			</div>
+
+			<h2>Debuffs:</h2>
+			<div class="Item-Card">
+				<h3>Blinded</h3>
+				<p>The Target automatically fails all vision based Perception checks. The Target must roll all melee attacks
+				with disadvantage, and all ranged attacks with <i>disadvantage as well as a -10 modifier</i>. Additionally,
+				the Target rolls all Grappling, Intimidation, Acrobatics, Reflex, Thievery, Crafting, Investigation,
+				Perception, and Performance checks at disadvantage.</p>
+				<p>This effect can be removed if the Target receives more than 2x its own Constitution value in HP 
+					healing within a single turn.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Deafened</h3>
+				<p>The Target automatically fails all sound based Perception checks and ignores all sound based communication. 
+					The Target must roll all Stealth, Investigation, Intuition, and Survival checks at disadvantage. Additionally, 
+					the Target is unable to gain any benefits from allied Leadership or Performance based abilities 
+					(including PP assistance).</p>
+				<p>This effect can be removed if the Target receives more than 1x its own Constitution value in HP healing within 
+					a single turn.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Fatigued - Stage I</h3>
+				<p>Disadvantage on all Ability rolls.</p>
+				<h3>Fatigued - Stage II</h3>
+				<p>Disadvantage on all Ability and atk rolls.</p>
+				<h3>Fatigued - Stage III</h3>
+				<p>Disadvantage on <i>all</i> rolls (including dmg rolls), and Movement is reduced by 50%.</p>
+				<p>Fatigue can be gained by not not resting for 20+Endurance consecutive hours, falling unconscious, or through certain 
+					direct spell effects. It can be removed only by resting, at a rate of 1 Stage per 10 hours of rest.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Intimidated</h3>
+				<p>The Target is unable to move closer to the Source at any point during their turn, and must make all rolls 
+					against the Source with disadvantage.</p>
+				<p>This effect can be removed if the Source falls unconscious, if the Target looses the ability to perceive the Source 
+					for 1 full turn (most commonly by breaking line-of-sight), or if the Target uses an Action contest the 
+					Intimidation with a successful Inspiration check.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Petrified</h3>
+				<p>The Target solidifies and turns to stone. Its stats become that of a stone statue: DV: 0, PR: 100, MR:100, 
+					Actions: 0, Reactions: M0, and Movement: 0. Additionally, it gains 100% immunity to poison and disease damage.</p>
+				<p>This effect can only be removed if the Target receives more than 10x its own Constitution value in HP
+					healing within a single turn.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Prone</h3>
+				<p>The Target is laying on the ground and rolls all CON, STR, DEX, and CHA based rolls, as well as atk and 
+					melee dmg rolls at disadvantage. However, atk rolls with two-handed rifle-style gunpowder weapons roll with 
+					advantage instead. All enemies also gain advantage on their melee atk and dmg rolls against the Target.</p>
+				<p>This effect can be removed if the Target stands up, which costs 1 Action or 3 Movement. Standing up is 
+					considered a non-combat Action, and therefore provokes AOOs.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Rooted</h3>
+				<p>The Target is unable to move.</p>
+				<p>The duration of this effect is usually limited in the Ability description itself, and the Target can
+					also attempt to break free each turn using the standard formula.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Stunned</h3>
+				<p>The Target is unable to move or perform and Actions or Reactions for the duration of the effect. All enemies roll 
+					all atk and dmg rolls against the Target with advantage.</p>
+				<p>The duration of this effect is always strictly limited in the Ability description, and the Target can
+				also attempt to break free each turn using the standard formula.</p>
+			</div>
+
+			<h2>Control over Others:</h2>
+			<div class="Item-Card">
+				<h3>Charmed</h3>
+				<p>The Source may use an Action to give a command to the Target. The Target must follow the command to 
+					the best of their ability until a new command is issued, except if following the command directly 
+					harms the Target (i.e., you can't tell your Target to jump off a cliff or fall on their sword).</p>
+				<p>This effect decays at 2x the normal rate => DC = atk - 2x(# of Turns since atk).</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Controlled</h3>
+				<p>The Source may use an Action to give a command to the Target. The Target must follow the command to
+					the best of their ability until a new command is issued, <i>even if the command directly	harms the 
+					Target</i>.</p>
+				<p>This effect decays at 5x the normal rate => DC = atk - 5x(# of Turns since atk).</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Grappled</h3>
+				<p>The Source and Target can both only perform the following Actions: Gain Control, Shove, Unarmed 
+					Attack, Intimidation Action, Pickpocket Action, Knowledge Check, Intuition Check, Perception 
+					Check, Inspiration Action, and Distraction Action. It is not possible to use Mana abilities while 
+					Grappled.</p>
+				<p>The effect ends when the winner of the most recent grappling contest chooses to let go, or when 
+					one of the two characters falls unconscious.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Restrained</h3>
+				<p>The Target is only able to move as far as the specific restraints allow, and makes all CHA based rolls at 
+					disadvantage.</p>
+				<p>This effect cannot be removed without removing the item causing it.</p>
+			</div>
+			<div class="Item-Card">
+				<h3>Taunted</h3>
+				<p>The Target is forced to attack the Source using basic attacks only (no Mana abilities).</p>
+				<p>The duration of this effect is always strictly limited in the Ability description, and the Target can 
+					also attempt to break free each turn using the standard formula.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
