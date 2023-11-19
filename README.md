@@ -1,4 +1,4 @@
-<h1>Welcome to <a href="https://masterhatu.github.io/HammRPG/src/" target=”_blank”>HammRPG</a></h1>
+<h1>Welcome to <a href="https://masterhatu.github.io/HammRPG/" target=”_blank”>HammRPG</a></h1>
 <p> HammRPG is a <strong>tabletop roleplaying game</strong> (TTRPG) loosely in the style of other famous TTRPGs you
     may already have heard of. It began because a small group of friends wanted to try out the collective
     story-telling experience but could not afford to buy any established rule books. Instead, we decided to create a 
@@ -10,16 +10,16 @@
     creativity as possible.	Rather than picking from a long list of possible abilities and features, each player 
     custom creates their own abilities from scratch. In order to achieve some form of balance between the different players, 
     however, we do use a few general rules to guide you as you create your abilities. You can find these rules in the Character 
-    Creation Section under <a href="https://masterhatu.github.io/HammRPG/src/pages/gameplay.html" target=”_blank”>Gameplay</a>.</p>
+    Creation Section under <a href="https://masterhatu.github.io/HammRPG/pages/gameplay.html" target=”_blank”>Gameplay</a>.</p>
 <p> For simplicity's sake, we have based all of our games so far loosely on the existing Warhammer fantasy universe
     created by Games Workshop; however, be aware that there is <em>no official affiliation between HammRPG and 
     Games Workshop</em>. All content provided here should be considered as <strong>a work of fanfiction</strong> 
     only.</p>
-<p> Head over to the <a href="https://masterhatu.github.io/HammRPG/src/pages/gameplay.html" target=”_blank”>Gameplay</a> section to familiarize yourself with the ruleset we use to play,
+<p> Head over to the <a href="https://masterhatu.github.io/HammRPG/pages/gameplay.html" target=”_blank”>Gameplay</a> section to familiarize yourself with the ruleset we use to play,
     and then check out the Character Creation section to start building your very own character right away.
     The next time a Game Master creates a new game, you might be one of the players to participate in writing the
     story yourself!</p>
 <p> If you prefer not to be a player yourself, you can still enjoy HammRPG by reading along as we play one of
-    the <a href="https://masterhatu.github.io/HammRPG/src/pages/ongoing.html" target=”_blank”>ongoing stories</a>, or just head to the <a href="https://masterhatu.github.io/HammRPG/src/pages/archived.html" target=”_blank”>Archive</a> 
+    the <a href="https://masterhatu.github.io/HammRPG/pages/ongoing.html" target=”_blank”>ongoing stories</a>, or just head to the <a href="https://masterhatu.github.io/HammRPG/pages/archived.html" target=”_blank”>Archive</a> 
     section and read stories that have already been completed.</p>
 <p> We hope you enjoy the game.</p>
