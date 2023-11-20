@@ -1,0 +1,129 @@
+<!-- General organizational Information -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HammRPG - Gameplay</title>
+	<meta name="HammRPG Gameplay" 
+		content="Gameplay rules for HammRPG">
+	<link rel="stylesheet" type="text/css" href="/../HammRPG/assets/index--66QLyAa.css">
+	<script type="module" src="/../HammRPG/assets/index-BC9Qz4L6.js"></script>
+	<script type="module" src="/../HammRPG/assets/script.js"></script>
+</head>
+
+<body>
+<!-- This container divided the available screenspace into 2 flexbox sections, the Menu-Panel and the Page itself-->
+<div class="Container">
+	<!-- The Menu-Panel at the top of the screen-->
+	<div class="Menu-Panel">
+		<a href="./../index.html">Home</a>
+		<a href="./gameplay.html" class="Current-Menu-Panel">Gameplay</a>
+		<a href="./ongoing.html">Campaigns</a>
+		<a href="./archived.html">Archive</a>
+		<a href="./foc.html">FoC</a>
+		<a href="./forum.html">Forum</a>
+	</div>
+
+	<!-- The page is subdivided into the navigational menu on the Side-Panel and the Content-Panel itself-->
+	<div class="Page">
+		<!-- The Side-Panel at the left side of the screen-->
+		<div class="Side-Panel">
+			<a href="./gameplay.html" class="Current-Side-Panel">Gameplay</a>
+			<p><a href="./gameplay.html">HammRPG Concept</a></p>
+			<div class="Current-Submenu">
+				<p><a href="javascript:void(0);" onclick="scrolltoSection('Level')" class="Current-Side-Panel">Character Level</a></p>
+				<ul>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Level-Up')">Level-Up</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Background-Points')">Background Points</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Skill-Points')">Skill Points</a></p></li>
+				</ul>
+			</div>
+			<p><a href="./gameplay-attributes.html">Attributes</a></p>
+			<p><a href="./gameplay-abilities.html">Abilities</a></p>
+			<p><a href="./gameplay-combat.html">Combat</a></p>
+			<a href="./terminology.html">Terminology</a>
+			<a href="./effects.html">Status Effects</a>
+			<a href="./creation.html">Character Creation</a>
+			<a href="./skillcreation.html">Skill Creation</a>
+			<div class="Scrollup"><a href="javascript:void(0);" onclick="scrollUp()">&#9585;&#9586;</a></div>
+		</div>
+
+		<!-- The content page itself-->
+		<div class="Content-Panel">
+			<article>
+				<h1 id="Level">Character Level</h1>
+					<p>Mathematically, the main measurement of advancement and power of a character is the character level (Lv).</p>
+					<p>The lowest possible Lv is Lv1, and while theoretically there is no upper limit to Lv, the higher you go the 
+						more complicated the game becomes. As the number of abilities continues to increase for both PCs and NPCs, it 
+						becomes increasingly difficult to keep track of everything, and so, for practicality, we typically scale NPCs up to 
+						approximately Lv20, as shown below (Note that this is only a rough guide, and many exceptions may exist at the 
+						discretion of the GM.):</p>
+					<ul>
+						<li>Lv1 to Lv3 - Slaves, prisoners, and other characters that have been deliberately weakened</li>
+						<li>Lv4 to Lv6 - Average citizens, grunt soldiers, or common animals</li>
+						<li>Lv7 to Lv8 - Common soldiers, city guards, predator animals</li>
+						<li>Lv9 to Lv10 - Mercenaries, experienced soldiers, stronger predators</li>
+						<li>Lv11 to Lv13 - Professional soldiers, military captains, some weak monsters</li>
+						<li>Lv14 to Lv17 - Generals, guild leaders, more monsters</li>
+						<li>Lv17 to Lv20 - Heroes, famous warriors, stronger monsters</li>
+						<li>Lv20 and up - Legendary figures, epic monsters, etc.</li>
+					</ul>
+					<p>Every character starts with 60 Attribute Points (AP) and 3 Background Points (BP). Additionally, the 
+						character also gains 1 additional AP, as well as 3 Skill Points (SP) per Lv. Some GMs further allow their 
+						players to earn additional BP at certain Lvs, such as 3 base, +1 at Lv 5, +2 at Lv 10, +1 at Lv 15, and 
+						+3 at Lv20; however, this is optional at the GM's discretion, and will be discussed during the <a href=
+						"javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session Zero</a> for your specific game. 
+						The different types of points will be discussed in detail further below.</p>
+			</article>
+			
+			<article>
+				<h2 id="Level-Up">Levelling Up</h2>
+					<p>One of the main motivations for many players is the opportunity to advance and develop their character. 
+						Of course, there any many ways to show character growth through roleplay, but the primary way to represent 
+						character growth is by increasing your PC's level, by collecting Experience Points (XP).</p>
+					<p>In order to level up, a PC needs to gain the same number of XP as the Lv they are trying to reach. In
+						other words, if a PC is Lv4, their next Lv would be Lv5. Therefore, the PC needs to collect 5 XP.</p>
+					<p>For every significant encounter, all surviving PCs gain 1 XP. The  definitiion of 'significant' in this 
+						context is deliberately left vague, as it can vary between groups, as well as based on the Lv of the PCs 
+						involved. For instance, going to a shop to buy a new sword is probably not significant regardless of PC 
+						Lv, but fighting off a group of three zombies is significant for a Lv 1 or 2 PC, while it is quite 
+						insignificant for a Lv 15 PC, or even a group of three Lv 5 PCs. As such, it is usually up the GM to 
+						determine if an encounter is significant enough to warrant XP.</p>
+					<p>Typically, this method is used to collect separate XP per individual PC, but some groups prefer to pool 
+						their XP (both needed and collected), so that they can advance and grow together. This is up to the group 
+						to determine during their <a href="javascript:void(0);" onclick="scrolltoSection('Session-Zero')">Session 
+						Zero</a> before the actual game starts</p>
+			</article>
+
+			<article>
+				<h1 id="Background-Points">Background Points</h1>
+					<p>Background Points (BP) are what makes your character unique. These points can be spent to acquire powerful 
+						abilities that will define your PC and their playstyle throughout the entire game.</p>
+					<p>While not strictly required, HammRPG recommends writing a backstory for your PC first, and only then creating 
+						abilities that make sense within that backstory. Characters whose abilities are strongly intertwined with their 
+						backstories tend to be more interesting from a role-play perspective, which improves immersion for yourself as 
+						well as everyone else at the table.</p>
+					<p>Please refer to the <a href="./creation.html">Character Creation</a> guide as well as the <a 
+						href="./skillcreation.html">Skill Creation Guide</a>, and talk to your GM to create your own custom abilities.</p>
+			</article>
+			
+			<article>
+				<h1 id="Skill-Points">Skill Points</h1>
+					<p>Skill Points (SP) are very similar to BP, except that they are less powerful. For instance, a single BP could grant 
+						your character a +5 bonus for a given ability, while a SP would only grant a +1.</p>
+					<p>The biggest advantage of SP over BP is that you get a lot more of them, which allows you to diversify your PC much 
+						more. Additionally, SP are designed to be a more fluid representation of your PC's current abilities, rather than a 
+						fixed picture of their background. As a result, most GMs will make it much easier to change SP abilities than BP 
+						abilities (see PP section below).</p>
+					<p>The two most common types of abilities are proficiencies, which provide a bonus to ability or attack rolls (atk), 
+						and active abilities, which use MP to achieve much stronger bonuses to certain individual Actions alone.</p>
+					<p>Please refer to the <a href="./creation.html">Character Creation</a> guide as well as the <a 
+						href="./skillcreation.html">Skill Creation Guide</a>, and talk to your GM to create your own custom abilities.</p>
+			</article>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

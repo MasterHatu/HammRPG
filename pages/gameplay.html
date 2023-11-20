@@ -1,0 +1,220 @@
+<!-- General organizational Information -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HammRPG - Gameplay</title>
+	<meta name="HammRPG Gameplay" 
+		content="Gameplay rules for HammRPG">
+	<link rel="stylesheet" type="text/css" href="/../HammRPG/assets/index--66QLyAa.css">
+	<script type="module" src="/../HammRPG/assets/index-BC9Qz4L6.js"></script>
+	<script type="module" src="/../HammRPG/assets/script.js"></script>
+</head>
+
+<body>
+<!-- This container divided the available screenspace into 2 flexbox sections, the Menu-Panel and the Page itself-->
+<div class="Container">
+	<!-- The Menu-Panel at the top of the screen-->
+	<div class="Menu-Panel">
+		<a href="./../index.html">Home</a>
+		<a href="./gameplay.html" class="Current-Menu-Panel">Gameplay</a>
+		<a href="./ongoing.html">Campaigns</a>
+		<a href="./archived.html">Archive</a>
+		<a href="./foc.html">FoC</a>
+		<a href="./forum.html">Forum</a>
+	</div>
+
+	<!-- The page is subdivided into the navigational menu on the Side-Panel and the Content-Panel itself-->
+	<div class="Page">
+		<!-- The Side-Panel at the left side of the screen-->
+		<div class="Side-Panel">
+			<a href="./gameplay.html" class="Current-Side-Panel">Gameplay</a>
+			<div class="Current-Submenu">
+				<p><a href="javascript:void(0);" onclick="scrolltoSection('Concept')" class="Current-Side-Panel">HammRPG Concept</a></p>
+				<ul>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Encounters')">Encounters</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Dice-Rolling')">Dice Rolling</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Nat1')">Crit Fail</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Nat20')">Crit Success</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('PP')">PP</a></p></li>
+				</ul>
+			</div>
+			<p><a href="./gameplay-level.html">Character Level</a></p>
+			<p><a href="./gameplay-attributes.html">Attributes</a></p>
+			<p><a href="./gameplay-abilities.html">Abilities</a></p>
+			<p><a href="./gameplay-combat.html">Combat</a></p>
+			<a href="./terminology.html">Terminology</a>
+			<a href="./effects.html">Status Effects</a>
+			<a href="./creation.html">Character Creation</a>
+			<a href="./skillcreation.html">Skill Creation</a>
+			<div class="Scrollup"><a href="javascript:void(0);" onclick="scrollUp()">&#9585;&#9586;</a></div>
+		</div>
+
+		<!-- The content page itself-->
+		<div class="Content-Panel">
+			<article>
+				<h1 id="Concept">The HammRPG Concept</h1>
+					<p>HammRPG is a tabletop roleplaying game (TTRPG) that allows players to collectively create and narrate a story 
+						together. One player takes on the role of the Game Master (GM), who drives the story forward and plays all the 
+						non-player characters (NPCs), while the other players create their own player characters (PCs) and work together 
+						with the GM to tell a unique and exciting story.</p>
+					<p>HammRPG is a collaborative storytelling game. This means that the GM and players all work together to create 
+						a story through cooperation and teamwork. No one player is more important than the others and everyone has a 
+						say in how the story unfolds by roleplaying their PC's choices, actions, and conversations. The more you immerse 
+						yourself into your character and try to think and act from their perspective, the more fun everyone will have. 
+						That being said, keep in mind that the player behind the character is always more important than the character or 
+						the even the story itself!</p>
+					<p>The main concept that sets HammRPG apart from other TTRPGs is its focus on customizability. Where some games may 
+						have you choose certain abilities from a pre-made list of possible features, HammRPG allows each player to create 
+						their own entirely customized abilities from scratch. Your character can be as synergized or ramshackled as you 
+						like, providing for a virtually infinitely complex combination of character features and roleplay opportunities. 
+						In order ensure all players have the same opportunity to shine, we recommend using the <a href="./skillcreation.html">
+						Skill Creation Guide</a> to create your custom abilities. This will enable you to plan how your PC will develop 
+						over time, helps with balancing, and might also provide some ideas for abilities you may not have thought of.</p>
+					<p>The below rules section is designed to help players create a fun and engaging storytelling experience. It provides 
+						a framework for resolving conflicts, handling challenges, and advancing the story in a way that is hopefully fair 
+						to everyone at the table. However, it's important to remember that the rules are not meant to be restrictive - 
+						the group should always feel free to adapt the rules as needed to best serve their specific story.</p>
+			</article>
+
+			<article>
+				<h1 id="Encounters">Encounters</h1>
+					<p>While outside of combat situations, your character is able to do essentially anything you can think of. When 
+						an encounter starts, the GM will typically describe the situation first, then the players have an opportunity 
+						to interact with that situation. Depending on what the players choose to do, the GM will then ask for appropriate 
+						ability rolls to determine how well your character actually performs what you described, or respond from the 
+						perspective of the NPCs the players interacted with, etc. The result of the roll, or the result of the role-play 
+						then leads to certain consequences as described by the GM. This back-and-forth between describing, rolling and 
+						interacting is the essence of HammRPG.</p>
+					<p>As such, while not in combat, actions and abilities are relatively fluid and intuitive, rather than closely 
+						defined. Nevertheless, you can find a general description of each of the <a href="./gameplay-abilities.html">
+						Abilities</a> below.</p>
+					<p>However, if a situation escalates into combat, time becomes a much more significant factor. This is where 
+						HammRPG uses a turn-based combat system to slow down time in order to allow players (and the GM) to think about 
+						their next move, describe their attacks or other Actions in epic detail, and still banter between each other 
+						without the stress of real-time combat.</p>
+			</article>
+					
+			<article>
+				<h2 id="Dice-Rolling">Dice Rolling</h2>
+					<p>Many of the actions described below are resolved by rolling dice. In such cases, HammRPG uses the XdX notation 
+						style:</p>
+					<div class="Highlight">
+						<h2># of Dice + "d" + Type of Dice</h2>
+					</div>
+					<p>For example, one twenty-sided die is written as 1d20, three twelve-sided dice would be 3d12, etc.</p>
+					<p>Normally, a roll consists of a single instance of rolling the appropriate dice, and then adding the appropriate 
+						modifiers to the roll. However, in some instances a roll may be rolled with Disadvantage, or Advantage, which 
+						means that we:</p>
+					<div class="Highlight">
+						<article>
+							<h5>If Disadvantage</h5>
+									<h2>roll twice and take the lower number</h2>
+						</article>
+						<article>
+							<h5>If Advantage</h5>
+							<h2>roll twice and take the higher number</h2>
+						</article>
+					</div>
+					<p>The instances of disadvantage or advantage stack, which means that if there are multiple sources of advantage 
+						or disadvantage, the number of total dice rolled also increases. Likewise, advantage and disadvantage cancel 
+						each other out.</p>
+					<p>For example, let's say our PC has a situation where they need to make a roll with 4 sources of Advantage and 
+						2 sources of Disadvantage: Two of the advantage-disadvantage pair cancel each other out, and we are left with 
+						2 instances of Advantage. As a result, we roll 3 dice (1 base, plus 1 for each instance of advantage), and 
+						then take the highest resulting number.</p>
+					<p>Any applicable modifiers are only applied after the roll itself, including advantage-disadvantage 
+						considerations, have been completed.</p>
+
+					<h3 id="Nat1">Critical Fails</h3>
+						<p>Rolling a natural 1 (nat1) constitutes a critical failure. While ability rolls are still compared in the 
+							same way they always are, atk rolls that result in a nat1 miss regardless of the actual DV value of the 
+							target. For example, if your target has a DV of 2, and you roll a nat1+5 => 6, the attack is still 
+							considered a miss, since it was a critical failure.</p>
+						<p>As an <b>optional</b> mechanic, some GMs also like to implement other consequences, such as accidentally 
+							hitting yourself, dropping your weapon, or falling to the ground, however, this should be discussed during 
+							your group's Session Zero.</p>
+
+					<h3 id="Nat20">Critical Successes</h3>
+						<p>Just as a nat1 is considered a critical fail, a natural 20 (nat20) is considered a critical success. 
+							However, as a bonus, the number resulting from a nat20 is multiplied by 2 (e.g.:Nat20 +2 = 44).</p>
+						<p>For atk rolls, a nat20 constitutes a guaranteed hit, thus giving you a chance to hit even enemies with 
+							very high DV values (although such high DV values are extremely rare in HammRPG). Additionally, the 
+							corresponding dmg roll is multiplied by 2. Note that different instances of critical hits <b>DO</b> 
+							stack, meaning that a nat20 on a successful Sneak Attack would multiply the corresponding dmg roll 
+							x2 x2 => x4. You can have as many sources of critical hits as your GM is comfortable running.</p>
+						<p>Again, some GMs enjoy applying contextual bonuses such as knocking the enemy's weapon from their hand, 
+							cutting off an arm entirely, etc., however, this should be discussed during the Session Zero for your 
+							game.</p>
+						<p>As an optional mechanic that has received very positive feedback, we have also created the <a 
+							href="javascript:void(0);" onclick="scrolltoSection('PP')">PP</a> mechanic.</p>
+					
+			</article>
+
+			<article>
+				<h2 id="PP">PP</h2>
+					<p>Participation Points, Party Points, Power Points - whatever you choose to call them, PP are designed 
+						to emulate the luck and influence of a character beyond simple dice rolling, as well as give the player 
+						a direct way to affect critical in-game events.</p>
+					<p>Since this mechanic influences the game on a quite high level, it can be immersion breaking for many 
+						players. As such, it <b>must</b> be discussed before the game starts, and the decision about this mechanic 
+						should be <i>unanimous</i>. PP are collected separately for each PC, and may not be transferred from one 
+						character to another.</p>
+					<p>There are several ways to obtain PP:</p>
+					<ul>
+						<li>When you roll a nat20, you gain 1 PP</li>
+						<li>After critical in-game moments, such as final boss fights or similarly important encounters, the GM 
+							may assign up to 5 PP to the player that delivered the killing blow, or otherwise decicively resolved the 
+							encounter. To encourage teamwork, at least 3 of these PP <b>must</b> be distributed among the rest of the 
+							team.</li>
+						<li>Particularly immersive and thoughtful roleplay, or contextually epic moments, can be awarded with PP 
+							at the GM's discretion. Players are encouraged to point out potential moments, but in order to avoid 
+							'PP farming', all such moments must be approved by the GM.</li>
+					</ul>
+					<p>There is no theoretical limit to how many PP a PC can store; however, the powerful boosts that PP can 
+						bestow make it rare for a character to gather large amounts of PP. Let's see some examples:</p>
+					<ul>
+						<li>When you make an ability roll (i.e.: not atk or dmg rolls), you can spend 1 PP to grant your PC a 1d4 
+							Inspiration bonus. Since this counts as an Inspiration roll, you can also make an Inspiration ability 
+							roll and add the resulting bonus to the 1d4. You can spend any number of PP on your own rolls in this way
+							 - if you have them.</li>
+						<li>When an ally makes an ability roll (i.e.: not atk or dmg rolls), you can spend a Reaction to grant 1 PP 
+							to that ally as a 1d6 Leadership bonus. Since this roll utilizes the Leadership ability, it benefits from 
+							a potentially higher bonus, but helping allies in this way is limited not only by the number of PP you have, 
+							but also by the number of Reactions you have available at the time of the roll.</li>
+						<li>At the beginning of an encounter, you can use some PP to learn critical information about your enemies 
+							(vulnerabilities, immunities, etc.), at a cost of 1 PP per piece of intel.</li>
+						<li>Similarly, at the beginning of an encounter, you can spend 3 PP to change a piece of terrain on a battle-
+							map, such as insert a window into a wall, place a few bushes near the alley you want to sneak in, etc. 
+							Do note, however, that such changes may affect how the GM planned the encounter, such as guard posts, 
+							patrol routes, etc, so your GM may increase the cost of the specific change you request, as well as take 
+							some time to actually implement the requested change.</li>
+						<li>During a level-up event, you can spend PP reassign or adjust your skills. Changing an SP ability costs 
+							1 PP per SP changed, while changing BP costs 5 PP per BP. This simply reflects that BP define who your 
+							character is, while SP represent what your PC is currently able to do. Additionally, this allows you to 
+							adjust abilities that turn out to be less useful than you envisioned without excessive penalty.</li>
+						<li>During any full rest, you can spend PP to permanently improve your item's stats. This represents the fact 
+							that your PC is getting accustomed to using that particular item, thus making it more effective for that PC. 
+							In other words, the upgrade applies to the item when the PC that upgraded it uses it, but it does not 
+							apply the upgrades when any other character uses it, which means it does not increase the value of the item 
+							for anyone else. The cost for such upgrades is highly dependent on what you're trying to do, but here are a 
+							few examples: 5 PP could improve your sword with a +1 to atk rolls, or add +1 PR to an armor item. 10 PP can 
+							even upgrade the damage dice by two points, for example bringing it from 1d8 to 1d10, or from 2d12 to 2d14. 
+							Adding additional dice, such as going from 1d6 to 2d6 is much more expensive, though, at 20PP. You can 
+							request almost any change, and your GM will then tell you if they are comfortable running that change, as 
+							well as the PP cost.</li>
+						<li>If you have any other special requests for your GM, such as resurrecting a character that died, etc., 
+							you can try to use PP to try to barter for it. However, ultimately each GM sets their own boundaries for 
+							their game, and players and GMs will all have certain lines they will not cross. Many such things can 
+							and should be discussed during the Session Zero for your specific game. PP are not intended as a way to 
+							bully the GM, and "No!" is a perfectly valid response to your request. Please refer to the Adventurer's 
+							Code before you make any special requests.</li>
+					</ul>
+			</article>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
