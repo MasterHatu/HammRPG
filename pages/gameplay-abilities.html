@@ -1,0 +1,366 @@
+<!-- General organizational Information -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>HammRPG - Gameplay</title>
+	<meta name="HammRPG Gameplay" 
+		content="Gameplay rules for HammRPG">
+	<link rel="stylesheet" type="text/css" href="/../HammRPG/assets/index--66QLyAa.css">
+	<script type="module" src="/../HammRPG/assets/index-BC9Qz4L6.js"></script>
+	<script type="module" src="/../HammRPG/assets/script.js"></script>
+</head>
+
+<body>
+<!-- This container divided the available screenspace into 2 flexbox sections, the Menu-Panel and the Page itself-->
+<div class="Container">
+	<!-- The Menu-Panel at the top of the screen-->
+	<div class="Menu-Panel">
+		<a href="./../index.html">Home</a>
+		<a href="./gameplay.html" class="Current-Menu-Panel">Gameplay</a>
+		<a href="./ongoing.html">Campaigns</a>
+		<a href="./archived.html">Archive</a>
+		<a href="./foc.html">FoC</a>
+		<a href="./forum.html">Forum</a>
+	</div>
+
+	<!-- The page is subdivided into the navigational menu on the Side-Panel and the Content-Panel itself-->
+	<div class="Page">
+		<!-- The Side-Panel at the left side of the screen-->
+		<div class="Side-Panel">
+			<a href="./gameplay.html" class="Current-Side-Panel">Gameplay</a>
+			<p><a href="./gameplay.html">HammRPG Concept</a></p>
+			<p><a href="./gameplay-level.html">Character Level</a></p>
+			<p><a href="./gameplay-attributes.html">Attributes</a></p>
+			<div class="Current-Submenu">
+				<p><a href="javascript:void(0);" onclick="scrolltoSection('Abilities')" class="Current-Side-Panel">Abilities</a></p>
+				<ul>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Endurance')">Endurance</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Resistance')">Resistance</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Athletics')">Athletics</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Grappling')">Grappling</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Intimidation')">Intimidation</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Acrobatics')">Acrobatics</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Reflex')">Reflex</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Stealth')">Stealth</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Thievery')">Thievery</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Crafting')">Crafting</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('History')">History</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Investigation')">Investigation</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Mindfulness')">Mindfulness</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Intuition')">Intuition</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Perception')">Perception</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Survival')">Survival</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Willpower')">Willpower</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Inspiration')">Inspiration</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Leadership')">Leadership</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Performance')">Performance</a></p></li>
+					<li><p><a href="javascript:void(0);" onclick="scrolltoSection('Persuasion')">Persuasion</a></p></li>
+				</ul>
+			</div>
+			<p><a href="./gameplay-combat.html">Combat</a></p>
+			<a href="./terminology.html">Terminology</a>
+			<a href="./effects.html">Status Effects</a>
+			<a href="./creation.html">Character Creation</a>
+			<a href="./skillcreation.html">Skill Creation</a>
+			<div class="Scrollup"><a href="javascript:void(0);" onclick="scrollUp()">&#9585;&#9586;</a></div>
+		</div>
+
+		<!-- The content page itself-->
+		<div class="Content-Panel">
+			<article>
+				<h2 id="Abilities">Abilities</h2>
+					<p>All characters have acccess to the same set of basic Abilities, which are influenced by the most appropriate 
+						<a href="javascript:void(0);" onclick="scrolltoSection('Attributes')">Attribute</a>:</p>
+
+					<h3 id="Endurance">Endurance</h3>
+						<p>Endurance is a character's cardio. In essence, how long can an effort be sustained before you run out of 
+							steam. While there is no specific combat-Action based on Endurance, your GM can ask you for an Endurance roll 
+							if you perform repeated <a href="javascript:void(0);" onclick="scrolltoSection('Sprint-Action')">Sprinting</a> 
+							attempts or other strenuous tasks.</p>
+						<p>Endurance can also be used to help calculate travel times for long distance trips, etc.</p>
+
+					<h3 id="Resistance">Resistance</h3>
+						<p>Resistance is one of the less-used abilities. Generally, it applies as a save against hostile attempts to 
+							affect your character, such as Grappling attempts or attacks that attempt to stun your character.</p>
+						<p>Some GMs also like to use the Resistance ability to reduce the potency of certain effects, such as poisons, 
+							but this is up to the GM and should be discussed during your group's <a href="javascript:void(0);" onclick=
+							"scrolltoSection('Session-Zero')">Session Zero</a>.</p>
+
+					<h3 id="Athletics">Athletics</h3>
+						<p>Athletics is a measure of the direct physical force a character's body can muster on short notice. Trying to 
+							push a heavy object, lift a rock, or compete in an arm-wrestling match are all typical examples that would 
+							warrant an Athletics roll.</p>
+						<p id="Sprint-Action">In combat, the most common Athletics check you will see is the Sprint Action:</p>
+						<p>A Sprint Action is an attempt to gain additional Movement so that you can move across the battlefield more 
+							quickly, or run away from an overpowering enemy. If you spend a combat-Action to try to sprint:</p>
+						<ul>
+							<li>less than 0 => no bonus Movement (the Action is still spent, though!)</li>
+							<li>0 to 9 => +1 m of Movement</li>
+							<li>10 to 19 => +2 m of Movement</li>
+							<li>20 to 29 => +3 m of Movement</li>
+							<li>etc.</li>
+						</ul>
+				
+					<h3 id="Grappling">Grappling</h3>
+						<p>Grappling is an attempt to hold an enemy down, preventing them from moving and using Actions freely. This 
+							can be done to protect your allies, prevent an enemy from running away, or simply to stop a spellcaster from 
+							casting. Grappling is almost exclusively a combat action, which means if you attempt it in a non-combat 
+							encounter, it will usually turn into a combat encounter.</p>
+						<p>First, the initiating grappler rolls their atk roll, which is a Grappling ability roll with Unarmed 
+							Proficiency. The resulting number is then compared to the target's DV to see if the target simply dodges 
+							the attack altogether. Finally, if the target does not dodge, the defender also rolls a Grappling roll to 
+							determine who gains control in the struggle. The initial Grappling attempt does not deal any damage.</p>
+						<p>If the attacker gains control, the Grapple is maintained, and the attacker continues their turn. 
+							If the defender gains control, they may choose to immediately let go of the Grapple, or maintain 
+							it as is. Regardless of who gains control, <i>both</i> contestants gain the <b>Grappled</b> 
+							effect as long as the Grapple is maintained.</p>
+						<p>While grappled, the contestants can only perform the following Actions (rolling with disadvantage unless 
+							they are in control of the contest):</p>
+						<ul>
+							<li><u>Gain Control</u>: The character performing this Action simply re-rolls their Grappling attempt. The 
+								DC for this is calculated according to the normal DC formula, based on the opponent's most recent Grappling 
+								roll. This Action can also be used to improve already existing control of a Grappling contest; however, it 
+								does not deal any damage.</li>
+							<li><u>Shove Action</u>: The initiator rolls Athletics, while the defender rolls Resistance. The winner may 
+								then dictate up to 1 m of movement for each 5 points of lead in the contest. For example, if the 
+								contest results are 5 vs 18, the character that rolled the 18 can move both characters by up to 2 
+								m each ((18 - 5) / 5 = 2). Such Movment is only possible if the winner actually has the necessary 
+								Movement available, but the looser's Movement is ignored within this context.</li>
+							<li>Unarmed Attack</li>
+							<li>Intimidation Action</li>
+							<li>Pickpocket Action</li>
+							<li>Knowledge Check</li>
+							<li>Intuition Check</li>
+							<li>Perception Check</li>
+							<li>Inspiration Action</li>
+							<li>Distraction Action</li>
+						</ul>
+				
+					<h3 id="Intimidation">Intimidation</h3>
+						<p>An Intimidation Action is an attempt to frighten the enemy, which is represented by the <b>Feared</b> 
+							effect when in combat. It functions similar to the Grappling contest, except that the initiator rolls 
+							Intimidation, while the target rolls Leadership as a measure of their level of discipline.</p>
+						<p>Intimidation is usually specific to the one target, but can in some cases also apply to a group of targets. 
+							In such situations, the GM will ususally increase the DC based on how many targets are around. In other words, 
+							the more allies a target has around them, the higher their chance of resisting an Intimidation attempt.</p>
+
+					<h3 id="Acrobatics">Acrobatics</h3>
+						<p>Acrobatics represents a character's general agility.</p>
+						<p id="Jump-Action">In many instances, a character may need to perform a Jump Action, for example to cross a 
+							chasm, to avoid triggering a pressure plate trap, etc.:</p>
+						<ul>
+							<li>less than 0 => the jump critically fails, which may mean the PC falls into the chasm, triggers the trap, 
+								etc. without the opportunity to try to save the situation</li>
+							<li>0 to 4 => the jump fails, but the PC may roll a Reflex save to stop themselves. The DC for the save is 
+								20 - the existing Acrobatics roll</li>
+							<li>5 to 9 => the jump clears up to 1 m</li>
+							<li>10 to 14 => the jump clears up to 2 m</li>
+							<li>15 to 19 => the jump clears up to 3 m</li>
+							<li>20 to 24 => the jump clears up to 4 m</li>
+							<li>25 to 29 => the jump clears up to 5 m</li>
+							<li>etc.</li>
+						</ul>
+						<p>Note that the Jump distance <b>does</b> count towards your Movement when you are in combat. In other words, 
+							if your PC has only 3 tiles of Movement left, they can only jump up to 3 tiles, even if they roll a wicked 
+							Acrobatics check (let's say a 42 or something like that).</p>
+
+					<h3 id="Reflex">Reflex</h3>
+						<p>Reflex is primarily a save against enemy attempts to place a character under an effect. It can also be used 
+							as a save when the character experiences sudden unexpected (and usually very negative) situations.</p>
+						<p>For example, if your character has to climb a rope to cross a deep chasm, rolling very low on an <a href=
+							"javascript:void(0);" onclick="scrolltoSection('Acrobatics')">Acrobatics</a> check could result in your 
+							character falling to their death. Rather than having such high stakes rely upon a single roll, the GM may 
+							allow the falling character a Reflex save to try to catch the rope again.</p>
+						<p id="Disengage">In combat, retreat may sometimes be the most viable strategy. A Disengage Action therefore 
+							represents an attempt to leave an enemy's melee range, but as you will see in the <a href="javascript:void(0);" 
+							onclick="scrolltoSection('AOO')">Attack of Opportunity</a> section, this may give the enemy a potential 
+							opportunity to attack even though it is not their turn. The disengage is the fleeing character's attempt to 
+							avoid this attack, by spending an Action of their own to contest the enemy's atk with a Reflex ability 
+							roll.</p>
+				
+					<h3 id="Stealth">Stealth</h3>
+						<p>Sneaking represents an attempt to prevent an enemy from knowing where you are or what you are doing. While, 
+							mathematically, this is represented by a simple ability check, the actual chance of success is much more 
+							complicated:</p>
+						<p>At minimum, you will likely have to break line-of-sight, and reduce the noises you make. You'll have to 
+							carefully examine the battlemap and decide where you want to position yourself, and then move as little as 
+							possible.</p>
+						<p>Unfortunately, your GM will most likely not tell you if your attempt at stealth is successful or not until 
+							the consequences are already self-evident...</p>
+						<p id="Sneak-Attack">In combat, if you manage to stay hidden, the first attack you make from a successful 
+							stealth attempt counts as a Sneak Attack, which means the dmg roll for the atk will be multiplied by 2.</p>
+						<div class="Highlight">
+							<h2>Successful Sneak Attack = dmg *2</h2>
+						</div>
+
+					<h3 id="Thievery">Thievery</h3>
+						<p>Thievery is the ability that represents the subtler, and often not entirely legal, arts requiring delicate 
+							manual dexterity. Lockpicking, trap-disarming, pickpocketing, etc, all fall into this category.</p>
+						<p>As a combat action, pickpocketing represents an attempt to manipulate your enemy's inventory, for example, 
+							grabbing a key from their belt, or switching one of their healing potions for a poison flask from your own 
+							inventory. Obviously, if the enemy has already spotted you, the DC for the attempt will be higher, but 
+							distractions in the form of Grappling or Performance rolls can sometimes help you achieve success.</p>
+						<p>For obvious reasons, pickpocketing can only be performed if you are in melee range of your target.</p>
+
+					<h3 id="Crafting">Crafting</h3>
+						<p>Crafting is one of those abilities that are often overlooked, as you will rarely be asked to make a Crafting 
+							roll. Nevertheless, characters trained in a craft can perform remarkable feats with it, and usually have a 
+							much easier time acquiring gold than those who are not.</p>
+						<p>The Crafting modifier becomes important when you are spending some down-time to collect ingredients:</p>
+						<div class="Highlight">
+							<h2># of ingredients collected per hour = 1d4 + Crafting Proficiency</h2>
+						</div>
+						<p>For every point of Proficiency bonus your character has, they can memorize a recipe to craft an item 
+							corresponding to that profession. The <a href="https://docs.google.com/spreadsheets/d/1QkFdJyOYmSCuLDvVvT-
+							ryOK-unPjXyxaJk77vcSobVA/edit?usp=sharing">Armory</a> contains some ideas for items, but you can also 
+							create custom items for yourself. You and your GM will then have to figure out the ingredient cost for 
+							your custom recipes before you can actually create them in the game.</p>
+						<p>For instance, if your chosen craft is Alchemy, you could use one of your recipe memory slots to memorize 
+							how to make a healing potion. While it is entirely possible to purchase a recipe from a merchant, or even 
+							find it while you are out adventuring, those recipes that are not memorized can only be created as long as 
+							you have the recipe in your inventory, meaning it can be stolen from you, or the page might get destroyed 
+							while you cross a river... Memorized recipes cannot be lost.</p>
+						<p>Note that the INT modifier that usually applies to an ability <i>does not</i> count towards your recipe 
+							limit, but it <i>does</i> get factored in when you are collecting ingredients or calculating hourly wage, 
+							as described below.</p>
+						<div class="Highlight">
+							<h2>Recipe Limit = Crafting Proficiency (without INT modifier)</h2>
+						</div>
+						<p>Another way to use the Crafting ability is to calculate a better wage for skilled workers compared to 
+							those without a learned craft (keep in mind that you can only earn this better wage if there is demand 
+							for it - for example, you can only get a blacksmith's pay if you are actually working as a blacksmith):</p>
+						<div class="Highlight">
+							<h2>In-game Hourly wage = Crafting Proficiency (minimum 2 gold per hour)</h2>
+						</div>
+
+					<h3 id="History">History</h3>
+						<p>History checks can be rolled when you are trying to remember something specific to your past. This can 
+							include knowledge that your character would have based on their backstory - even if the player that 
+							controls the character doesn't have that knowledge, or it can mean small bits of information that your 
+							GM may have given you before, but you just need a little reminder.</p>
+						<p>In combat, a History check is essential when special enemy types appear on the battlefield. Certain 
+							enemies will either be immune to certain damage types, or may even be healed or strengthened by them 
+							instead. Think of a fire elemental, for example. Not only does it not care about you waving a torch in 
+							its face, but stoking its flames would actually make it stronger. The History check is therefore there 
+							to try to remember any special information about what  the enemy may be vulnerable to, or resistant 
+							against.</p>
+						<p></p>
+
+					<h3 id="Investigation">Investigation</h3>
+						<p>Investigation comes into play when you are trying to figure out brand new information. Where a History 
+							check refers to specific information you have learned before, Investigation can help you figure out 
+							something you never knew before.</p>
+						<p>Investigation is also useful when you are searching for something, such as a trap, or a clue about 
+							something. In this context, it overlaps slightly with Perception, but Investigation is more of a hands-
+							on search, looking under that pile of leaves or questioning suspects, while Perception is simply 
+							observation without interference.</p>
+						<p>In combat, it can also be useful to take a second to pick your target's weak spot, especially if your
+							enemy has not seen you yet. It essentially sacrifices one action in order to make the next attack 
+							stronger:</p>
+						<ul>
+							<li>less than 0 => no bonus</li>
+							<li>0 to 4 => +1 atk and +2 dmg</li>
+							<li>5 to 9 => +2 atk and +4 dmg</li>
+							<li>10 to 14 => +3 atk and +6 dmg</li>
+							<li>15 to 19 => +4 atk and +8 dmg</li>
+							<li>20 to 24 => +5 atk and +10 dmg</li>
+							<li>25 to 29 => +6 atk and +12 dmg</li>
+						</ul>
+
+					<h3 id="Mindfulness">Mindfulness</h3>
+						<p>Mindfulness is primarily a save against enemy attempts to control your character. It represents your 
+							PC's ability to discern their own state of mind, as well as any effects that may attempt to influence 
+							them. Mindfulness can also be used to attempt to attune to an item in order to identify its effects, 
+							magical or otherwise.</p>
+
+					<h3 id="Intuition">Intuition</h3>
+						<p>If you're stuck and not really sure what to do, you can also use an Intuition check to essentaily ask your 
+							GM for some hints. Think of it as a form of 'sixth sense'. A History check can only give you information 
+							that your PC would reasonably know based on their backstory and previous encounters, and an Investigation 
+							can lead to logically formed conclusion, but a good Intuition check might allow you to infer brand new 
+							information right in the heat of the moment.</p>
+						<p>Despite this vague description, Intuition comes up rather often, as it bridges the gap that may occur 
+							between GM and players based on their own thinking styles. If your GM is giving you information and you 
+							just can't seem to put the pieces of the puzzle together, it might be worth asking for an Intuition check 
+							as well.</p>
+
+					<h3 id="Perception">Perception</h3>
+						<p>This is a quick physical check of your surroundings. If you suspect that there might be enemies in hiding, 
+							waiting to ambush you, or if you think an area might be trapped, or even just if you really enjoy a 
+							scene your GM is describing, it may be a good idea to spend an Action just making sure you have a good lay 
+							of the land before interacting.</p>
+						<p>As for all abilities in HammRPG, <u>if you do not make a specific roll, your Passive ability is 0 + your 
+							modifiers</u>. In other words, even if you get the lowest possible roll on your ability check, you will 
+							get more information than simply waiting for the GM to tell you what's happening. Some GMs will wait for 
+							you to ask them for a Perception check, rather than potentially giving you a hint that there might be 
+							something hidden by asking you for it.</p>
+
+					<h3 id="Survival">Survival</h3>
+						<p>Survival represents your character's navigational abilities, especially in nature, as well as their 
+							ability to communicate when they do not speak the same language as their counterpart, which often comes 
+							into play when trying to communicate with animals. Survival is also a common check when you are affected 
+							by effects such as Blinded or Deafened, or when you are in the middle of a dust-cloud or smoke-screen.</p>
+
+					<h3 id="Willpower">Willpower</h3>
+						<p>Willpower is a common save against enemy attempts to use magic against a character. If your character 
+							is ever captured, you can also use a Willpower roll to see how well they are resisting hostile attempts to 
+							interrogate your PC, etc.</p>
+
+					<h3 id="Inspiration">Inspiration</h3>
+						<p>If you have a very critical roll coming up, you can psych yourself up for it using your own internal 
+							monologue as Inspiration (Note that this costs an Action in combat, unless you are spending PP):</p>
+						<ul>
+							<li>less than 0 => no bonus</li>
+							<li>0 to 9 => +1 next ability roll</li>
+							<li>10 to 19 => +2 next ability roll</li>
+							<li>20 to 29 => +3 next ability roll</li>
+							<li>etc.</li>
+						</ul>
+
+					<h3 id="Leadership">Leadership</h3>
+						<p>Leadership functions as a measure of your disciplice and your ability to inspire others. As such, it 
+							is the default save against enemy attempts to <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Intimidation')">Intimidate</a> you.</p>
+						<p>In the same spirit as the <a href="javascript:void(0);" onclick="scrolltoSection('Inspiration')">
+							Inspiration Action</a> above, you can also spend an Action to help one of your allies. The bonuses for 
+							helping your friends are higher, though, especially if you roll well:</p>
+						<ul>
+							<li>less than 0 => no bonus</li>
+							<li>0 to 4 => +1</li>
+							<li>5 to 9 => +2</li>
+							<li>10 to 14 => +3</li>
+							<li>15 to 19 => +4</li>
+							<li>20 to 24 => +5</li>
+							<li>25 to 29 => +6</li>
+							<li>etc.</li>
+						</ul>
+						<p>When you spend PP to help your allies instead of yourself, you will also be able to use the Leadership 
+							roll instead of the Inspiration roll, which makes helping others more effective than helping yourself, 
+							specifically in order to encourage teamwork.</p>
+
+					<h3 id="Performance">Performance</h3>
+						<p>Performance refers to your ability to handle the spotlight. Whether performing in a tavern or running a 
+							distraction while your allies steal something or sneak up on a critical enemy, Performance has a huge 
+							variety of applications. The GM will determine the DC of the roll based on the specific context, including 
+							your role-play for the distraction and/or any details you describe.</p>
+
+					<h3 id="Persuasion">Persuasion</h3>
+						<p>Persuasion is the art of word-craft, which means it will most commonly come into play when you role-play 
+							conversations and similar situations. Some spells, particularly charms and such, can also utilize the 
+							Persuasion ability for their applicable contests.</p>
+						<p>If you or your GM do not enjoy the haggling experience, you can also use Persuasion as an easy way to 
+							calculate discounts when buying or selling items. The formula for this is given in the Charisma section 
+							of the <a href="./gameplay-attributes.html">Attributes</a> page; however, using Persuasion rather than 
+							the base CHA modifier allows you to take advantage of Persuasion proficiency. Which of these two methods 
+							you end up using should be discussed during the <a href="javascript:void(0);" onclick="scrolltoSection(
+							'Session-Zero')">Session Zero</a> for your game.</p>
+				
+			</article>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
