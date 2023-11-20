@@ -1,96 +1,287 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	/* Color palette with commonly used colors */
+	--red: #820f0f;
+	--lightred: #b43333;
+	--orange: #c9a17c;
+	--brown: #2a2117;
+	--black: #1b1717;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	/* Some constant variables */
+	--sidePanelWidth: 160px;
+	--menuPanelHeight: 40px;
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* This section eliminates the default whitespace margin so that our custom background color fills in the entire page */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Times New Roman",serif;
+	color: white;
 }
 
+
+/* This overall section sets up the layout of the page */
+/* This container splits the page into the top Menu-Panel and the Page container */
+.Container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--orange);
+}
+
+/* This is the formatting for the Menu-Panel */
+.Menu-Panel {
+	display: flex;
+	position: fixed;
+	height: var(--menuPanelHeight);
+	width: 100%;
+	background-color: var(--black);
+	justify-content: center;
+	align-items: center;
+	font-size: large;
+	gap: 20px;
+}
+
+.Menu-Panel a {
+	background-color: transparent;
+	font-weight: 100;
+}
+.Menu-Panel a:hover {
+    background-color: var(--red);
+}
+
+.Current-Menu-Panel {
+    text-decoration: underline;
+	text-underline-offset: 4px;
+	text-decoration-color: var(--red);
+	text-decoration-thickness: 3px;
+}
+
+
+/* This container allows flexbox arranging of the Side-Panel and the Content-Panel */
+.Page {
+	display: flex;
+	min-height: 100vh;
+	padding-top: var(--menuPanelHeight);
+	margin: 0 7% 0 10%;
+}
+
+/* This is the formatting for the Side-Panel */
+.Side-Panel {
+	left: 10%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	width: var(--sidePanelWidth);
+	gap: 8px;
+	padding: 5px;
+	text-align: center;
+	overflow-y: auto;
+}
+
+.Side-Panel p {
+	font-size: 10px;
+	margin: 2px 5px;
+	text-align: left;
+}
+
+.Side-Panel ul {
+	padding-left: 15px;
+	padding-right: 0;
+	margin: 7px 0 2px 10px;
+}
+
+.Side-Panel li {
+	margin-bottom: 6px;
+}
+
+.Side-Panel a {
+	padding: 4px 5px;
+	font-weight: 100;
+}
+
+.Current-Submenu {
+	padding: 8px 0 4px 0;
+	border-radius: 5px;
+}
+
+.Current-Side-Panel {
+	background-color: var(--lightred);
+}
+
+/* This is the formatting for the Content-Panel */
+.Content-Panel {
+	flex: 1 1 0px;
+	padding: 20px 25px 20px 25px;
+	margin-right: var(--sidePanelWidth);
+	background-color: var(--brown);
+}
+
+
+/* Now we're getting to the formatting of the content itself */
+
+/* Articles group relevant sections together */
+article {
+	margin-bottom: 30px;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+	margin-bottom: 10px;
+}
+
+/* Links */
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+	background-color: var(--red);
+	padding: 2px 5px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 700;
+	white-space: nowrap;
 }
 a:hover {
-  color: #535bf2;
+	background-color: var(--lightred);
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* Lists */
+ul, ol {
+	padding: 0px 25px;
+	margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* The Gameplay Rules section */
+.Example {
+	border: 5px solid var(--red);
+	border-radius: 10px;
+	padding: 5px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* The Terminology Page */
+.Terminology-Card-Organizer {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+.Terminology-Card-Organizer .Item-Card {
+	flex: 0 0 260px;
 }
 
-.card {
-  padding: 2em;
+.Item-Card {
+	border: 5px solid var(--red);
+	border-radius: 10px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+.Item-Card h1,
+.Item-Card h2,
+.Item-Card h3 {
+	flex: 0 0 auto;
+	margin: 2px 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.Item-Card h3 {
+	text-decoration: underline;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.Item-Card p {
+	flex: 1 1 0;
+	margin: 5px 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+.Highlight {
+	margin: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Highlight h2 {
+	background-color: #a55a13;
+	padding: 5px;
+	border: 6px solid var(--red);
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	text-decoration: none;
+}
+
+.Highlight h2 section {
+	text-align: center;
+}
+
+.Highlight article {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+/* The Effects Page, except Item-Card formatting */
+.Effects-Card-Organizer {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.Effects-Card-Organizer h2 {
+	margin-top: 20px;
+}
+
+.Effects-Card-Organizer .Item-Card {
+	flex: 0 0 auto;
+}
+
+/* Scroll up button */
+.Scrollup {
+	display: flex;
+    justify-content: center;
+}
+.Scrollup a {
+	position: fixed;
+	bottom: 60px;
+	width: 50px;
+	height: 50px;
+	padding: 0 0 5px 0;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	border-radius: 100%;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+
+/* Style changes for smaller screen sizes */
+
+/* For screens with a width of less than 1000px*/
+@media only screen and (max-width: 1000px) {
+	.Menu-Panel {
+		height: 80px;
+		font-size: 2em;
+	}
+
+	.Page {
+		margin: 0;
+		padding-top: 80px;
+	}
+
+	.Content-Panel {
+		margin-right: 0;
+	}
 }
