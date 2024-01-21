@@ -4,7 +4,7 @@
     story-telling experience but could not afford to buy any established rule books. Instead, we decided to create a 
     brand-new system, which is what you see here today.</p>
 <p> Because of this background, <strong>the base ruleset of HammRPG is and always will be completely free</strong>
-    to use. Is is available at our website, which you can visit <a href="https://masterhatu.github.io/HammRPG/index.html">here<</a>> That 
+    to use. Is is available at our website, which you can visit <a href="https://masterhatu.github.io/HammRPG/index.html">here</a>. That 
 		being said, it does take a lot of time and effort to create and maintain a system like this, so if you feel like
     buying the admin team a coffee, please visit our <a href="https://www.patreon.com/HammRPG" target=”_blank”>Patreon Page</a>.</p>
 <p> The system is designed to function within a wide range of universes, allowing for as much freedom for player
